@@ -64,6 +64,9 @@
   justify-content: center;
   overflow-x: auto;
 }
+.axes::-webkit-scrollbar {
+  display: none;
+}
 .axes {
   width: 50vw;
   height: 80vh;
@@ -72,6 +75,7 @@
   flex-direction: row;
   overflow-x: scroll;
   gap: 0.5rem;
+  padding: 1rem;
 }
 // .countryNameContainer {
 //   width: 50vw;
