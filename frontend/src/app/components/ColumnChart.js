@@ -16,9 +16,22 @@ const ColumnChart = () => {
       CountryVsVisitor.push(newCountry);
     }
   });
+  // const totalVisitors = CountryVsVisitor.reduce((accumulator, target) => {
+  //   return accumulator + target.totalVisitor;
+  // }, 0);
+  // console.log(totalVisitors);
   return (
     <div className="columnChartContainer">
-      <div className="axes"></div>
+      <div className="axes">
+        {CountryVsVisitor.map(({ country, totalVisitor }) => {
+          return (
+            <div className="columns">
+              <div className="countryName">{country}</div>
+              <div className="numOfVisitors" style={{height:`${(totalVisitor/2229)*100}%`}}>{totalVisitor}</div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
