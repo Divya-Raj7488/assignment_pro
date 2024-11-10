@@ -1,0 +1,92 @@
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 0vh;
+}
+.logo {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.links {
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+ul {
+  width: 40%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+ul li {
+  text-decoration: none;
+}
+.searchBar {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.searchTag {
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 1.5rem;
+  background-color: #2c0000;
+  color: white;
+  padding: 1rem;
+}
+input:focus {
+  outline: none;
+}
+.hamburgerIcon {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* flex-grow: 1; */
+}
+.threeDots {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 860px) {
+  ul {
+    display: none;
+  }
+  .searchBar {
+    width: 100%;
+  }
+  .threeDots {
+    display: flex;
+  }
+  .links {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .links {
+    display: none;
+  }
+}
