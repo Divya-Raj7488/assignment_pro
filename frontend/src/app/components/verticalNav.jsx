@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TimeChart = () => {
+export default function VerticalNav() {
   return (
     <div>
       
@@ -8,4 +8,3 @@ const TimeChart = () => {
   )
 }
 
-export default TimeChart
