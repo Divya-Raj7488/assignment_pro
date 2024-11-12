@@ -32,6 +32,7 @@ ul {
   align-items: center;
   gap: 0.5rem;
   color: white;
+  cursor: pointer;
 }
 
 ul li {
@@ -70,6 +71,57 @@ input:focus {
   display: none;
   width: 30px;
   height: 30px;
+  color: white;
+}
+.menu {
+  width: 10rem;
+  min-height: 5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10vh;
+  right: 2vw;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0rem;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: auto;
+  cursor: pointer;
+}
+.verticalNavbar {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  top: 10vh;
+}
+.iconAndName{
+  width: 16vw;
+  width: 100%;
+  min-height: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.verticalNavbar2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 @media screen and (max-width: 860px) {
   ul {
@@ -87,6 +139,11 @@ input:focus {
 }
 @media screen and (max-width: 500px) {
   .links {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .title {
     display: none;
   }
 }
