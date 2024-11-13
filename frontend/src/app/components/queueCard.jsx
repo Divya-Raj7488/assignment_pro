@@ -4,9 +4,8 @@ import "../styles/card.css";
 import { BsMusicNoteBeamed } from "react-icons/bs";
 
 export default function QueueCard(props) {
-  // const { index, songName, songImg, duration, album } = props;
-  const isPlaying = props.keys;
-  // const index = 1;
+  const { key, songName, album, singer, songSrc } = props.songs;
+  const isPlaying = key;
   return (
     <div
       className="queueCard"

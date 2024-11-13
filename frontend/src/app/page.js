@@ -7,24 +7,35 @@ import { BottomNav } from "./components/verticalNav";
 import CurrentPlayingCard from "./components/currentSong";
 import { useState } from "react";
 import QueueCard from "./components/queueCard";
+// import { Howl, Howler } from "howler";
 
 export default function Home() {
   // const [songs, setSongs] = useState([]);
   const [isPlaying, setIsPlaying] = useState(null);
   const songs = [
-    { key: 1, name: "DIVYA" },
-    { key: 2, name: "DIVYA" },
-    { key: 3, name: "DIVYA" },
-    { key: 4, name: "DIVYA" },
-    { key: 5, name: "DIVYA" },
-    { key: 6, name: "DIVYA" },
-    { key: 7, name: "DIVYA" },
-    { key: 8, name: "DIVYA" },
-    { key: 9, name: "DIVYA" },
-    { key: 10, name: "DIVYA" },
-    { key: 11, name: "DIVYA" },
-    { key: 12, name: "DIVYA" },
+    {
+      key: 1,
+      songName: "care-enough",
+      album: "lorem",
+      singer: "ln",
+      songSrc: "./music/music1.mp3",
+    },
+    {
+      key: 2,
+      songName: "Host",
+      album: "epsum",
+      singer: "xyz",
+      songSrc: "./music/music2.mp3",
+    },
+    {
+      key: 3,
+      songName: "random",
+      album: "dollar",
+      singer: "rdz",
+      songSrc: "/music/music2.mp3",
+    },
   ];
+ 
   return (
     <main className="homepage">
       <nav className="nav">
@@ -39,7 +50,7 @@ export default function Home() {
           <div className="artistData"></div>
           <div className="songData">
             {songs &&
-              songs.map(({ key, name }) => {
+              songs.map(({ key }) => {
                 return (
                   <div
                     style={{ width: "100%", height: "3rem" }}
@@ -48,7 +59,7 @@ export default function Home() {
                     }}
                     key={key}
                   >
-                    <QueueCard isPlaying={isPlaying}  keys={key} />
+                    <QueueCard isPlaying={isPlaying} songs={songs} />
                   </div>
                 );
               })}
