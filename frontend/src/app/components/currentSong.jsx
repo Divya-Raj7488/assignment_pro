@@ -24,7 +24,7 @@ export default function CurrentPlayingCard() {
       </div>
       <div className="names">
         <div className="songName">Love your voice</div>
-        <div className="title">Micheal Jackson</div>
+        <div className="title2">Micheal Jackson</div>
       </div>
       <div className="animation">
         <span className="time">2:45</span>

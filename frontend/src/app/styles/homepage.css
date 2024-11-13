@@ -36,17 +36,31 @@
   height: 100%;
   background-image: linear-gradient(to bottom, #4c0000, #0a0a0a);
 }
+.artistData {
+  width: 90%;
+  height: 50%;
+}
+.songData {
+  width: 100%;
+  height: 50vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.songData::-webkit-scrollbar {
+  display: none;
+}
 .currentPlaying {
   width: 20vw;
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
-  background-image: linear-gradient(to bottom, #000000, #0F0F0F);
+  background-image: linear-gradient(to bottom, #000000, #0f0f0f);
   flex-grow: 1;
   align-items: center;
 }
-@media screen and (max-width:800px){
-  .verticalNav{
+@media screen and (max-width: 800px) {
+  .verticalNav {
     width: 10vw;
   }
 }

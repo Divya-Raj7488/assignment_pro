@@ -24,11 +24,11 @@
   align-items: center;
   color: white;
 }
-.songName{
-    font-size: 0.9rem;
+.songName {
+  font-size: 0.9rem;
 }
-.title{
-    font-size: 0.7rem;
+.title2 {
+  font-size: 0.7rem;
 }
 .animation {
   width: 90%;
@@ -83,4 +83,51 @@
   width: 24px;
   height: 24px;
   color: white;
+}
+.queueCard {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+}
+.index {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.songImg {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.songName {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Duration {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Album {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
