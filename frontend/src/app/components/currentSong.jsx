@@ -9,12 +9,11 @@ import { BsRepeat } from "react-icons/bs";
 import { FaRandom } from "react-icons/fa";
 import pic from "../assets/Pic.svg";
 import Image from "next/image";
-import { Howl, howler } from "howler";
 
 export default function CurrentPlayingCard(props) {
-  const [isPlaying, setIsPlaying] = useState();
+  const [isPlaying, setIsPlaying] = useState(true);
   const { id, songName, album, singer, songSrc } = props.song;
- 
+  const { controlFlow } = props;
   return (
     <div className="currentSongCard" key={id}>
       <div style={{ color: "white" }}>Currently Playing</div>
@@ -40,31 +39,41 @@ export default function CurrentPlayingCard(props) {
       </div> */}
       <div className="controlBox">
         <span>
-          <BsRepeat className="controlIcons" />
+          <BsRepeat className="controlIcons" onClick={controlFlow.repeatSong} />
         </span>
         <span>
-          <AiFillStepBackward className="controlIcons" />
+          <AiFillStepBackward
+            className="controlIcons"
+            onClick={controlFlow.PlayPrevious}
+          />
         </span>
-        <span
-          // onClick={() => {
-          //   if (isPlaying) {
-          //     playSong();
-          //   } else {
-          //     pauseSong();
-          //   }
-          // }}
-        >
+        <span>
           {isPlaying ? (
-            <FaPlay className="controlIcons" />
+            <FaPause
+              className="controlIcons"
+              onClick={() => {
+                controlFlow.pauseSong();
+                setIsPlaying(false);
+              }}
+            />
           ) : (
-            <FaPause className="controlIcons" />
+            <FaPlay
+              className="controlIcons"
+              onClick={() => {
+                controlFlow.resumeSong();
+                setIsPlaying(true);
+              }}
+            />
           )}
         </span>
         <span>
-          <AiFillStepForward className="controlIcons" />
+          <AiFillStepForward
+            className="controlIcons"
+            onClick={controlFlow.playNext}
+          />
         </span>
         <span>
-          <FaRandom className="controlIcons" />
+          <FaRandom className="controlIcons" onClick={controlFlow.randomSong} />
         </span>
       </div>
     </div>

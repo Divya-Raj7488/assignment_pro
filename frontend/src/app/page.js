@@ -11,6 +11,7 @@ import { Howl, Howler } from "howler";
 
 export default function Home() {
   const [currentSongId, setCurrentSongId] = useState(null);
+  const [howl, setHowl] = useState(null);
   const songs = [
     {
       id: 0,
@@ -36,20 +37,67 @@ export default function Home() {
   ];
 
   const playSong = (id) => {
-    const howl = new Howl({
+    if (howl !== null) {
+      howl.stop();
+      howl.unload();
+    }
+    const newHowl = new Howl({
       src: [songs[id].songSrc],
+      loop: true,
       onend: () => {
-        setIsPlaying(false);
+        if (currentSongId < songs.length - 1) {
+          playSong(currentSongId + 1);
+        } else {
+          console.log("playlist completed");
+        }
       },
     });
+    newHowl.play();
+    setHowl(newHowl);
+    setCurrentSongId(id);
+  };
+  const controlFlow = {
+    pauseSong: function() {
+      if (howl !== null) {
+        howl.pause();
+      }
+    },
+    resumeSong: function() {
+      if (howl !== null) {
+        howl.play();
+      }
+    },
+    PlayPrevious: function() {
+      if (currentSongId !== null && currentSongId > 0) {
+        playSong(currentSongId - 1);
+      } else if (currentSongId !== null && currentSongId == 0) {
+        console.log("no previous song");
+        playSong(currentSongId);
+      } else {
+        console.log("cannot load previous song");
+      }
+    },
+    playNext: function() {
+      if (currentSongId !== null && currentSongId < songs.length - 1) {
+        playSong(currentSongId + 1);
+      } else if (currentSongId !== null && currentSongId === songs.length - 1) {
+        console.log("no next song");
+        playSong(0);
+      } else {
+        console.log("cannot load previous song");
+      }
+    },
+    repeatSong: function() {
+      if (currentSongId !== null) {
+        playSong(currentSongId);
+      }
+    },
+    randomSong: function() {
+      const newId = Math.floor(Math.random() * (songs.length - 1));
+      playSong(newId);
+    },
+  };
 
-    howl.play();
-  };
-  const pauseSong = () => {
-    if (currentSongId !== null) {
-      songs[currentSongId].howl.pause();
-    }
-  };
   return (
     <main className="homepage">
       <nav className="nav">
@@ -74,7 +122,7 @@ export default function Home() {
                     }}
                     key={song.id}
                   >
-                    <QueueCard isPlaying={currentSongId} songs={song} />
+                    <QueueCard currentSongId={currentSongId} songs={song} />
                   </div>
                 );
               })}
@@ -84,8 +132,8 @@ export default function Home() {
           {currentSongId !== null && (
             <CurrentPlayingCard
               song={songs[currentSongId]}
-              isPlaying={currentSongId}
-              pauseSong={pauseSong}
+              currentSongId={currentSongId}
+              controlFlow={controlFlow}
             />
           )}
         </div>

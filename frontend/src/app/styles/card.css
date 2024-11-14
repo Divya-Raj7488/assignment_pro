@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .artistImg {
   width: 90%;
@@ -100,6 +101,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .songImg {
   width: 10%;
