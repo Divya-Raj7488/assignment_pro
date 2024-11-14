@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/card.css";
 import { AiFillStepForward } from "react-icons/ai";
 import { AiFillStepBackward } from "react-icons/ai";
@@ -9,11 +9,14 @@ import { BsRepeat } from "react-icons/bs";
 import { FaRandom } from "react-icons/fa";
 import pic from "../assets/Pic.svg";
 import Image from "next/image";
+import { Howl, howler } from "howler";
 
-export default function CurrentPlayingCard() {
-  const [play, setPlay] = useState(false);
+export default function CurrentPlayingCard(props) {
+  const [isPlaying, setIsPlaying] = useState();
+  const { id, songName, album, singer, songSrc } = props.song;
+ 
   return (
-    <div className="currentSongCard">
+    <div className="currentSongCard" key={id}>
       <div style={{ color: "white" }}>Currently Playing</div>
       <div className="artistImg">
         <Image
@@ -23,10 +26,10 @@ export default function CurrentPlayingCard() {
         />
       </div>
       <div className="names">
-        <div className="songName">Love your voice</div>
-        <div className="title2">Micheal Jackson</div>
+        <div className="songName">{songName}</div>
+        <div className="title2">{singer}</div>
       </div>
-      <div className="animation">
+      {/* <div className="animation">
         <span className="time">2:45</span>
         <span className="line">
           <span className="dot">
@@ -34,7 +37,7 @@ export default function CurrentPlayingCard() {
           </span>
         </span>
         <span className="duration">5:56</span>
-      </div>
+      </div> */}
       <div className="controlBox">
         <span>
           <BsRepeat className="controlIcons" />
@@ -43,11 +46,15 @@ export default function CurrentPlayingCard() {
           <AiFillStepBackward className="controlIcons" />
         </span>
         <span
-          onClick={() => {
-            setPlay(!play);
-          }}
+          // onClick={() => {
+          //   if (isPlaying) {
+          //     playSong();
+          //   } else {
+          //     pauseSong();
+          //   }
+          // }}
         >
-          {play ? (
+          {isPlaying ? (
             <FaPlay className="controlIcons" />
           ) : (
             <FaPause className="controlIcons" />

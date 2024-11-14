@@ -4,31 +4,30 @@ import "../styles/card.css";
 import { BsMusicNoteBeamed } from "react-icons/bs";
 
 export default function QueueCard(props) {
-  const { key, songName, album, singer, songSrc } = props.songs;
-  const isPlaying = key;
+  const { id, songName, album, singer, songSrc } = props.songs;
+  console.log("isPlaying", props.isPlaying);
   return (
     <div
       className="queueCard"
       style={
-        isPlaying == props.isPlaying
+        props.isPlaying == id
           ? { backgroundColor: "#520000" }
           : { backgroundColor: "transparent" }
       }
     >
       <span className="index">
-        {isPlaying == props.isPlaying ? (
+        {props.isPlaying == id ? (
           <BsMusicNoteBeamed style={{ color: "white" }} />
         ) : (
-          <span>{props.keys}</span>
+          <span>{id + 1}</span>
         )}
       </span>
       <span className="songImg">
         {/* <Image src={songImg} alt="" /> */}
         {/* {songImg} */}
       </span>
-      {/* <span className="songName"> {songName} </span> */}
-      {/* <span className="Duration"> {duration} </span> */}
-      {/* <span className="Album">{album} </span> */}
+      <span className="songName"> {songName} </span>
+      <span className="Album">{album} </span>
     </div>
   );
 }
