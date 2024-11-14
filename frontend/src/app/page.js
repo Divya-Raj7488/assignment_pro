@@ -108,34 +108,36 @@ export default function Home() {
           <VerticalNav />
           <BottomNav />
         </div>
-        <div className="songList">
-          <div className="artistData"></div>
-          <div className="songData">
-            {songs &&
-              songs.map((song) => {
-                return (
-                  <div
-                    style={{ width: "100%", height: "3rem" }}
-                    onClick={() => {
-                      setCurrentSongId(song.id);
-                      playSong(song.id);
-                    }}
-                    key={song.id}
-                  >
-                    <QueueCard currentSongId={currentSongId} songs={song} />
-                  </div>
-                );
-              })}
+        <div className="hey">
+          <div className="songList">
+            <div className="artistData"></div>
+            <div className="songData">
+              {songs &&
+                songs.map((song) => {
+                  return (
+                    <div
+                      style={{ width: "100%", height: "3rem" }}
+                      onClick={() => {
+                        setCurrentSongId(song.id);
+                        playSong(song.id);
+                      }}
+                      key={song.id}
+                    >
+                      <QueueCard currentSongId={currentSongId} songs={song} />
+                    </div>
+                  );
+                })}
+            </div>
           </div>
-        </div>
-        <div className="currentPlaying">
-          {currentSongId !== null && (
-            <CurrentPlayingCard
-              song={songs[currentSongId]}
-              currentSongId={currentSongId}
-              controlFlow={controlFlow}
-            />
-          )}
+          <div className="currentPlaying">
+            {currentSongId !== null && (
+              <CurrentPlayingCard
+                song={songs[currentSongId]}
+                currentSongId={currentSongId}
+                controlFlow={controlFlow}
+              />
+            )}
+          </div>
         </div>
       </div>
     </main>
