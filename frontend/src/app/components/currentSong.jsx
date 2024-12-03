@@ -14,9 +14,13 @@ export default function CurrentPlayingCard({
   song,
   currentSongId,
   controlFlow,
+  isPlaying,
+  setIsPlaying,
 }) {
-  const [isPlaying, setIsPlaying] = useState(true);
   const { id, songName, album, singer, songSrc } = song;
+  useEffect(() => {
+    setIsPlaying(true);
+  }, [currentSongId]);
   return (
     <div className="currentSongCard" key={currentSongId}>
       <div style={{ color: "white" }}>Currently Playing</div>

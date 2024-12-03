@@ -13,6 +13,7 @@ export default function Home() {
   const [currentSongId, setCurrentSongId] = useState(null);
   const [howl, setHowl] = useState(null);
   const [dragIdx, setDragIdx] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(true);
   const songs = [
     {
       id: 0,
@@ -57,6 +58,7 @@ export default function Home() {
     newHowl.play();
     setHowl(newHowl);
     setCurrentSongId(id);
+    setIsPlaying(true)
   };
   const controlFlow = {
     pauseSong: function() {
@@ -111,7 +113,7 @@ export default function Home() {
     const updatedComponents = [...components];
     const [draggedItem] = updatedComponents.splice(dragIdx, 1);
     updatedComponents.splice(id, 0, draggedItem);
-    console.log(id)
+    console.log(id);
     setCurrentSongId(id);
     setComponents(updatedComponents);
     setDragIdx(null);
@@ -152,7 +154,11 @@ export default function Home() {
                       }}
                       key={index}
                     >
-                      <QueueCard currentSongId={currentSongId} songs={song} idx = {index} />
+                      <QueueCard
+                        currentSongId={currentSongId}
+                        songs={song}
+                        idx={index}
+                      />
                     </div>
                   );
                 })}
@@ -164,6 +170,8 @@ export default function Home() {
                 song={components[currentSongId]}
                 currentSongId={currentSongId}
                 controlFlow={controlFlow}
+                isPlaying={isPlaying}
+                setIsPlaying={setIsPlaying}
               />
             )}
           </div>
