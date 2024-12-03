@@ -10,12 +10,15 @@ import { FaRandom } from "react-icons/fa";
 import pic from "../assets/Pic.svg";
 import Image from "next/image";
 
-export default function CurrentPlayingCard(props) {
+export default function CurrentPlayingCard({
+  song,
+  currentSongId,
+  controlFlow,
+}) {
   const [isPlaying, setIsPlaying] = useState(true);
-  const { id, songName, album, singer, songSrc } = props.song;
-  const { controlFlow } = props;
+  const { id, songName, album, singer, songSrc } = song;
   return (
-    <div className="currentSongCard" key={id}>
+    <div className="currentSongCard" key={currentSongId}>
       <div style={{ color: "white" }}>Currently Playing</div>
       <div className="artistImg">
         <Image

@@ -7,11 +7,12 @@ import { BottomNav } from "./components/verticalNav";
 import CurrentPlayingCard from "./components/currentSong";
 import { useState } from "react";
 import QueueCard from "./components/queueCard";
-import { Howl, Howler } from "howler";
+import { Howl } from "howler";
 
 export default function Home() {
   const [currentSongId, setCurrentSongId] = useState(null);
   const [howl, setHowl] = useState(null);
+  const [dragIdx, setDragIdx] = useState(null);
   const songs = [
     {
       id: 0,
@@ -35,6 +36,7 @@ export default function Home() {
       songSrc: "/music/music3.mp3",
     },
   ];
+  const [components, setComponents] = useState(songs);
 
   const playSong = (id) => {
     if (howl !== null) {
@@ -42,10 +44,10 @@ export default function Home() {
       howl.unload();
     }
     const newHowl = new Howl({
-      src: [songs[id].songSrc],
+      src: [components[id].songSrc],
       loop: true,
       onend: () => {
-        if (currentSongId < songs.length - 1) {
+        if (currentSongId < components.length - 1) {
           playSong(currentSongId + 1);
         } else {
           console.log("playlist completed");
@@ -98,6 +100,23 @@ export default function Home() {
     },
   };
 
+  function handleDragStart(id) {
+    setDragIdx(id);
+  }
+
+  function handleDragEnd(e) {
+    e.preventDefault();
+  }
+  function handleDrop(id) {
+    const updatedComponents = [...components];
+    const [draggedItem] = updatedComponents.splice(dragIdx, 1);
+    updatedComponents.splice(id, 0, draggedItem);
+    console.log(id)
+    setCurrentSongId(id);
+    setComponents(updatedComponents);
+    setDragIdx(null);
+  }
+
   return (
     <main className="homepage">
       <nav className="nav">
@@ -112,18 +131,28 @@ export default function Home() {
           <div className="songList">
             <div className="artistData"></div>
             <div className="songData">
-              {songs &&
-                songs.map((song) => {
+              {components &&
+                components.map((song, index) => {
                   return (
                     <div
+                      draggable
+                      onDragStart={() => {
+                        handleDragStart(index);
+                      }}
+                      onDragOver={(e) => {
+                        handleDragEnd(e);
+                      }}
+                      onDrop={() => {
+                        handleDrop(index);
+                      }}
                       style={{ width: "100%", height: "3rem" }}
                       onClick={() => {
-                        setCurrentSongId(song.id);
-                        playSong(song.id);
+                        setCurrentSongId(index);
+                        playSong(index);
                       }}
-                      key={song.id}
+                      key={index}
                     >
-                      <QueueCard currentSongId={currentSongId} songs={song} />
+                      <QueueCard currentSongId={currentSongId} songs={song} idx = {index} />
                     </div>
                   );
                 })}
@@ -132,7 +161,7 @@ export default function Home() {
           <div className="currentPlaying">
             {currentSongId !== null && (
               <CurrentPlayingCard
-                song={songs[currentSongId]}
+                song={components[currentSongId]}
                 currentSongId={currentSongId}
                 controlFlow={controlFlow}
               />
