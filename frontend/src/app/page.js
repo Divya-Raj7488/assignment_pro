@@ -5,7 +5,7 @@ import "./styles/homepage.css";
 import VerticalNav from "./components/verticalNav";
 import { BottomNav } from "./components/verticalNav";
 import CurrentPlayingCard from "./components/currentSong";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import QueueCard from "./components/queueCard";
 import { Howl } from "howler";
 
@@ -14,6 +14,7 @@ export default function Home() {
   const [howl, setHowl] = useState(null);
   const [dragIdx, setDragIdx] = useState(null);
   const [isPlaying, setIsPlaying] = useState(true);
+  const howlRef = useRef(null);
   const songs = [
     {
       id: 0,
@@ -21,6 +22,7 @@ export default function Home() {
       album: "lorem",
       singer: "Ln",
       songSrc: "./music/music1.mp3",
+      duration: 178,
     },
     {
       id: 1,
@@ -28,38 +30,83 @@ export default function Home() {
       album: "epsum",
       singer: "xyz",
       songSrc: "./music/music2.mp3",
+      duration: 159,
     },
+
     {
       id: 2,
+      songName: "Sad story",
+      album: "dollar",
+      singer: "rdz",
+      songSrc: "/music/music4.mp3",
+      duration: 31,
+    },
+
+    {
+      id: 3,
+      songName: "Olivia",
+      album: "dollar",
+      singer: "rdz",
+      songSrc: "/music/music5.mp3",
+      duration: 162,
+    },
+    {
+      id: 4,
+      songName: "party",
+      album: "dollar",
+      singer: "rdz",
+      songSrc: "/music/music6.mp3",
+      duration: 146,
+    },
+    {
+      id: 5,
       songName: "random",
       album: "dollar",
       singer: "rdz",
       songSrc: "/music/music3.mp3",
+      duration: 222,
     },
   ];
   const [components, setComponents] = useState(songs);
 
   const playSong = (id) => {
-    if (howl !== null) {
-      howl.stop();
-      howl.unload();
+    if (howlRef.current !== null) {
+      howlRef.current.stop();
+      howlRef.current.unload();
+      howlRef.current = null; 
     }
+
+    setCurrentSongId(id);
     const newHowl = new Howl({
       src: [components[id].songSrc],
-      loop: true,
+      loop: false,
       onend: () => {
-        if (currentSongId < components.length - 1) {
-          playSong(currentSongId + 1);
+        if (id < components.length - 1) {
+          playSong(id + 1);
         } else {
-          console.log("playlist completed");
+          console.log("Playlist completed");
+          if (howlRef.current !== null) {
+            howlRef.current.stop();
+            howlRef.current.unload();
+            howlRef.current = null; 
+          }
+          setCurrentSongId(null); 
+          setIsPlaying(false);
         }
       },
     });
+
+    // Assign the new Howl instance to the ref
+    howlRef.current = newHowl;
+
+    // Start playback
     newHowl.play();
-    setHowl(newHowl);
-    setCurrentSongId(id);
-    setIsPlaying(true)
+
+    // Update the Howl instance and playing state
+    setHowl(newHowl); // Optional: Keep state in sync for other components
+    setIsPlaying(true);
   };
+  // control - functions
   const controlFlow = {
     pauseSong: function() {
       if (howl !== null) {
@@ -82,9 +129,12 @@ export default function Home() {
       }
     },
     playNext: function() {
-      if (currentSongId !== null && currentSongId < songs.length - 1) {
+      if (currentSongId !== null && currentSongId < components.length - 1) {
         playSong(currentSongId + 1);
-      } else if (currentSongId !== null && currentSongId === songs.length - 1) {
+      } else if (
+        currentSongId !== null &&
+        currentSongId === components.length - 1
+      ) {
         console.log("no next song");
         playSong(0);
       } else {
@@ -149,7 +199,9 @@ export default function Home() {
                       }}
                       style={{ width: "100%", height: "3rem" }}
                       onClick={() => {
-                        setCurrentSongId(index);
+                        // setCurrentSongId(() => {
+                        //   return index;
+                        // });
                         playSong(index);
                       }}
                       key={index}

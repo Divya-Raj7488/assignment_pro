@@ -67,6 +67,7 @@
   /* animation: ; */
 }
 .time {
+  width: 1.75rem;
   font-size: 0.7rem;
 }
 .duration {
@@ -129,5 +130,6 @@
 @media screen and (max-width: 800px){
   .currentSongCard{
     justify-content: space-between;
+    top: 5vh;
   }
 }

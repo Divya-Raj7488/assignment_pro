@@ -17,7 +17,37 @@ export default function CurrentPlayingCard({
   isPlaying,
   setIsPlaying,
 }) {
-  const { id, songName, album, singer, songSrc } = song;
+  const [currentDuration, setCurrentDuration] = useState(0);
+  const { songName, singer, duration } = song;
+  const intervalIdRef = useRef(null);
+
+  function countDuration() {
+    if (intervalIdRef.current) {
+      clearInterval(intervalIdRef.current);
+    }
+
+    intervalIdRef.current = setInterval(() => {
+      setCurrentDuration((prev) => {
+        if (prev + 1 >= duration) {
+          clearInterval(intervalIdRef.current);
+          setCurrentDuration(0)
+          return duration;
+        }
+        return prev + 1;
+      });
+    }, 1000);
+  }
+
+  useEffect(() => {
+    countDuration();
+
+    return () => {
+      if (intervalIdRef.current) {
+        clearInterval(intervalIdRef.current);
+      }
+    };
+  }, [duration]);
+
   useEffect(() => {
     setIsPlaying(true);
   }, [currentSongId]);
@@ -35,15 +65,17 @@ export default function CurrentPlayingCard({
         <div className="songName">{songName}</div>
         <div className="title2">{singer}</div>
       </div>
-      {/* <div className="animation">
-        <span className="time">2:45</span>
+      <div className="animation">
+        <span className="time"> {Math.floor(currentDuration / 60)}:{Math.floor(currentDuration % 60)}</span>
         <span className="line">
           <span className="dot">
             <span className="dot2"></span>
           </span>
         </span>
-        <span className="duration">5:56</span>
-      </div> */}
+        <span className="duration">
+          {Math.floor(duration / 60)}:{Math.floor(duration % 60)}
+        </span>
+      </div>
       <div className="controlBox">
         <span>
           <BsRepeat className="controlIcons" onClick={controlFlow.repeatSong} />
