@@ -16,41 +16,29 @@ export default function CurrentPlayingCard({
   controlFlow,
   isPlaying,
   setIsPlaying,
+  currentDuration
 }) {
-  const [currentDuration, setCurrentDuration] = useState(0);
   const { songName, singer, duration } = song;
-  const intervalIdRef = useRef(null);
 
-  function countDuration() {
-    if (intervalIdRef.current) {
-      clearInterval(intervalIdRef.current);
-    }
-
-    intervalIdRef.current = setInterval(() => {
-      setCurrentDuration((prev) => {
-        if (prev + 1 >= duration) {
-          clearInterval(intervalIdRef.current);
-          setCurrentDuration(0)
-          return duration;
-        }
-        return prev + 1;
-      });
-    }, 1000);
-  }
-
-  useEffect(() => {
-    countDuration();
-
-    return () => {
-      if (intervalIdRef.current) {
-        clearInterval(intervalIdRef.current);
-      }
-    };
-  }, [duration]);
+  const progressRef = useRef(null);
+  const previousProgress = useRef(0);
 
   useEffect(() => {
     setIsPlaying(true);
   }, [currentSongId]);
+
+  useEffect(() => {
+    if (!progressRef.current || !song) return;
+    const progress = (currentDuration / song.duration) * 100;
+    progressRef.current.style.width = `${progress}%`;
+    if (isPlaying) {
+      progressRef.current.style.transition = "width 1s linear";
+      previousProgress.current = progress;
+    } else {
+      progressRef.current.style.transition = "none";
+      progressRef.current.style.width = `${previousProgress.current}%`;
+    }
+  }, [currentDuration, isPlaying]);
   return (
     <div className="currentSongCard" key={currentSongId}>
       <div style={{ color: "white" }}>Currently Playing</div>
@@ -66,12 +54,13 @@ export default function CurrentPlayingCard({
         <div className="title2">{singer}</div>
       </div>
       <div className="animation">
-        <span className="time"> {Math.floor(currentDuration / 60)}:{Math.floor(currentDuration % 60)}</span>
-        <span className="line">
-          <span className="dot">
-            <span className="dot2"></span>
-          </span>
+        <span className="time">
+          {" "}
+          {Math.floor(currentDuration / 60)}:{Math.floor(currentDuration % 60)}
         </span>
+        <div className="line">
+          <div className="progress" ref={progressRef}></div>
+        </div>
         <span className="duration">
           {Math.floor(duration / 60)}:{Math.floor(duration % 60)}
         </span>
@@ -96,13 +85,7 @@ export default function CurrentPlayingCard({
               }}
             />
           ) : (
-            <FaPlay
-              className="controlIcons"
-              onClick={() => {
-                controlFlow.resumeSong();
-                setIsPlaying(true);
-              }}
-            />
+            <FaPlay className="controlIcons" onClick={controlFlow.resumeSong} />
           )}
         </span>
         <span>

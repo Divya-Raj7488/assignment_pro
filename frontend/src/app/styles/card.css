@@ -42,12 +42,29 @@
 }
 .line {
   width: 75%;
-  height: 2px;
-  border: 1px solid white;
-  background-color: white;
+  height: 4px;
+  border: 1px solid #f0f0f0;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
+  border-radius: 0.1rem;
+}
+.progress {
+  width: 0%;
+  height: 100%; 
+  background-color: white;
+  /* transition: width 0.5s linear; */
+  /* animation: fillBar 5s linear forwards; */
+}
+@keyframes fillBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 .dot {
   width: 10px;
@@ -58,6 +75,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 10;
 }
 .dot2 {
   width: 5px;
@@ -65,6 +84,7 @@
   border-radius: 5px;
   background-color: #0a0a0a;
   /* animation: ; */
+  z-index: 20;
 }
 .time {
   width: 1.75rem;

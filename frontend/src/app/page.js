@@ -8,6 +8,8 @@ import CurrentPlayingCard from "./components/currentSong";
 import { useEffect, useRef, useState } from "react";
 import QueueCard from "./components/queueCard";
 import { Howl } from "howler";
+import Image from "next/image";
+import ArtistBackground from "../../public/Background.svg";
 
 export default function Home() {
   const [currentSongId, setCurrentSongId] = useState(null);
@@ -15,6 +17,7 @@ export default function Home() {
   const [dragIdx, setDragIdx] = useState(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const howlRef = useRef(null);
+  const durationRef = useRef(null);
   const songs = [
     {
       id: 0,
@@ -68,6 +71,27 @@ export default function Home() {
     },
   ];
   const [components, setComponents] = useState(songs);
+  const [currentDuration, setCurrentDuration] = useState(0);
+
+  function clearDurationRef() {
+    clearInterval(durationRef.current);
+    durationRef.current = null;
+  }
+
+  useEffect(() => {
+    if (!howl) return;
+    if (durationRef.current) clearInterval(durationRef.current);
+    let id = setInterval(() => {
+      if (howl.seek() === howl._duration) {
+        clearInterval(id);
+      } else {
+        setCurrentDuration(() => Math.floor(howl.seek()));
+      }
+    }, 1000);
+    durationRef.current = id;
+  }, [howl]);
+
+  // play song
 
   const playSong = (id) => {
     if (howlRef.current !== null) {
@@ -90,6 +114,9 @@ export default function Home() {
             howlRef.current.unload();
             howlRef.current = null;
           }
+          if (durationRef.current !== null) {
+            clearDurationRef();
+          }
           setCurrentSongId(null);
           setIsPlaying(false);
         }
@@ -99,17 +126,27 @@ export default function Home() {
     newHowl.play();
     setHowl(newHowl);
     setIsPlaying(true);
+
+    if (durationRef.current !== null) {
+      clearDurationRef();
+    }
+    setCurrentDuration(0);
+    console.log("playing again");
   };
+
   // control - functions
+
   const controlFlow = {
     pauseSong: function() {
-      if (howl !== null) {
+      if (howl) {
         howl.pause();
+        setIsPlaying(false);
       }
     },
     resumeSong: function() {
       if (howl !== null) {
         howl.play();
+        setIsPlaying(true);
       }
     },
     PlayPrevious: function() {
@@ -145,7 +182,7 @@ export default function Home() {
       playSong(newId);
     },
   };
-
+  // Drag-Drop controller
   function handleDragStart(id) {
     setDragIdx(id);
   }
@@ -190,7 +227,15 @@ export default function Home() {
         </div>
         <div className="hey">
           <div className="songList">
-            <div className="artistData"></div>
+            <div className="artistData">
+              <div>
+                <Image
+                  src={ArtistBackground}
+                  alt="background"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
+            </div>
             <div className="songData">
               {components &&
                 components.map((song, index) => {
@@ -208,9 +253,6 @@ export default function Home() {
                       }}
                       style={{ width: "100%", height: "3rem" }}
                       onClick={() => {
-                        // setCurrentSongId(() => {
-                        //   return index;
-                        // });
                         playSong(index);
                       }}
                       key={index}
@@ -233,6 +275,7 @@ export default function Home() {
                 controlFlow={controlFlow}
                 isPlaying={isPlaying}
                 setIsPlaying={setIsPlaying}
+                currentDuration={currentDuration}
               />
             )}
           </div>
