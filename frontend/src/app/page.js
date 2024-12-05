@@ -35,7 +35,7 @@ export default function Home() {
 
     {
       id: 2,
-      songName: "Sad story",
+      songName: "party",
       album: "dollar",
       singer: "rdz",
       songSrc: "/music/music4.mp3",
@@ -52,7 +52,7 @@ export default function Home() {
     },
     {
       id: 4,
-      songName: "party",
+      songName: "Sad story",
       album: "dollar",
       singer: "rdz",
       songSrc: "/music/music6.mp3",
@@ -73,7 +73,7 @@ export default function Home() {
     if (howlRef.current !== null) {
       howlRef.current.stop();
       howlRef.current.unload();
-      howlRef.current = null; 
+      howlRef.current = null;
     }
 
     setCurrentSongId(id);
@@ -88,22 +88,16 @@ export default function Home() {
           if (howlRef.current !== null) {
             howlRef.current.stop();
             howlRef.current.unload();
-            howlRef.current = null; 
+            howlRef.current = null;
           }
-          setCurrentSongId(null); 
+          setCurrentSongId(null);
           setIsPlaying(false);
         }
       },
     });
-
-    // Assign the new Howl instance to the ref
     howlRef.current = newHowl;
-
-    // Start playback
     newHowl.play();
-
-    // Update the Howl instance and playing state
-    setHowl(newHowl); // Optional: Keep state in sync for other components
+    setHowl(newHowl);
     setIsPlaying(true);
   };
   // control - functions
@@ -163,8 +157,23 @@ export default function Home() {
     const updatedComponents = [...components];
     const [draggedItem] = updatedComponents.splice(dragIdx, 1);
     updatedComponents.splice(id, 0, draggedItem);
-    console.log(id);
-    setCurrentSongId(id);
+    if (dragIdx < currentSongId && id >= currentSongId) {
+      setCurrentSongId((prev) => {
+        if (prev > 0) {
+          return prev - 1;
+        }
+      });
+    } else if (dragIdx > currentSongId && id <= currentSongId) {
+      setCurrentSongId((prev) => {
+        if (prev < components.length) {
+          return prev + 1;
+        }
+      });
+    } else if (dragIdx === currentSongId) {
+      setCurrentSongId(() => {
+        return id;
+      });
+    }
     setComponents(updatedComponents);
     setDragIdx(null);
   }

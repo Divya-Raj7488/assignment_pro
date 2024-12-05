@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: black;
 }
 .nav {
   width: 100vw;
@@ -35,8 +36,11 @@
   width: 60vw;
   min-height: 100%;
   background-image: linear-gradient(to bottom, #4c0000, #0a0a0a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.hey{
+.hey {
   width: 85vw;
   min-height: 100vh;
   display: flex;
@@ -44,11 +48,11 @@
   height: 100%;
 }
 .artistData {
-  width: 90%;
-  height: 50%;
+  width: 95%;
+  height: 70%;
 }
 .songData {
-  width: 100%;
+  width: 95%;
   height: 50vh;
   overflow-y: scroll;
   display: flex;
@@ -66,7 +70,7 @@
   flex-grow: 1;
   align-items: center;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .verticalNav {
     width: 10vw;
   }
@@ -79,14 +83,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   overflow-y: scroll;
+    overflow-y: scroll;
   }
-  .currentPlaying{
+  .currentPlaying {
+    width: 100%;
+    min-height: 60vh;
+  }
+  .songList {
     width: 100%;
     height: 50vh;
-  }
-  .songList{
-    width: 100%;
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

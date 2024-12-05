@@ -40,7 +40,8 @@ export default function Nav() {
               width: "26px",
               height: "26px",
               color: "white",
-              marginLeft: "-2.5rem",
+              position:"relative",
+              right:"2.5rem"
             }}
             onClick={search}
           />

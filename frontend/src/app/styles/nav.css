@@ -14,7 +14,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 .links {
   width: 60vw;
@@ -22,6 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-grow: 1;
 }
 ul {
   width: 40%;
@@ -33,18 +33,28 @@ ul {
   gap: 0.5rem;
   color: white;
   cursor: pointer;
+  flex-grow: 3;
 }
 
 ul li {
   text-decoration: none;
+  font-size: 0.95rem;
+}
+.title {
+  font-size: 0.95rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .searchBar {
-  width: 50%;
+  width: 30vw;
   height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
 }
 .searchTag {
   width: 100%;
@@ -59,7 +69,8 @@ input:focus {
   outline: none;
 }
 .hamburgerIcon {
-  width: 20vw;
+  /* width: 20vw; */
+  width: 0vw;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -96,15 +107,16 @@ input:focus {
   color: white;
   height: auto;
   cursor: pointer;
+  flex-grow: 1;
 }
 .verticalNavbar {
   min-height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 1rem;
   position: relative;
-  top: 10vh;
+  top: 15vh;
 }
 .iconAndName{
   width: 16vw;
@@ -123,6 +135,12 @@ input:focus {
   gap: 1rem;
   padding-bottom: 1rem;
 }
+.iconbox{
+ width: 1.5rem;
+ height:  1.5rem;
+ color: white;
+
+}
 @media screen and (max-width: 860px) {
   ul {
     display: none;
@@ -136,13 +154,19 @@ input:focus {
   .links {
     width: 40vw;
   }
+  .hamburgerIcon{
+    width: 20vw;
+  }
+  .logo{
+    flex-grow: 1;
+  }
 }
 @media screen and (max-width: 500px) {
   .links {
     display: none;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .title {
     display: none;
   }

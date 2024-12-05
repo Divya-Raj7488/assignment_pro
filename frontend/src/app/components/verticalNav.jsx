@@ -14,40 +14,40 @@ export default function VerticalNav() {
       <div className="iconAndName">
         <span>
           <AiFillHome
-            style={{ width: "26px", height: "26px", color: "white" }}
+          className="iconbox"
           />
         </span>
-        <span style={{ color: "white" }} className="title">
+        <span className="title">
           Home
         </span>
       </div>
       <div className="iconAndName">
         <span>
           <AiOutlineStock
-            style={{ width: "26px", height: "26px", color: "white" }}
+          className="iconbox"
           />
         </span>
-        <span style={{ color: "white" }} className="title">
+        <span className="title">
           Trends
         </span>
       </div>
       <div className="iconAndName">
         <span>
           <BsMusicNoteBeamed
-            style={{ width: "26px", height: "26px", color: "white" }}
+          className="iconbox"
           />
         </span>
-        <span style={{ color: "white" }} className="title">
+        <span className="title">
           Music
         </span>
       </div>
       <div className="iconAndName">
         <span>
           <BsFillArrowUpRightCircleFill
-            style={{ width: "26px", height: "26px", color: "white" }}
+          className="iconbox"
           />
         </span>
-        <span style={{ color: "white" }} className="title">
+        <span className="title">
           Discover
         </span>
       </div>
@@ -58,21 +58,21 @@ export default function VerticalNav() {
 export const BottomNav = () => {
   return (
     <div className="verticalNavbar2">
-      <div style={{ color: "white" }} className="title">Menu</div>
+      {/* <div className="title">Menu</div> */}
       <div className="iconAndName">
         <span>
           <AiFillSetting
-            style={{ width: "26px", height: "26px", color: "white" }}
+           className="iconbox"
           />
         </span>
-        <span style={{ color: "white" }} className="title">
+        <span className="title">
           Settings
         </span>
       </div>
       <div className="iconAndName">
         <span>
           <AiOutlineLogout
-            style={{ width: "26px", height: "26px", color: "white" }}
+            className="iconbox"
           />
         </span>
         <span style={{ color: "white" }} className="title">
