@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import QueueCard from "./components/queueCard";
 import { Howl } from "howler";
 import Image from "next/image";
-import ArtistBackground from "../../public/Background.svg";
+import micheal from "../../public/Michael.svg";
 
 export default function Home() {
   const [currentSongId, setCurrentSongId] = useState(null);
@@ -228,11 +228,12 @@ export default function Home() {
         <div className="hey">
           <div className="songList">
             <div className="artistData">
-              <div>
+              <div className="artistBackground">
+                <div className="personalInfo"></div>
                 <Image
-                  src={ArtistBackground}
-                  alt="background"
-                  style={{ width: "100%", height: "100%" }}
+                  src={micheal}
+                  alt="Micheal Jackson"
+                  className="artistImage"
                 />
               </div>
             </div>
