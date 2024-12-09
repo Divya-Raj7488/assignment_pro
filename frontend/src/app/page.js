@@ -71,7 +71,9 @@ export default function Home() {
     },
   ];
   const [components, setComponents] = useState(songs);
-  const [currentDuration, setCurrentDuration] = useState(0);
+  const [currentDuration, setCurrentDuration] = useState(
+    howl !== null ? howl.seek : 0
+  );
 
   function clearDurationRef() {
     clearInterval(durationRef.current);
@@ -276,7 +278,7 @@ export default function Home() {
                 controlFlow={controlFlow}
                 isPlaying={isPlaying}
                 setIsPlaying={setIsPlaying}
-                currentDuration={currentDuration}
+                currentDuration={ currentDuration}
               />
             )}
           </div>
