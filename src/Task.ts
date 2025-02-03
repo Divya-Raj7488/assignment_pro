@@ -1,0 +1,73 @@
+import task from './typeDef';
+import { workout } from './typeDef';
+const Tasks: task[] = [
+  {
+    title: 'Read Docker',
+    day: 'Saturday',
+    hours: 2,
+    priority: 'High'
+  },
+  {
+    title: 'Read Angular',
+    day: 'Saturday',
+    hours: 4,
+    priority: 'Medium'
+  },
+  {
+    title: 'Fyle Assignment',
+    day: 'Sunday',
+    hours: 4,
+    priority: 'High'
+  }
+];
+
+const userData = [
+  {
+    id: 1,
+    name: 'John Doe',
+    workouts: [
+      { type: 'Running', minutes: 30 },
+      { type: 'Cycling', minutes: 45 }
+    ]
+  },
+  {
+    id: 2,
+    name: 'Jane Smith',
+    workouts: [
+      { type: 'Swimming', minutes: 60 },
+      { type: 'Running', minutes: 20 }
+    ]
+  },
+  {
+    id: 3,
+    name: 'Mike Johnson',
+    workouts: [
+      { type: 'Yoga', minutes: 50 },
+      { type: 'Cycling', minutes: 40 }
+    ]
+  }
+];
+const workouts: workout[] = [
+  { type: 'Running', minutes: 45 },
+  { type: 'Jump Rope', minutes: 30 },
+  { type: 'Cycling', minutes: 50 },
+  { type: 'Swimming', minutes: 25 },
+  { type: 'Push-ups', minutes: 15 },
+  { type: 'Squats', minutes: 35 },
+  { type: 'Lunges', minutes: 40 },
+  { type: 'Plank', minutes: 10 },
+  { type: 'Burpees', minutes: 20 },
+  { type: 'Mountain Climbers', minutes: 18 },
+  { type: 'Pull-ups', minutes: 12 },
+  { type: 'Deadlifts', minutes: 28 },
+  { type: 'Jumping Jacks', minutes: 22 },
+  { type: 'Kettlebell Swings', minutes: 37 },
+  { type: 'Yoga', minutes: 60 },
+  { type: 'Pilates', minutes: 55 },
+  { type: 'Battle Ropes', minutes: 42 },
+  { type: 'Boxing', minutes: 33 },
+  { type: 'Dancing', minutes: 48 },
+  { type: 'Rowing', minutes: 29 }
+];
+export default Tasks;
+export { workouts, userData };

@@ -1,0 +1,64 @@
+<main class="w-screen h-screen flex justify-center items-center">
+  <form
+    class="w-4/5 h-3/5 md:w-3/5 flex flex-col justify-center gap-6 border px-4 py-4 rounded-md"
+    (ngSubmit)="onFormSubmit()"
+  >
+    <div class="w-full h-8 flex items-center justify-center">
+      <h2 class="text-gray-600 font-bold text-xl">Add Details</h2>
+    </div>
+
+    <div class="flex flex-col">
+      <label for="username">username*</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="username"
+        [(ngModel)]="username"
+        class="w-1/2 h-12 bg-slate-600 border-b-2 border-gray-700 outline-gray-700 px-2 rounded-sm text-white"
+      />
+    </div>
+    <div class="flex flex-row w-full gap-4 items-end">
+      <div class="w-1/2">
+        <label for="workout">Workout Type*</label>
+        <select
+          name="workoutType"
+          id="workoutType"
+          title="workout"
+          class="w-full h-12 border-b-2 border-gray-700 outline-gray-700 px-2 bg-slate-600 rounded-sm text-white"
+          [(ngModel)]="workoutType"
+        >
+          <option value="">Select a Type</option>
+          <option [value]="workout.type" *ngFor="let workout of workouts">
+            {{ workout.type }}
+          </option>
+        </select>
+      </div>
+      <div class="flex flex-col w-1/2">
+        <label for="hours">Workout hours*</label>
+        <input
+          type="number"
+          name="hours"
+          id="hours"
+          placeholder="Workout hours"
+          class="w-full h-12 border-b-2 border-gray-700 outline-gray-700 px-2 bg-slate-600 rounded-sm text-white"
+          [(ngModel)]="workoutMins"
+        />
+      </div>
+    </div>
+    <div class="w-full flex justify-end gap-4">
+      <button
+        type="submit"
+        class="w-20 h-10 bg-green-700 rounded-lg text-white"
+      >
+        Add
+      </button>
+      <button
+        class="w-20 h-10 rounded-lg text-white bg-slate-600"
+        (click)="onCancel()"
+      >
+        Cancel
+      </button>
+    </div>
+  </form>
+</main>

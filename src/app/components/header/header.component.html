@@ -1,0 +1,31 @@
+<nav class="w-screen h-16 flex justify-evenly items-center gap-4 px-2">
+  <div
+    class="w-3/12 h-12 bg-slate-600 border-b-2 border-gray-700 text-white rounded-sm"
+  >
+    <input
+      type="text"
+      placeholder="Search by Name"
+      class="w-full h-full bg-transparent outline-gray-700 px-2"
+      [(ngModel)]="searchTerm"
+      (input)="onSearchChange()"
+      id="searchTerm"
+      name="searchTerm"
+    />
+  </div>
+  <div
+    class="w-3/12 h-12 bg-slate-600 border-b-2 border-gray-700 text-white rounded-sm"
+  >
+    filter
+  </div>
+  <button
+    class="w-3/12 h-12 bg-slate-600 border-b-2 border-gray-700 text-white rounded-sm"
+    (click)="showForm()"
+  >
+    Add members
+  </button>
+  <button
+    class="w-3/12 h-12 bg-slate-600 border-b-2 border-gray-700 text-white rounded-sm"
+  >
+    See graph
+  </button>
+</nav>

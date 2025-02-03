@@ -1,0 +1,32 @@
+<div class="overflow-x-auto">
+  <table class="min-w-full border border-gray-300 shadow-lg rounded-lg">
+    <thead>
+      <tr class="bg-gray-600 text-white">
+        <th class="px-4 py-2 text-left">Name</th>
+        <th class="px-4 py-2 text-left">Workout Type</th>
+        <th class="px-4 py-2 text-left">Total Workouts</th>
+        <th class="px-4 py-2 text-left">Workout Minutes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="border-b border-gray-300 hover:bg-gray-100"
+        *ngFor="let member of userdata"
+      >
+        <td class="px-4 py-2">{{ member.name }}</td>
+        <td class="px-4 py-2">
+          <div class="flex gap-2">
+            <span
+              *ngFor="let workoutType of member.workouts"
+              class="bg-gray-200 text-green-700 text-sm font-semibold px-2 py-1 rounded-md"
+            >
+              {{ workoutType.type }}
+            </span>
+          </div>
+        </td>
+        <td class="px-4 py-2">{{ member.workouts.length }}</td>
+        <td class="px-4 py-2">{{ getTotalWorkoutMinutes(member) }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

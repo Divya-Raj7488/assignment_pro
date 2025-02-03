@@ -1,0 +1,9 @@
+<app-header
+  *ngIf="!isFormVisible"
+  (formVisibilityChanged)="toggleFormVisibility($event)"
+></app-header>
+<app-forms
+  *ngIf="isFormVisible"
+  (formVisibilityChanged)="toggleFormVisibility($event)"
+></app-forms>
+<app-user *ngIf="!isFormVisible"></app-user>

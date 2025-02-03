@@ -1,0 +1,9 @@
+.taskContainer {
+  width: auto;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem 0rem;
+  border: 1px solid blue;
+}
