@@ -43,10 +43,13 @@ export class UserComponent implements OnInit {
     return member.workouts.reduce((sum, workout) => sum + workout.minutes, 0);
   }
   get filteredUsers() {
-    const cleanedSearchTerm = this.searchTerm.replace(/\s/g, '').toLowerCase();
-    console.log('serach');
+    const cleanedSearchTerm = this.searchTerm
+      .trim()
+      .replace(/\s/g, '')
+      .toLowerCase();
     return this.userdata.filter(user =>
       user.name
+        .trim()
         .replace(/\s/g, '')
         .toLowerCase()
         .includes(cleanedSearchTerm)

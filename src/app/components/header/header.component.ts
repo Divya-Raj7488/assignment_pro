@@ -4,6 +4,8 @@ import taskDef from '../../../typeDef';
 import { CommonModule } from '@angular/common';
 import { SearchService } from '../../services/search.service';
 import { FormsModule } from '@angular/forms';
+import { workouts } from '../../../Task';
+import { workout } from '../../../typeDef';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +15,8 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  filterbByWorkoutTerm: string = '';
+  workouts: workout[] = workouts;
   searchTerm: string = '';
   @Output() formVisibilityChanged = new EventEmitter<boolean>();
   tasks: taskDef[] = Tasks;
