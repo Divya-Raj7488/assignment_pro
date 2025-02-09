@@ -1,0 +1,22 @@
+.quizQuestion {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.questions {
+  width: 90%;
+  overflow-y: scroll;
+  border: 1px solid black;
+  padding-left: 1.5rem;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.incorrect-answer {
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5px;
+}
