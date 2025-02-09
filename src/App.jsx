@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="homepage">
       <div className="startQuizContainer">
-        <h2>hello quiz is here</h2>
+        <h1>Welcome to the quiz</h1>
         <button
           className="startQuizBtn"
           onClick={() => {

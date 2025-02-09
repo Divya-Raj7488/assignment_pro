@@ -41,20 +41,26 @@ export default function StartQuiz() {
       </div>
       <div className="questions">
         {questions.map(({ id, description, options }, idx) => (
-          <div key={id}>
+          <div key={id} className="questionBox">
             <div>
               {idx + 1}. {description}
             </div>
             <ul>
               {options.map(({ id: optionId, description }) => (
-                <li key={optionId}>
+                <li key={optionId} className="option-item">
                   <input
+                    className="custom-radio"
                     type="radio"
                     name={`question-${id}`}
                     id={`option-${optionId}`}
                     onClick={() => saveResponseFromStudent(id, optionId)}
                   />
-                  <label htmlFor={`option-${optionId}`}>{description}</label>
+                  <label
+                    className="option-label"
+                    htmlFor={`option-${optionId}`}
+                  >
+                    {description}
+                  </label>
                 </li>
               ))}
             </ul>
