@@ -1,41 +1,41 @@
-React + Vite
+# React + Vite
 
-This project is a React application built using Vite. Vite is a fast build tool that provides hot module replacement (HMR) and an optimized development experience for modern front-end applications.
+### This project is a React application built using Vite. Vite is a fast build tool that provides hot module replacement (HMR) and an optimized development experience for modern front-end applications.
 
-Getting Started
+## Getting Started
 
-Prerequisites
+### Prerequisites
 
-Make sure you have the following installed on your system:
+#### Make sure you have the following installed on your system:
 
-Node.js (LTS version recommended)
+#### Node.js (LTS version recommended)
 
-npm or yarn
+#### npm or yarn
 
-Installation
+### Installation
 
-Clone the repository:
+#### Clone the repository:
 
-git clone <repository-url>
-cd quiz
+#### git clone (https://github.com/Divya-Raj7488/assignment_pro.git)
 
-Install dependencies:
 
-npm install
+### Install dependencies:
 
-# or
-
-yarn install
-
-Running the Development Server
-
-To start the development server, run:
-
-npm run dev
+#### npm install
 
 # or
 
-yarn dev
+#### yarn install
+
+#### Running the Development Server
+
+#### To start the development server, run:
+
+#### npm run dev
+
+# or
+
+#### yarn dev
 
 This will start Vite's development server and enable hot module replacement (HMR) for React components.
 
@@ -47,52 +47,52 @@ npm run build
 
 # or
 
-yarn build
+#### yarn build
 
-This will output the optimized build files to the dist folder.
+#### This will output the optimized build files to the dist folder.
 
-Previewing the Build
+#### Previewing the Build
 
-To preview the production build locally, run:
+#### To preview the production build locally, run:
 
-npm run preview
-
-# or
-
-yarn preview
-
-Linting
-
-To check for linting errors, run:
-
-npm run lint
+#### npm run preview
 
 # or
 
-yarn lint
+#### yarn preview
 
-Software Packages Used
+### Linting
 
-Dependencies
+#### To check for linting errors, run:
 
-@reduxjs/toolkit - Official Redux library for state management.
+#### npm run lint
 
-axios - HTTP client for making API requests.
+# or
 
-react - JavaScript library for building user interfaces.
+#### yarn lint
 
-react-dom - React library for DOM rendering.
+#### Software Packages Used
 
-react-redux - Official React bindings for Redux.
+### Dependencies
 
-react-router-dom - Declarative routing for React applications.
+#### @reduxjs/toolkit - Official Redux library for state management.
 
-react-toastify - Notifications for React applications.
+#### axios - HTTP client for making API requests.
 
-vite - Build tool that provides fast HMR and optimized builds for modern front-end applications.
+#### react - JavaScript library for building user interfaces.
 
-License
+#### react-dom - React library for DOM rendering.
 
-This project is licensed under the MIT License.
+#### react-redux - Official React bindings for Redux.
 
-Now you are ready to start building with React and Vite! 🚀
+#### react-router-dom - Declarative routing for React applications.
+
+#### react-toastify - Notifications for React applications.
+
+#### vite - Build tool that provides fast HMR and optimized builds for modern front-end applications.
+
+#### License
+
+#### This project is licensed under the MIT License.
+
+#### Now you are ready to start building with React and Vite! 🚀
