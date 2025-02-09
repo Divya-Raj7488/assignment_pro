@@ -28,7 +28,11 @@ export default function StartQuiz() {
   }
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="loaderContainer">
+        <div className="loader"></div>
+      </div>
+    );
   }
 
   return (
