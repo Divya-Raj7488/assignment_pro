@@ -7,7 +7,13 @@ import { useState } from "react";
 
 const main = () => {
   const [products, setProducts] = useState(data.slice(0, 50));
-
+  const imgList = {
+    Electronics: "/electronics.jpg",
+    Books: "/books.jpg",
+    Clothing: "/clothes.jpg",
+    Toys: "/toys.jpg",
+    Sports: "/sports.jpg",
+  };
   const checkScrollPosition = () => {
     const scrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
@@ -31,15 +37,15 @@ const main = () => {
   return (
     <div className="w-full h-full flex flex-row justify-evenly items-center flex-wrap gap-4 pt-3">
       <Navbar />
-      {products.map(({ id, name, description, rating, price }) => {
+      {products.map(({ id, name, description, rating, price, category }) => {
         return (
           <ProductCard
             key={id}
             id={id}
-            title={name}
+            name={name}
             price={price}
             description={description}
-            // image={data.image}
+            imgUrl={category ? imgList[category] : "electronics.jpg"}
             rating={rating}
           />
         );

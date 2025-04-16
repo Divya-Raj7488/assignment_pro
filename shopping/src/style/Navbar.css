@@ -1,4 +1,7 @@
 .navbar {
-  position: sticky;
+  position: relative;
   top: 0vh;
+}
+.addToCart:hover {
+  background-color: rgb(146, 141, 141);
 }
