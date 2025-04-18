@@ -1,7 +1,7 @@
 "use client";
-import CardItem from "@/components/CardItem";
 import React, { useEffect, useState } from "react";
 import "../../style/Cart.css";
+import CartItem from "@/components/CartItem";
 
 const CartList = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -24,7 +24,7 @@ const CartList = () => {
             {/* items */}
             {cartItems.map(({ id, name, price, imgUrl, quantity }) => {
               return (
-                <CardItem
+                <CartItem
                   key={id}
                   id={id}
                   name={name}
