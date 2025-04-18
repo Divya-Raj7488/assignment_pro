@@ -75,47 +75,49 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-screen flex flex-col items-center">
-      <Navbar setSearchParams={setSearchParams} />
-      <div className="w-full h-full flex flex-row justify-evenly pt-3 px-4">
-        <div className="filterIcon">
-          <AiFillFilter
-            className="w-8 h-8 cursor-pointer"
-            onClick={() => setToggleCategory(!toggleCategory)}
-          />
-          {toggleCategory && (
-            <div className="filterMenu">
-              <FilterOptions
-                selectedCategory={selectedCategory}
-                setSelectedCategory={setSelectedCategory}
-              />
-            </div>
-          )}
-        </div>
-        <div className="filterOptions w-40 h-screen flex flex-col items-center border rounded-md sticky top-15 py-2">
-          <FilterOptions
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
-          />
-        </div>
-        <div className="flex-1 flex flex-row justify-evenly items-center flex-wrap gap-4 overflow-y-scroll">
-          {products.map(
-            ({ id, name, description, rating, price, category }) => {
-              return (
-                <ProductCard
-                  key={id}
-                  id={id}
-                  name={name}
-                  price={price}
-                  description={description}
-                  imgUrl={category ? imgList[category] : "electronics.jpg"}
-                  rating={rating}
+    <>
+      <div className="w-screen flex flex-col items-center">
+        <Navbar setSearchParams={setSearchParams} />
+        <div className="w-full h-full flex flex-row justify-evenly pt-3 px-4">
+          <div className="filterIcon">
+            <AiFillFilter
+              className="w-8 h-8 cursor-pointer"
+              onClick={() => setToggleCategory(!toggleCategory)}
+            />
+            {toggleCategory && (
+              <div className="filterMenu">
+                <FilterOptions
+                  selectedCategory={selectedCategory}
+                  setSelectedCategory={setSelectedCategory}
                 />
-              );
-            }
-          )}
+              </div>
+            )}
+          </div>
+          <div className="filterOptions w-40 h-screen flex flex-col items-center border rounded-md sticky top-15 py-2">
+            <FilterOptions
+              selectedCategory={selectedCategory}
+              setSelectedCategory={setSelectedCategory}
+            />
+          </div>
+          <div className="flex-1 flex flex-row justify-evenly items-center flex-wrap gap-4 overflow-y-scroll">
+            {products.map(
+              ({ id, name, description, rating, price, category }) => {
+                return (
+                  <ProductCard
+                    key={id}
+                    id={id}
+                    name={name}
+                    price={price}
+                    description={description}
+                    imgUrl={category ? imgList[category] : "electronics.jpg"}
+                    rating={rating}
+                  />
+                );
+              }
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
