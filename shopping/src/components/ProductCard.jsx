@@ -49,7 +49,7 @@ const ProductCard = ({
   };
   return (
     <div
-      className="w-88 h-80 border border-gray-500 rounded-md flex flex-col gap-2"
+      className="w-84 h-80 border border-gray-500 rounded-md flex flex-col gap-2"
       key={id}
     >
       <div className="ImgContainer w-full h-1/2">
@@ -57,7 +57,7 @@ const ProductCard = ({
           src={imgUrl}
           width={100}
           height={100}
-          className="w-full h-full"
+          className="w-full h-full border rounded-md"
           alt={category ?? "product"}
         />
       </div>
