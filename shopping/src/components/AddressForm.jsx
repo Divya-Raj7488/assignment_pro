@@ -45,6 +45,7 @@ const AddressForm = ({ setRenderId }) => {
       state: "",
       country: "",
     });
+    setRenderId(2);
   };
 
   const handleAddressForm = (e) => {

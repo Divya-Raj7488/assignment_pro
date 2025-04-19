@@ -38,7 +38,7 @@ const CartList = () => {
             </div>
           ) : (
             <div className="w-full h-full flex flex-row justify-evenly">
-              <div className="cardListContainer w-1/2 h-full flex flex-col items-center justify-center">
+              <div className="cardListContainer w-1/2 h-full flex flex-col items-center justify-center gap-2">
                 {/* items */}
                 {cartItems.map(({ id, name, price, imgUrl, quantity }) => {
                   return (
