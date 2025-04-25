@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 import json
+from .models import SuggestionRecord
 
 load_dotenv()
 
@@ -53,6 +54,14 @@ def suggestions(request):
                     "suggested_actions": actions,
                 }
                 print(response_data)
+
+                record = SuggestionRecord(
+                    query=input_text,
+                    tone=tone[0] if isinstance(tone, list) else tone,
+                    intent=intent[0] if isinstance(intent, list) else intent,
+                    suggested_actions=actions,
+                )
+                record.save()
                 return Response(response_data)
 
             except Exception as e:
