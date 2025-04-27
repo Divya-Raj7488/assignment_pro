@@ -11,34 +11,26 @@ interface AddExpenseFormProps {
   setRenderId: React.Dispatch<React.SetStateAction<number>>;
 }
 const AddExpenseForm = ({ setRenderId }: AddExpenseFormProps) => {
-  const handleExpenseForm = () => {
-    console.log("clicked");
-  };
-  const addMore = () => {
-    if (!expense.name || !expense.amount || !expense.category) {
-      alert("Please fill all the fields");
-      return;
-    }
-    setExpenseList((prev) => [...prev, expense]);
+  const [expense, setExpense] = useState<Expense>({
+    name: undefined,
+    amount: null,
+    category: undefined,
+  });
+  const analyse = () => {
     setExpense({
       name: undefined,
       amount: null,
       category: undefined,
     });
+    setRenderId(2);
   };
   const saveExpense = () => {
     if (!expense.name || !expense.amount || !expense.category) {
       alert("Please fill all the fields");
       return;
     }
-    setExpenseList((prev) => [...prev, expense]);
   };
-  const [expenseList, setExpenseList] = useState<Expense[]>([]);
-  const [expense, setExpense] = useState<Expense>({
-    name: undefined,
-    amount: null,
-    category: undefined,
-  });
+
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center bg-white">
       <form className="w-4/5 h-3/5 flex flex-col items-center border py-4 gap-4 rounded-md overflow-y-scroll md:w-[60%]">
@@ -101,10 +93,10 @@ const AddExpenseForm = ({ setRenderId }: AddExpenseFormProps) => {
             className="w-24 h-full border-green-600 rounded-md bg-blue-600 text-white"
             onClick={(e) => {
               e.preventDefault();
-              addMore();
+              analyse();
             }}
           >
-            Add More
+            Analyse
           </button>
           <button
             className="w-16 h-full border-green-600 rounded-md bg-green-600 text-white"
