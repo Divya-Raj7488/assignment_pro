@@ -5,7 +5,6 @@ const expenseSchema = new Schema({
   userId: {
     type: String,
     required: true,
-    unique: true,
   },
   name: {
     type: String,
@@ -15,12 +14,12 @@ const expenseSchema = new Schema({
     type: Number,
     required: true,
   },
-  cetegory: {
+  category: {
     type: String,
     required: false,
     default: "",
   },
 });
 
-const expenseModel = model("User", expenseSchema);
+const expenseModel = model("Expense", expenseSchema);
 module.exports = expenseModel;

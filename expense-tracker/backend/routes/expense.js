@@ -1,13 +1,15 @@
-const express = requier("express");
+const express = require("express");
 const router = express.Router();
 const {
   getAllExpenses,
   createNewExpense,
   updateExpense,
   deleteExpense,
-} = require("../controllers/expenseController");
+} = require("../controller/expenseController");
 
-router.route("/expenses").get(getAllExpenses);
-router.route("/expenses").post(createNewExpense);
-router.route("/expenses/:id").get(updateExpense);
-router.route("/expenses/:id").delete(deleteExpense);
+router.route("").get(getAllExpenses);
+router.route("").post(createNewExpense);
+router.route("/:id").put(updateExpense);
+router.route("/:id").delete(deleteExpense);
+
+module.exports = router;
