@@ -25,43 +25,167 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { useEffect, useState } from "react";
+import { Loader2 } from "lucide-react";
+import { tableData } from "../../../data.json";
 
-const ContentTable = ({ tableData }) => {
-  return (
-    <main className="flex-1 overflow-auto p-4 md:p-6">
-      <Card>
-        <CardHeader className="flex flex-col items-center md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0 pb-6">
-          <CardTitle>Your Content</CardTitle>
-          <div className="flex flex-col md:flex-row gap-2 md:gap-4">
-            <div className="relative">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input
-                type="text"
-                placeholder="Filter by keyword..."
-                className="pl-8 w-full"
-              />
+const ContentTable = () => {
+  const [currentDataInPreview, setCurrentDataInPreview] = useState(
+    tableData.slice(0, 4)
+  );
+  const [currentIdInPreview, setCurrentIdInPreview] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setCurrentIdInPreview((prev) => {
+      const newIndex = prev + 5;
+      setCurrentDataInPreview(() => {
+        return tableData.slice(newIndex, newIndex + 4);
+      });
+      return newIndex;
+    });
+    const timeout = setTimeout(() => {
+      console.log("Loading...");
+      setIsLoading(false);
+    }, 1000);
+    return () => clearTimeout(timeout);
+  }, []);
+
+  const nextPage = () => {
+    setCurrentIdInPreview((prev) => {
+      const newIndex = prev + 5;
+      setCurrentDataInPreview(() => {
+        return tableData.slice(newIndex, newIndex + 4);
+      });
+      return newIndex;
+    });
+  };
+
+  const previousPage = () => {
+    setCurrentIdInPreview((prev) => {
+      const newIndex = prev - 5;
+      setCurrentDataInPreview(() => {
+        return tableData.slice(newIndex, newIndex + 4);
+      });
+      return newIndex;
+    });
+  };
+
+  if (isLoading) {
+    return (
+      <main className="flex-1 overflow-auto p-4 md:p-6 flex justify-center items-center">
+        <Loader2 className="w-8 h-8 animate-spin" />
+      </main>
+    );
+  } else {
+    return (
+      <main className="flex-1 overflow-auto p-4 md:p-6">
+        <Card>
+          <CardHeader className="flex flex-col items-center md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0 pb-6">
+            <CardTitle>Your Content</CardTitle>
+            <div className="flex flex-col md:flex-row gap-2 md:gap-4">
+              <div className="relative">
+                <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                <Input
+                  type="text"
+                  placeholder="Filter by keyword..."
+                  className="pl-8 w-full"
+                />
+              </div>
+              {/* <Button>Add New</Button> */}
             </div>
-            {/* <Button>Add New</Button> */}
-          </div>
-        </CardHeader>
-        <CardContent>
-          <div className="hidden md:block overflow-x-auto">
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Title</TableHead>
-                  <TableHead>Keywords</TableHead>
-                  <TableHead>Word Count</TableHead>
-                  <TableHead>Created On</TableHead>
-                  <TableHead>Actions</TableHead>
-                  <TableHead>Publish</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {tableData.map((item) => (
-                  <TableRow key={item.id}>
-                    <TableCell className="font-medium">{item.title}</TableCell>
-                    <TableCell>
+          </CardHeader>
+          <CardContent>
+            <div className="hidden md:block overflow-x-auto">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Title</TableHead>
+                    <TableHead>Keywords</TableHead>
+                    <TableHead>Word Count</TableHead>
+                    <TableHead>Created On</TableHead>
+                    <TableHead>Actions</TableHead>
+                    <TableHead>Publish</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {currentDataInPreview.slice(0, 4).map((item) => (
+                    <TableRow key={item.id}>
+                      <TableCell className="font-medium">
+                        {item.title}
+                      </TableCell>
+                      <TableCell>
+                        <div className="flex flex-wrap gap-1">
+                          {item.keywords.map((keyword, idx) => (
+                            <Badge key={idx} variant="secondary">
+                              {keyword}
+                            </Badge>
+                          ))}
+                        </div>
+                      </TableCell>
+                      <TableCell>{item.wordCount}</TableCell>
+                      <TableCell>{item.createdOn}</TableCell>
+                      <TableCell>
+                        <DropdownMenu>
+                          <DropdownMenuTrigger asChild>
+                            <Button variant="ghost" size="icon">
+                              <MoreHorizontal size={16} />
+                            </Button>
+                          </DropdownMenuTrigger>
+                          <DropdownMenuContent align="end">
+                            <DropdownMenuItem>Edit</DropdownMenuItem>
+                            <DropdownMenuItem>Preview</DropdownMenuItem>
+                            <DropdownMenuItem className="text-destructive">
+                              Delete
+                            </DropdownMenuItem>
+                          </DropdownMenuContent>
+                        </DropdownMenu>
+                      </TableCell>
+                      <TableCell>
+                        <Button
+                          variant={
+                            item.status === "Published" ? "outline" : "default"
+                          }
+                          size="sm"
+                        >
+                          {item.status === "Published"
+                            ? "Published"
+                            : "Publish"}
+                        </Button>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+            <div className="grid gap-4 md:hidden">
+              {currentDataInPreview.slice(0, 4).map((item) => (
+                <Card key={item.id}>
+                  <CardContent className="p-4">
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <h3 className="font-medium">{item.title}</h3>
+                          <p className="text-sm text-muted-foreground">
+                            {item.createdOn} · {item.wordCount} words
+                          </p>
+                        </div>
+                        <DropdownMenu>
+                          <DropdownMenuTrigger asChild>
+                            <Button variant="ghost" size="icon">
+                              <MoreHorizontal size={16} />
+                            </Button>
+                          </DropdownMenuTrigger>
+                          <DropdownMenuContent align="end">
+                            <DropdownMenuItem>Edit</DropdownMenuItem>
+                            <DropdownMenuItem>Preview</DropdownMenuItem>
+                            <DropdownMenuItem className="text-destructive">
+                              Delete
+                            </DropdownMenuItem>
+                          </DropdownMenuContent>
+                        </DropdownMenu>
+                      </div>
+
                       <div className="flex flex-wrap gap-1">
                         {item.keywords.map((keyword, idx) => (
                           <Badge key={idx} variant="secondary">
@@ -69,111 +193,51 @@ const ContentTable = ({ tableData }) => {
                           </Badge>
                         ))}
                       </div>
-                    </TableCell>
-                    <TableCell>{item.wordCount}</TableCell>
-                    <TableCell>{item.createdOn}</TableCell>
-                    <TableCell>
-                      <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                          <Button variant="ghost" size="icon">
-                            <MoreHorizontal size={16} />
-                          </Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent align="end">
-                          <DropdownMenuItem>Edit</DropdownMenuItem>
-                          <DropdownMenuItem>Preview</DropdownMenuItem>
-                          <DropdownMenuItem className="text-destructive">
-                            Delete
-                          </DropdownMenuItem>
-                        </DropdownMenuContent>
-                      </DropdownMenu>
-                    </TableCell>
-                    <TableCell>
-                      <Button
-                        variant={
-                          item.status === "Published" ? "outline" : "default"
-                        }
-                        size="sm"
-                      >
-                        {item.status === "Published" ? "Published" : "Publish"}
-                      </Button>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-          <div className="grid gap-4 md:hidden">
-            {tableData.map((item) => (
-              <Card key={item.id}>
-                <CardContent className="p-4">
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h3 className="font-medium">{item.title}</h3>
-                        <p className="text-sm text-muted-foreground">
-                          {item.createdOn} · {item.wordCount} words
-                        </p>
+
+                      <div className="flex justify-end">
+                        <Button
+                          variant={
+                            item.status === "Published" ? "outline" : "default"
+                          }
+                          size="sm"
+                        >
+                          {item.status === "Published"
+                            ? "Published"
+                            : "Publish"}
+                        </Button>
                       </div>
-                      <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
-                          <Button variant="ghost" size="icon">
-                            <MoreHorizontal size={16} />
-                          </Button>
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent align="end">
-                          <DropdownMenuItem>Edit</DropdownMenuItem>
-                          <DropdownMenuItem>Preview</DropdownMenuItem>
-                          <DropdownMenuItem className="text-destructive">
-                            Delete
-                          </DropdownMenuItem>
-                        </DropdownMenuContent>
-                      </DropdownMenu>
                     </div>
-
-                    <div className="flex flex-wrap gap-1">
-                      {item.keywords.map((keyword, idx) => (
-                        <Badge key={idx} variant="secondary">
-                          {keyword}
-                        </Badge>
-                      ))}
-                    </div>
-
-                    <div className="flex justify-end">
-                      <Button
-                        variant={
-                          item.status === "Published" ? "outline" : "default"
-                        }
-                        size="sm"
-                      >
-                        {item.status === "Published" ? "Published" : "Publish"}
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <div className="mt-4">
-            <Pagination>
-              <PaginationContent>
-                <PaginationPrevious href="#" />
-                <PaginationItem>
-                  <PaginationLink href="#" isActive>
-                    1
-                  </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink href="#">2</PaginationLink>
-                </PaginationItem>
-                <PaginationNext href="#" />
-              </PaginationContent>
-            </Pagination>
-          </div>
-        </CardContent>
-      </Card>
-    </main>
-  );
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <div className="mt-4">
+              <Pagination>
+                <PaginationContent>
+                  {currentIdInPreview / 5 > 1 && (
+                    <PaginationPrevious href="#" onClick={previousPage} />
+                  )}
+                  <PaginationItem>
+                    <PaginationLink href="#" isActive>
+                      {currentIdInPreview / 5}
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href="#">
+                      {" "}
+                      {currentIdInPreview / 5 + 1}
+                    </PaginationLink>
+                  </PaginationItem>
+                  {currentIdInPreview > tableData.length - 5}
+                  <PaginationNext href="#" onClick={nextPage} />
+                </PaginationContent>
+              </Pagination>
+            </div>
+          </CardContent>
+        </Card>
+      </main>
+    );
+  }
 };
 
 export default ContentTable;
