@@ -25,6 +25,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+
 const ContentTable = ({ tableData }) => {
   return (
     <main className="flex-1 overflow-auto p-4 md:p-6">
