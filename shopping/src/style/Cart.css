@@ -1,8 +1,0 @@
-@media screen and (max-width: 900px) {
-  .cartListContainer {
-    flex-direction: column;
-  }
-  .cardListContainer {
-    width: 100%;
-  }
-}

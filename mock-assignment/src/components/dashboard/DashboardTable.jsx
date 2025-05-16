@@ -25,7 +25,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-const DashboardTable = ({ tableData }) => {
+const ContentTable = ({ tableData }) => {
   return (
     <main className="flex-1 overflow-auto p-4 md:p-6">
       <Card>
@@ -175,4 +175,4 @@ const DashboardTable = ({ tableData }) => {
   );
 };
 
-export default DashboardTable;
+export default ContentTable;

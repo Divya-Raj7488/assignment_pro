@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Sidebar from "./dashboard/Sidebar";
 import Navbar from "./dashboard/navbar";
-import DashboardTable from "./dashboard/DashboardTable";
+import ContentTable from "./dashboard/DashboardTable";
 
 export default function Dashboard() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -53,14 +53,10 @@ export default function Dashboard() {
 
   return (
     <div className="flex min-h-screen bg-background">
-      {/* Desktop Sidebar */}
       <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-
-      {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Top Header */}
         <Navbar />
-        <DashboardTable tableData={tableData} />
+        <ContentTable tableData={tableData} />
       </div>
     </div>
   );
