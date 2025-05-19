@@ -15,7 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const Navbar = ({ searchParam, setSearchParam }) => {
+const Navbar = ({ searchParam, setSearchParam, handleSort }) => {
   return (
     <header className="border-b bg-background">
       <div className="flex items-center justify-between px-4 h-16">
@@ -73,29 +73,29 @@ const Navbar = ({ searchParam, setSearchParam }) => {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("1")}>
               <span>
                 <ArrowDownNarrowWide size={16} />
               </span>
               <span>Sort by word count (Increasing)</span>
             </DropdownMenuItem>
-            <DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("2")}>
               <span>
                 <ArrowDownWideNarrow size={16} />
               </span>
               <span>Sort by word count (Decreasing)</span>
             </DropdownMenuItem>
-            <DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("3")}>
               <span>
                 <ArrowDownNarrowWide size={16} />
               </span>
-              <span>Date (Increasing)</span>
+              <span>Date (newest first)</span>
             </DropdownMenuItem>
-            <DropdownMenuItem>
+            <DropdownMenuItem onClick={() => handleSort("4")}>
               <span>
                 <ArrowDownWideNarrow size={16} />
               </span>
-              <span>Date (Decreasing)</span>
+              <span>Date (oldest first)</span>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

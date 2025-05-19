@@ -38,6 +38,24 @@ export default function Dashboard() {
       setDashboardData(searchedData);
     }
   };
+
+  const handleSort = (sortParam) => {
+    let sortedData = [...dashboardData];
+
+    if (sortParam === "1") {
+      sortedData.sort((a, b) => a.wordCount - b.wordCount);
+    } else if (sortParam === "2") {
+      sortedData.sort((a, b) => b.wordCount - a.wordCount);
+    } else if (sortParam === "3") {
+      sortedData.sort((a, b) => new Date(b.createdOn) - new Date(a.createdOn));
+    } else {
+      sortedData.sort((a, b) => new Date(a.createdOn) - new Date(b.createdOn));
+    }
+
+    setDashboardData(sortedData);
+    console.log("sortedData", sortedData);
+  };
+
   useEffect(() => {
     setDashboardData(() => {
       return tableData;
@@ -62,7 +80,12 @@ export default function Dashboard() {
     <div className="flex min-h-screen bg-background">
       <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <div className="flex-1 flex flex-col overflow-hidden">
-        <Navbar searchParam={searchParam} setSearchParam={setSearchParam} />
+        <Navbar
+          searchParam={searchParam}
+          setSearchParam={setSearchParam}
+          setDashboardData={setDashboardData}
+          handleSort={handleSort}
+        />
         <ContentTable
           tableData={dashboardData}
           filterParam={filterParam}
