@@ -32,8 +32,22 @@ const ContentTable = ({ tableData, filterParam, setFilterParam }) => {
   const [currentDataInPreview, setCurrentDataInPreview] = useState(
     tableData.slice(0, 4)
   );
-  const [currentIdInPreview, setCurrentIdInPreview] = useState(0);
+  const [currentIdInPreview, setCurrentIdInPreview] = useState(5);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // setCurrentIdInPreview((prev) => {
+    //   const newIndex = prev + 5;
+    //   setCurrentDataInPreview(() => {
+    //     return tableData.slice(newIndex, newIndex + 4);
+    //   });
+    //   return newIndex;
+    // });
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+    return () => clearTimeout(timeout);
+  }, []);
 
   useEffect(() => {
     setCurrentDataInPreview(() => {
@@ -42,19 +56,8 @@ const ContentTable = ({ tableData, filterParam, setFilterParam }) => {
   }, [tableData]);
 
   useEffect(() => {
-    setCurrentIdInPreview((prev) => {
-      const newIndex = prev + 5;
-      setCurrentDataInPreview(() => {
-        return tableData.slice(newIndex, newIndex + 4);
-      });
-      return newIndex;
-    });
-    const timeout = setTimeout(() => {
-      console.log("Loading...");
-      setIsLoading(false);
-    }, 1000);
-    return () => clearTimeout(timeout);
-  }, []);
+    console.log("currentIdInPreview", currentIdInPreview);
+  }, [currentIdInPreview]);
 
   const nextPage = () => {
     setCurrentIdInPreview((prev) => {
@@ -224,19 +227,25 @@ const ContentTable = ({ tableData, filterParam, setFilterParam }) => {
                   {currentIdInPreview / 5 > 1 && (
                     <PaginationPrevious href="#" onClick={previousPage} />
                   )}
-                  <PaginationItem>
-                    <PaginationLink href="#" isActive>
-                      {currentIdInPreview / 5}
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink href="#">
-                      {" "}
-                      {currentIdInPreview / 5 + 1}
-                    </PaginationLink>
-                  </PaginationItem>
-                  {currentIdInPreview > tableData.length - 5}
-                  <PaginationNext href="#" onClick={nextPage} />
+                  {currentIdInPreview / 5 >= 1 && (
+                    <PaginationItem>
+                      <PaginationLink href="#" isActive>
+                        {currentIdInPreview / 5}
+                      </PaginationLink>
+                    </PaginationItem>
+                  )}
+                  {currentIdInPreview < tableData.length && (
+                    <PaginationItem>
+                      <PaginationLink href="#">
+                        {" "}
+                        {currentIdInPreview / 5 + 1}
+                      </PaginationLink>
+                    </PaginationItem>
+                  )}
+
+                  {currentIdInPreview < tableData.length && (
+                    <PaginationNext href="#" onClick={nextPage} />
+                  )}
                 </PaginationContent>
               </Pagination>
             </div>

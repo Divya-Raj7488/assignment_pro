@@ -1,7 +1,9 @@
 {
   "forceConsistentCasingInFileNames": true,
-  "strict": true,
+
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
