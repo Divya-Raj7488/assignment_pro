@@ -1,8 +1,21 @@
 import React from "react";
-import { Search, Menu } from "lucide-react";
+import {
+  Search,
+  Menu,
+  MoreHorizontal,
+  ArrowDownNarrowWide,
+  ArrowDownUp,
+  ArrowDownWideNarrow,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   return (
@@ -53,6 +66,39 @@ const Navbar = () => {
             />
           </div>
         </div>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" size="icon">
+              <ArrowDownUp size={16} />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem>
+              <span>
+                <ArrowDownNarrowWide size={16} />
+              </span>
+              <span>Sort by word count (Increasing)</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <span>
+                <ArrowDownWideNarrow size={16} />
+              </span>
+              <span>Sort by word count (Decreasing)</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <span>
+                <ArrowDownNarrowWide size={16} />
+              </span>
+              <span>Date (Increasing)</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <span>
+                <ArrowDownWideNarrow size={16} />
+              </span>
+              <span>Date (Decreasing)</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   );

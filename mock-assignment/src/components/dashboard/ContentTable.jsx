@@ -27,9 +27,8 @@ import {
 } from "@/components/ui/pagination";
 import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
-import { tableData } from "../../../data.json";
 
-const ContentTable = () => {
+const ContentTable = ({ tableData }) => {
   const [currentDataInPreview, setCurrentDataInPreview] = useState(
     tableData.slice(0, 4)
   );
