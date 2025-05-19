@@ -1,8 +1,6 @@
-import React from "react";
 import {
   Search,
   Menu,
-  MoreHorizontal,
   ArrowDownNarrowWide,
   ArrowDownUp,
   ArrowDownWideNarrow,
@@ -17,7 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const Navbar = () => {
+const Navbar = ({ searchParam, setSearchParam }) => {
   return (
     <header className="border-b bg-background">
       <div className="flex items-center justify-between px-4 h-16">
@@ -63,6 +61,8 @@ const Navbar = () => {
               type="search"
               placeholder="Search..."
               className="w-full md:w-64 pl-8"
+              value={searchParam}
+              onChange={(e) => setSearchParam(e.target.value)}
             />
           </div>
         </div>

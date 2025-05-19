@@ -28,12 +28,18 @@ import {
 import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
 
-const ContentTable = ({ tableData }) => {
+const ContentTable = ({ tableData, filterParam, setFilterParam }) => {
   const [currentDataInPreview, setCurrentDataInPreview] = useState(
     tableData.slice(0, 4)
   );
   const [currentIdInPreview, setCurrentIdInPreview] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setCurrentDataInPreview(() => {
+      return tableData.slice(0, 4);
+    });
+  }, [tableData]);
 
   useEffect(() => {
     setCurrentIdInPreview((prev) => {
@@ -89,6 +95,8 @@ const ContentTable = ({ tableData }) => {
                   type="text"
                   placeholder="Filter by keyword..."
                   className="pl-8 w-full"
+                  value={filterParam}
+                  onChange={(e) => setFilterParam(e.target.value)}
                 />
               </div>
               {/* <Button>Add New</Button> */}
