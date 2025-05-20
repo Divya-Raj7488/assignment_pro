@@ -1,0 +1,82 @@
+.homepageContainer {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+}
+.homepageMain {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.forCopilotSign {
+  width: 10rem;
+  height: 2rem;
+  border: 2px solid rgb(215, 209, 209);
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+.forCopilotText {
+  color: white;
+  font-size: 2rem;
+}
+.leftSidebar {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.animationContainer {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+}
+.leftSidebarTitle {
+  color: white;
+}
+.chatAnimationContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(186, 179, 228);
+}
+.startChatButton {
+  width: 6rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, rgb(186, 179, 228), white);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.leftSidebar,
+.chatAnimationContainer {
+  transition: all 0.6s ease;
+  overflow: hidden;
+}
+
+.leftSidebar.collapsed {
+  width: 0;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.chatAnimationContainer.expanded {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .homepageMain {
+    flex-direction: column;
+  }
+}

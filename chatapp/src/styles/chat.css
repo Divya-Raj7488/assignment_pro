@@ -1,0 +1,9 @@
+.chatContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(186, 179, 228);
+}
+.chatSectionsContainer {
+  width: 90%;
+  height: 90%;
+}
