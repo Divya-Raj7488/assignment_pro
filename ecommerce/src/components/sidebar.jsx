@@ -29,6 +29,9 @@ const Sidebar = ({ isOpen, toggleSidebar, isMobile }) => {
               "Home & Kitchen",
               "Beauty",
               "Books",
+              "Toys",
+              "Sportswear",
+              "Sports",
             ].map((category) => (
               <div key={category} className="flex items-center">
                 <input type="checkbox" id={category} className="mr-2" />

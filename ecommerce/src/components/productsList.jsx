@@ -2,9 +2,10 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Sidebar from "./sidebar";
+import Products from "../../products.json";
 
 const ProductList = () => {
-  const [products, setProducts] = useState([]);
+  const [productsInDisplay, setProductsInDisplay] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
   const observer = useRef();
@@ -21,17 +22,18 @@ const ProductList = () => {
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
-  const fetchProducts = (pageNum) => {
+  const fetchProducts = () => {
     setLoading(true);
     setTimeout(() => {
-      const newProducts = Array.from({ length: 100 }, (_, i) => ({
-        id: (pageNum - 1) * 100 + i + 1,
-        title: `Product ${(pageNum - 1) * 100 + i + 1}`,
-        price: Math.floor(Math.random() * 500) + 10,
-        image: `/api/placeholder/300/300`,
-        rating: (Math.random() * 2 + 3).toFixed(1),
-      }));
-      setProducts((prev) => [...prev, ...newProducts]);
+      setProductsInDisplay((prev) => {
+        if (!prev || prev.length === 0) {
+          return Products.slice(0, 100);
+        } else {
+          let len = prev.length;
+          let newProducts = Products.slice(len, len + 100);
+          return [...prev, ...newProducts];
+        }
+      });
       setLoading(false);
     }, 800);
   };
@@ -66,7 +68,7 @@ const ProductList = () => {
 
   useEffect(() => {
     if (page > 1) {
-      fetchProducts(page);
+      fetchProducts();
     }
   }, [page]);
 
@@ -98,13 +100,13 @@ const ProductList = () => {
           )}
           <div className="hidden md:block">
             <span className="text-gray-600">
-              Showing {products.length} products
+              Showing {Products.length} products
             </span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product) => (
+          {productsInDisplay.map((product) => (
             <div
               key={product.id}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"

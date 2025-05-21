@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "../components/navbar";
-// import ProductList from "../components/productsList";
+import ProductList from "../components/productsList";
 import Footer from "../components/footer";
 
 export default function Home() {
