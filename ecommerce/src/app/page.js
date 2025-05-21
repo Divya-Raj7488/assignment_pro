@@ -19,6 +19,7 @@ export default function Home() {
           filterParams={filterParams}
           searchParams={searchParams}
           setFilterParams={setFilterParams}
+          setSearchParams={setSearchParams}
         />
       </div>
       <Footer />

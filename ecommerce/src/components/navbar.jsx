@@ -1,5 +1,6 @@
 "use client";
-import { Search, ShoppingCart, User } from "lucide-react";
+import { ShoppingCart, User } from "lucide-react";
+import Searchbar from "./searchbar";
 
 const Navbar = ({ searchParams, setSearchParams }) => {
   return (
@@ -11,20 +12,10 @@ const Navbar = ({ searchParams, setSearchParams }) => {
           </h1>
         </div>
         <div className="hidden md:flex flex-1 max-w-xl mx-6">
-          <div className="relative w-full">
-            <input
-              type="text"
-              placeholder="Search products..."
-              value={searchParams}
-              onChange={(e) => {
-                setSearchParams(e.target.value);
-              }}
-              className="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
-            <button className="absolute right-3 top-2">
-              <Search size={20} className="text-gray-500" />
-            </button>
-          </div>
+          <Searchbar
+            searchParams={searchParams}
+            setSearchParams={setSearchParams}
+          />
         </div>
         <div className="flex items-center space-x-4">
           <div className="relative">

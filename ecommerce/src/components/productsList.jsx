@@ -1,10 +1,17 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Search } from "lucide-react";
 import Sidebar from "./sidebar";
 import Products from "../../products.json";
+import Searchbar from "./searchbar";
+import ProductCard from "./productCard";
 
-const ProductList = ({ filterParams, searchParams, setFilterParams }) => {
+const ProductList = ({
+  filterParams,
+  searchParams,
+  setFilterParams,
+  setSearchParams,
+}) => {
   const [productsList, setProductsList] = useState([]);
   const [productsInDisplay, setProductsInDisplay] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -45,7 +52,7 @@ const ProductList = ({ filterParams, searchParams, setFilterParams }) => {
 
   useEffect(() => {
     fetchProducts();
-  }, [productsList]);
+  }, []);
 
   useEffect(() => {
     const handleObserver = (entries) => {
@@ -69,7 +76,7 @@ const ProductList = ({ filterParams, searchParams, setFilterParams }) => {
         observer.current.unobserve(loadingElement);
       }
     };
-  }, [loading]);
+  }, []);
 
   useEffect(() => {
     if (page > 1) {
@@ -80,9 +87,13 @@ const ProductList = ({ filterParams, searchParams, setFilterParams }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const filteredData = Products.filter((product) => {
-        return product.title.toLowerCase().includes(searchParams.toLowerCase());
+        return product.title
+          .toLowerCase()
+          .includes((searchParams || "").toLowerCase());
       });
+      console.log("Filtered Data: ", filteredData);
       setProductsList(filteredData);
+      setProductsInDisplay(filteredData.slice(0, 100));
     }, 500);
     return () => clearTimeout(timeout);
   }, [searchParams]);
@@ -101,6 +112,7 @@ const ProductList = ({ filterParams, searchParams, setFilterParams }) => {
 
       <main className="flex-1 p-4 overflow-y-auto max-h-screen">
         <div className="mb-4 flex justify-between items-center">
+          {/* expand/collapse button */}
           {isMobile && (
             <button
               onClick={toggleSidebar}
@@ -113,6 +125,14 @@ const ProductList = ({ filterParams, searchParams, setFilterParams }) => {
               )}
             </button>
           )}
+
+          {isMobile && (
+            <Searchbar
+              searchParams={searchParams}
+              setSearchParams={setSearchParams}
+            />
+          )}
+          {/* product count */}
           <div className="hidden md:block">
             <span className="text-gray-600">
               Showing {Products.length} products
@@ -122,45 +142,19 @@ const ProductList = ({ filterParams, searchParams, setFilterParams }) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {productsInDisplay.map((product) => (
-            <div
-              key={product.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="relative pb-2/3">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="w-full h-64 object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-medium text-gray-900 mb-2">
-                  {product.title}
-                </h3>
-                <div className="flex items-center mb-3">
-                  <div className="flex text-yellow-400">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <span key={i}>★</span>
-                    ))}
-                  </div>
-                  <span className="ml-2 text-gray-600">{product.rating}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <p className="text-xl font-bold text-gray-900">
-                    ${product.price}
-                  </p>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300">
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-            </div>
+            <ProductCard product={product} />
           ))}
         </div>
-
-        {loading && (
+        {/* loader */}
+        {loading && productsInDisplay.length < productsList.length && (
           <div className="flex justify-center my-8">
             <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-600"></div>
+          </div>
+        )}
+        {/* product list ends */}
+        {!loading && productsInDisplay.length >= productsList.length && (
+          <div className="w-full h-16 flex justify-center items-center text-gray-500 text-lg">
+            You have scrolled to end...
           </div>
         )}
         <div id="load-more-trigger" className="h-4"></div>
