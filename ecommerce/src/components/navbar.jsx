@@ -1,7 +1,7 @@
 "use client";
 import { Search, ShoppingCart, User } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({ searchParams, setSearchParams }) => {
   return (
     <header className="w-screen bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -15,6 +15,10 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search products..."
+              value={searchParams}
+              onChange={(e) => {
+                setSearchParams(e.target.value);
+              }}
               className="w-full py-2 px-4 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
             <button className="absolute right-3 top-2">

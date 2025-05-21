@@ -4,13 +4,18 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Sidebar from "./sidebar";
 import Products from "../../products.json";
 
-const ProductList = () => {
+const ProductList = ({ filterParams, searchParams, setFilterParams }) => {
+  const [productsList, setProductsList] = useState([]);
   const [productsInDisplay, setProductsInDisplay] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
   const observer = useRef();
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setProductsList([...Products]);
+  }, []);
 
   useEffect(() => {
     const checkIfMobile = () => {
@@ -27,10 +32,10 @@ const ProductList = () => {
     setTimeout(() => {
       setProductsInDisplay((prev) => {
         if (!prev || prev.length === 0) {
-          return Products.slice(0, 100);
+          return productsList.slice(0, 100);
         } else {
           let len = prev.length;
-          let newProducts = Products.slice(len, len + 100);
+          let newProducts = productsList.slice(len, len + 100);
           return [...prev, ...newProducts];
         }
       });
@@ -39,8 +44,8 @@ const ProductList = () => {
   };
 
   useEffect(() => {
-    fetchProducts(page);
-  }, []);
+    fetchProducts();
+  }, [productsList]);
 
   useEffect(() => {
     const handleObserver = (entries) => {
@@ -71,6 +76,16 @@ const ProductList = () => {
       fetchProducts();
     }
   }, [page]);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      const filteredData = Products.filter((product) => {
+        return product.title.toLowerCase().includes(searchParams.toLowerCase());
+      });
+      setProductsList(filteredData);
+    }, 500);
+    return () => clearTimeout(timeout);
+  }, [searchParams]);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
