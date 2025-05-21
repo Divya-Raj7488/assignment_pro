@@ -15,6 +15,7 @@ export default function Cart() {
       price: 89.99,
       image: "/api/placeholder/100/100",
       quantity: 1,
+      category: "Electronics",
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ export default function Cart() {
       price: 24.99,
       image: "/api/placeholder/100/100",
       quantity: 2,
+      category: "Electronics",
     },
     {
       id: 3,
@@ -29,6 +31,7 @@ export default function Cart() {
       price: 12.99,
       image: "/api/placeholder/100/100",
       quantity: 1,
+      category: "Electronics",
     },
   ]);
   const [showConfetti, setShowConfetti] = useState(false);
@@ -59,6 +62,9 @@ export default function Cart() {
   const startNewOrder = () => {
     setOrderComplete(false);
     setCartItems([]);
+    setTimeout(() => {
+      router.push("/");
+    }, 500);
   };
   const subtotal = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,

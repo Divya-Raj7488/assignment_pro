@@ -1,7 +1,6 @@
 "use client";
 
 import { ChevronLeft } from "lucide-react";
-import { useEffect } from "react";
 
 const Sidebar = ({
   isOpen,

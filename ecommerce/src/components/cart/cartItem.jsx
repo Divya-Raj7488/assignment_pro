@@ -2,11 +2,21 @@ import React from "react";
 import { Trash2, Plus, Minus } from "lucide-react";
 
 const CartItem = ({ item, updateQuantity, removeItem }) => {
+  const imageArr = {
+    Electronics: "/electronics.jpg",
+    Clothing: "/clothes.jpg",
+    "Home & Kitchen": "/homeKitchen.jpg",
+    Beauty: "/beauty.jpg",
+    Books: "/books.jpg",
+    Toys: "/toys.jpg",
+    Sportswear: "/sportswear.jpg",
+    Sports: "/sports.jpg",
+  };
   return (
     <li key={item.id} className="px-6 py-4 flex items-center">
       <div className="flex-shrink-0 h-24 w-24 rounded-md overflow-hidden">
         <img
-          src={item.image}
+          src={imageArr[item.category]}
           alt={item.name}
           className="h-full w-full object-cover"
         />

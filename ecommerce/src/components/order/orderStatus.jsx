@@ -1,10 +1,8 @@
 "use client";
-import { useRouter } from "next/navigation";
 import { Check } from "lucide-react";
 import React from "react";
 
 const OrderCompleteMessage = ({ startNewOrder }) => {
-  const router = useRouter();
   return (
     <div className="bg-white rounded-lg shadow-md p-8 text-center">
       <div className="w-16 h-16 bg-green-100 rounded-full mx-auto flex items-center justify-center mb-4">

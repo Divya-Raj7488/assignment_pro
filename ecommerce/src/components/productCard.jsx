@@ -2,6 +2,17 @@ import Link from "next/link";
 import React from "react";
 
 const ProductCard = ({ product }) => {
+  const imageArr = {
+    Electronics: "/electronics.jpg",
+    Clothing: "/clothes.jpg",
+    "Home & Kitchen": "/homeKitchen.jpg",
+    Beauty: "/beauty.jpg",
+    Books: "/books.jpg",
+    Toys: "/toys.jpg",
+    Sportswear: "/sportswear.jpg",
+    Sports: "/sports.jpg",
+  };
+  console.log(product);
   return (
     <Link href={`/product/${product.id}`}>
       <div
@@ -10,7 +21,8 @@ const ProductCard = ({ product }) => {
       >
         <div className="relative pb-2/3">
           <img
-            src={product.image}
+            src={imageArr[product.category]}
+            // src="/electronics.jpg"
             alt={product.title}
             className="w-full h-64 object-cover"
           />

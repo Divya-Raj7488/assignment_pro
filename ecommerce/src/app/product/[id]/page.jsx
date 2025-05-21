@@ -34,6 +34,17 @@ export default function ProductPage() {
   const id = params.id;
   const [quantity, setQuantity] = useState(1);
   const [product, setProduct] = useState({});
+
+  const imageArr = {
+    Electronics: "/electronics.jpg",
+    Clothing: "/clothes.jpg",
+    "Home & Kitchen": "/homeKitchen.jpg",
+    Beauty: "/beauty.jpg",
+    Books: "/books.jpg",
+    Toys: "/toys.jpg",
+    Sportswear: "/sportswear.jpg",
+    Sports: "/sports.jpg",
+  };
   const increaseQuantity = () => {
     setQuantity((prev) => prev + 1);
   };
@@ -67,7 +78,7 @@ export default function ProductPage() {
           <div className="md:flex">
             <div className="md:w-1/2 p-6 flex items-center justify-center bg-gray-100">
               <img
-                src={product.image}
+                src={imageArr[product.category]}
                 alt={product.title}
                 className="max-h-96 object-contain"
               />
