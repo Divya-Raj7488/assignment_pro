@@ -8,7 +8,7 @@ export default function Home() {
   const [filterParams, setFilterParams] = useState({
     category: "",
     priceRange: [0, 1000],
-    rating: 0,
+    brand: "",
   });
   const [searchParams, setSearchParams] = useState("");
   return (

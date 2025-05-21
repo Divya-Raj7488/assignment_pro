@@ -108,6 +108,8 @@ const ProductList = ({
         isOpen={sidebarOpen}
         toggleSidebar={toggleSidebar}
         isMobile={isMobile}
+        filterParams={filterParams}
+        setFilterParams={setFilterParams}
       />
 
       <main className="flex-1 p-4 overflow-y-auto max-h-screen">
@@ -142,7 +144,7 @@ const ProductList = ({
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {productsInDisplay.map((product) => (
-            <ProductCard product={product} />
+            <ProductCard product={product} key={product.id} />
           ))}
         </div>
         {/* loader */}

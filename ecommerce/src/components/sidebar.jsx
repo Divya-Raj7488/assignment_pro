@@ -2,7 +2,13 @@
 
 import { ChevronLeft } from "lucide-react";
 
-const Sidebar = ({ isOpen, toggleSidebar, isMobile }) => {
+const Sidebar = ({
+  isOpen,
+  toggleSidebar,
+  isMobile,
+  filterParams,
+  setFilterParams,
+}) => {
   return (
     <aside
       className={`sidebarContainer bg-white shadow-md ${
@@ -34,7 +40,17 @@ const Sidebar = ({ isOpen, toggleSidebar, isMobile }) => {
               "Sports",
             ].map((category) => (
               <div key={category} className="flex items-center">
-                <input type="checkbox" id={category} className="mr-2" />
+                <input
+                  type="checkbox"
+                  id={category}
+                  className="mr-2"
+                  value={filterParams.category}
+                  onClick={() => {
+                    setFilterParams((prev) => {
+                      return { ...prev, category: category };
+                    });
+                  }}
+                />
                 <label htmlFor={category} className="text-gray-600">
                   {category}
                 </label>
@@ -49,10 +65,27 @@ const Sidebar = ({ isOpen, toggleSidebar, isMobile }) => {
             min="0"
             max="1000"
             className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            value={filterParams.priceRange[1]}
+            onChange={(e) => {
+              const value = parseInt(e.target.value);
+              console.log(value);
+              setFilterParams((prev) => {
+                return { ...prev, priceRange: [0, value] };
+              });
+            }}
+            style={{
+              background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${(filterParams
+                .priceRange[1] /
+                1000) *
+                100}%, #ffffff ${(filterParams.priceRange[1] / 1000) *
+                100}%, #ffffff 100%)`,
+            }}
           />
           <div className="flex justify-between mt-2">
             <span className="text-sm text-gray-600">$0</span>
-            <span className="text-sm text-gray-600">$1000</span>
+            <span className="text-sm text-gray-600">
+              ${filterParams.priceRange[1]}
+            </span>
           </div>
         </div>
 
@@ -62,7 +95,17 @@ const Sidebar = ({ isOpen, toggleSidebar, isMobile }) => {
           <div className="space-y-2">
             {["Apple", "Samsung", "Sony", "Nike", "Adidas"].map((brand) => (
               <div key={brand} className="flex items-center">
-                <input type="checkbox" id={brand} className="mr-2" />
+                <input
+                  type="checkbox"
+                  id={brand}
+                  className="mr-2"
+                  value={filterParams.brand}
+                  onClick={() => {
+                    setFilterParams((prev) => {
+                      return { ...prev, brand: brand };
+                    });
+                  }}
+                />
                 <label htmlFor={brand} className="text-gray-600">
                   {brand}
                 </label>
