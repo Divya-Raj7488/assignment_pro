@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronLeft } from "lucide-react";
+import { useEffect } from "react";
 
 const Sidebar = ({
   isOpen,
@@ -47,7 +48,10 @@ const Sidebar = ({
                   value={filterParams.category}
                   onClick={() => {
                     setFilterParams((prev) => {
-                      return { ...prev, category: category };
+                      return {
+                        ...prev,
+                        category: [...prev.category, category.toLowerCase()],
+                      };
                     });
                   }}
                 />
@@ -102,7 +106,10 @@ const Sidebar = ({
                   value={filterParams.brand}
                   onClick={() => {
                     setFilterParams((prev) => {
-                      return { ...prev, brand: brand };
+                      return {
+                        ...prev,
+                        brand: [...prev.brand, brand.toLowerCase()],
+                      };
                     });
                   }}
                 />

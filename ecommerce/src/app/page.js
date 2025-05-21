@@ -6,9 +6,9 @@ import { useState } from "react";
 
 export default function Home() {
   const [filterParams, setFilterParams] = useState({
-    category: "",
+    category: [],
     priceRange: [0, 1000],
-    brand: "",
+    brand: [],
   });
   const [searchParams, setSearchParams] = useState("");
   return (

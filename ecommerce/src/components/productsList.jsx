@@ -22,18 +22,13 @@ const ProductList = ({
 
   useEffect(() => {
     setProductsList([...Products]);
+    fetchProducts();
   }, []);
 
-  useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-      setSidebarOpen(window.innerWidth >= 768);
-    };
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-    return () => window.removeEventListener("resize", checkIfMobile);
-  }, []);
-
+  const checkIfMobile = () => {
+    setIsMobile(window.innerWidth < 768);
+    setSidebarOpen(window.innerWidth >= 768);
+  };
   const fetchProducts = () => {
     setLoading(true);
     setTimeout(() => {
@@ -50,8 +45,32 @@ const ProductList = ({
     }, 800);
   };
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+  const filterData = () => {
+    const data = [...Products];
+    const filteredData = data.filter((product) => {
+      const isCategory = filterParams.category.length
+        ? filterParams.category.includes(product.category.toLowerCase())
+        : true;
+      const isPriceRange =
+        product.price >= filterParams.priceRange[0] &&
+        product.price <= filterParams.priceRange[1];
+      const isBrand = filterParams.brand.length
+        ? filterParams.brand.includes(product.brand.toLowerCase)
+        : true;
+      return isCategory && isPriceRange && isBrand;
+    });
+    setProductsList(filteredData);
+    setProductsInDisplay(filteredData.slice(0, 100));
+  };
+
   useEffect(() => {
-    fetchProducts();
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+    return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
   useEffect(() => {
@@ -91,16 +110,19 @@ const ProductList = ({
           .toLowerCase()
           .includes((searchParams || "").toLowerCase());
       });
-      console.log("Filtered Data: ", filteredData);
+
       setProductsList(filteredData);
       setProductsInDisplay(filteredData.slice(0, 100));
     }, 500);
     return () => clearTimeout(timeout);
   }, [searchParams]);
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      filterData();
+    }, 500);
+    return () => clearTimeout(timeout);
+  }, [filterParams]);
 
   return (
     <div className="w-screen h-screen flex flex-row overflow-hidden bg-gray-100 pt-4">
@@ -157,6 +179,11 @@ const ProductList = ({
         {!loading && productsInDisplay.length >= productsList.length && (
           <div className="w-full h-16 flex justify-center items-center text-gray-500 text-lg">
             You have scrolled to end...
+          </div>
+        )}
+        {productsList.length === 0 && (
+          <div className="w-full h-full flex items-center justify-center text-gray-500 text-lg">
+            No product found
           </div>
         )}
         <div id="load-more-trigger" className="h-4"></div>
