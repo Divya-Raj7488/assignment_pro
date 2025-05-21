@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "../components/navbar";
-import ProductList from "../components/productsList";
+// import ProductList from "../components/productsList";
 import Footer from "../components/footer";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       {/* <div className="flex flex-1 flex-col md:flex-row">
         <ProductList />
       </div> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
