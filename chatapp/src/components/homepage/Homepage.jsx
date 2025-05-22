@@ -25,14 +25,11 @@ const Homepage = () => {
             isChatVisible ? "expanded" : ""
           }`}
         >
-          {/* {!isChatVisible ? (
+          {!isChatVisible ? (
             <div className="animationContainer"></div>
           ) : (
-            <ChatRoom />
-          )} */}
-          <div
-            className={`animationContainer ${isChatVisible ? "expanded" : ""}`}
-          ></div>
+            <ChatRoom isChatVisible={isChatVisible} />
+          )}
         </div>
       </main>
     </div>
