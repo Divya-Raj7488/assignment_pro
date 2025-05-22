@@ -1,9 +1,11 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import { Star, ShoppingCart, Heart, Share2 } from "lucide-react";
 import { useParams } from "next/navigation";
 import Products from "../../../../products.json";
+import { MyContext } from "../../../context/createContext";
+import { useRouter } from "next/navigation";
 
 const RatingStars = ({ rating }) => {
   const fullStars = Math.floor(rating);
@@ -34,6 +36,9 @@ export default function ProductPage() {
   const id = params.id;
   const [quantity, setQuantity] = useState(1);
   const [product, setProduct] = useState({});
+  const { cartItems, setCartItems } = useContext(MyContext);
+  const router = useRouter();
+  const [addedToCart, setAddedToCart] = useState(false);
 
   const imageArr = {
     Electronics: "/electronics.jpg",
@@ -51,6 +56,50 @@ export default function ProductPage() {
 
   const decreaseQuantity = () => {
     setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
+  };
+
+  const addToCart = () => {
+    if (!product.id) return;
+
+    const isItemPresent = cartItems.find((item) => item.id === product.id);
+
+    if (!isItemPresent) {
+      const newItem = { ...product, quantity };
+      setCartItems((prev) => [...prev, newItem]);
+    } else {
+      const updatedCart = cartItems.map((item) =>
+        item.id === product.id
+          ? { ...item, quantity: item.quantity + quantity }
+          : item
+      );
+      setCartItems(updatedCart);
+    }
+
+    alert("Product added to cart!");
+  };
+  const buyNow = () => {
+    if (!product.id) return;
+
+    const isItemPresent = cartItems.find((item) => item.id === product.id);
+
+    if (!isItemPresent) {
+      const newItem = { ...product, quantity };
+      setCartItems((prev) => {
+        const updated = [...prev, newItem];
+        return updated;
+      });
+      router.push("/cart");
+    } else {
+      setCartItems((prev) => {
+        const updated = prev.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + quantity }
+            : item
+        );
+        return updated;
+      });
+      router.push("/cart");
+    }
   };
 
   useEffect(() => {
@@ -139,11 +188,17 @@ export default function ProductPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
-                <button className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium transition-colors">
+                <button
+                  onClick={addToCart}
+                  className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium transition-colors"
+                >
                   <ShoppingCart size={20} className="mr-2" />
-                  Add to Cart
+                  {addedToCart ? "Add to Cart" : "Added to Cart"}
                 </button>
-                <button className="bg-gray-800 hover:bg-gray-900 text-white py-3 px-6 rounded-md font-medium transition-colors">
+                <button
+                  onClick={buyNow}
+                  className="bg-gray-800 hover:bg-gray-900 text-white py-3 px-6 rounded-md font-medium transition-colors"
+                >
                   Buy Now
                 </button>
               </div>
