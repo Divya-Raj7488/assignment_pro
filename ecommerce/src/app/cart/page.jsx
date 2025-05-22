@@ -1,39 +1,15 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Confetti from "../../components/order/confetti";
 import { OrderCompleteMessage } from "../../components/order/orderStatus";
 import CartItem from "../../components/cart/cartItem";
 import OrderSummary from "../../components/order/summary";
 import { useRouter } from "next/navigation";
+import { MyContext } from "../../context/createContext";
 
 export default function Cart() {
   const router = useRouter();
-  const [cartItems, setCartItems] = useState([
-    {
-      id: 1,
-      name: "Wireless Headphones",
-      price: 89.99,
-      image: "/api/placeholder/100/100",
-      quantity: 1,
-      category: "Electronics",
-    },
-    {
-      id: 2,
-      name: "Smartphone Case",
-      price: 24.99,
-      image: "/api/placeholder/100/100",
-      quantity: 2,
-      category: "Electronics",
-    },
-    {
-      id: 3,
-      name: "USB-C Charging Cable",
-      price: 12.99,
-      image: "/api/placeholder/100/100",
-      quantity: 1,
-      category: "Electronics",
-    },
-  ]);
+  const { cartItems, setCartItems } = useContext(MyContext);
   const [showConfetti, setShowConfetti] = useState(false);
   const [orderComplete, setOrderComplete] = useState(false);
 
