@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../styles/Profile.css";
-import { conversations } from "../../../data.json";
+import data from "../../../data.json";
+const messages = data.messages;
+console.log(messages);
 
 const MessengerComponent = () => {
+  const loaderRef = useRef(null);
+  const [conversations, setConversations] = useState([]);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setConversations(messages.slice(0, 10));
+  }, []);
   const getRandomColor = (name) => {
     const colors = [
       "#FF6B6B",
@@ -28,10 +38,37 @@ const MessengerComponent = () => {
     return name.charAt(0).toUpperCase();
   };
   const truncateMessage = (message, maxLength = 35) => {
-    return message.length > maxLength
+    return message && message.length > maxLength
       ? message.substring(0, maxLength) + "..."
       : message;
   };
+
+  useEffect(() => {
+    const option = {
+      root: document.querySelector(".conversationList"),
+      rootMargin: "0px",
+      threshold: 1.0,
+    };
+    const handleObserver = (entries) => {
+      const target = entries[0];
+      if (target.isIntersecting) {
+        console.log("loaded");
+        setConversations((prev) => {
+          setLoading(true);
+          let newChats = messages.slice(prev.length + 1, prev.length + 10);
+          return [...prev, ...newChats];
+        });
+        setLoading(false);
+      }
+    };
+    const observer = new IntersectionObserver(handleObserver, option);
+    if (loaderRef.current) {
+      observer.observe(loaderRef.current);
+    }
+    return () => {
+      if (loaderRef.current) observer.unobserve(loaderRef.current);
+    };
+  }, []);
 
   const Profile = ({ conversation }) => {
     return (
@@ -45,15 +82,12 @@ const MessengerComponent = () => {
           e.currentTarget.classList.remove("conversationItemHover")
         }
       >
-        {/* Profile Icon */}
         <div
           className="profileIcon"
-          style={{ backgroundColor: getRandomColor(conversation.name) }}
+          style={{ backgroundColor: getRandomColor(conversation.name || "") }}
         >
-          {getInitials(conversation.name)}
+          {getInitials(conversation.name || "")}
         </div>
-
-        {/* Conversation Details */}
         <div className="conversationDetails">
           <div className="conversationHeader">
             <h3 className="senderName">{conversation.name}</h3>
@@ -97,9 +131,18 @@ const MessengerComponent = () => {
         </div>
       </div>
       <div className="conversationList">
-        {conversations.map((conversation) => (
-          <Profile conversation={conversation} />
-        ))}
+        {conversations.length > 0 &&
+          conversations.map((conversation) => (
+            <Profile key={conversation.id} conversation={conversation} />
+          ))}
+        {loading && <div>!!!!yayyy!!!!</div>}
+        <div
+          ref={loaderRef}
+          style={{ height: "20px", background: "transparent" }}
+          className="chatLoader"
+        >
+          End
+        </div>
       </div>
     </div>
   );

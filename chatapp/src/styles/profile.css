@@ -63,7 +63,7 @@
 .conversationList {
   height: 85%;
   border-top: none;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .conversationItem {
@@ -190,4 +190,10 @@
 
 .newMessageButton:hover {
   background-color: #15803d;
+}
+.chatLoader {
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
