@@ -6,8 +6,8 @@ console.log(messages);
 
 const MessengerComponent = () => {
   const loaderRef = useRef(null);
+  const containerRef = useRef(null);
   const [conversations, setConversations] = useState([]);
-  const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -45,9 +45,9 @@ const MessengerComponent = () => {
 
   useEffect(() => {
     const option = {
-      root: document.querySelector(".conversationList"),
+      root: containerRef.current,
       rootMargin: "0px",
-      threshold: 1.0,
+      threshold: 0.1,
     };
     const handleObserver = (entries) => {
       const target = entries[0];
@@ -55,7 +55,7 @@ const MessengerComponent = () => {
         console.log("loaded");
         setConversations((prev) => {
           setLoading(true);
-          let newChats = messages.slice(prev.length + 1, prev.length + 10);
+          let newChats = messages.slice(prev.length, prev.length + 10);
           return [...prev, ...newChats];
         });
         setLoading(false);
@@ -130,11 +130,13 @@ const MessengerComponent = () => {
           </div>
         </div>
       </div>
-      <div className="conversationList">
-        {conversations.length > 0 &&
-          conversations.map((conversation) => (
-            <Profile key={conversation.id} conversation={conversation} />
-          ))}
+      <div className="conversationList" ref={containerRef}>
+        <div>
+          {conversations.length > 0 &&
+            conversations.map((conversation) => (
+              <Profile key={conversation.id} conversation={conversation} />
+            ))}
+        </div>
         {loading && <div>!!!!yayyy!!!!</div>}
         <div
           ref={loaderRef}
