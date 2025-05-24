@@ -1,5 +1,6 @@
 .container {
-  max-width: 28rem;
+  max-width: 90%;
+  flex: 1;
   margin: 0 auto;
   background-color: white;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -91,6 +92,13 @@
   font-size: 1.125rem;
   margin-right: 0.75rem;
   flex-shrink: 0;
+}
+.selected {
+  height: 1rem;
+  border: 1px solid white;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid gray;
+  color: blue;
 }
 
 .conversationDetails {
