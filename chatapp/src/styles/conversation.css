@@ -8,7 +8,16 @@
   flex-direction: column;
   overflow: hidden;
 }
-
+.conversationHeader2 {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
 .chatboxHeader {
   background: #f8f9fa;
   padding: 1rem 1.5rem;
@@ -26,7 +35,7 @@
 .messagesContainer::-webkit-scrollbar {
   display: none;
 }
-.message {
+.message2 {
   max-width: 100%;
   display: flex;
   margin-bottom: 1rem;
@@ -63,13 +72,13 @@
   right: 10px;
 }
 
-.message.sender .messageBubble {
+.message2.sender .messageBubble {
   background: #e9ecef;
   color: #333;
   border-bottom-left-radius: 6px;
 }
 
-.message.receiver .messageBubble {
+.message2.receiver .messageBubble {
   background: rgb(210, 204, 248);
   color: black;
   border-bottom-right-radius: 6px;

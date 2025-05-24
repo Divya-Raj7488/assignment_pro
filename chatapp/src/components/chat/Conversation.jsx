@@ -3,7 +3,7 @@ import "../../styles/conversation.css";
 import data from "../../../data.json";
 import CustomProfile from "./CutomProfile";
 const conversations = data.conversations;
-const Conversation = () => {
+const Conversation = ({ currentSenderProfile }) => {
   const [messages, setMessages] = useState(conversations);
 
   const [inputValue, setInputValue] = useState("");
@@ -75,6 +75,7 @@ const Conversation = () => {
 
   return (
     <div className="chatboxContainer">
+      <div className="conversationHeader2">{currentSenderProfile.name}</div>
       <div className="messagesContainer">
         {messages.length === 0 ? (
           <div className="emptyState">
@@ -84,7 +85,7 @@ const Conversation = () => {
           </div>
         ) : (
           messages.map((message) => (
-            <div key={message.id} className={`message ${message.type}`}>
+            <div key={message.id} className={`message2 ${message.type}`}>
               <div className="messageBubble">
                 <CustomProfile name={"Me"} />
                 <span className="txtBox">{message.text}</span>

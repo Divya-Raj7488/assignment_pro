@@ -1,17 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../../styles/Profile.css";
 import data from "../../../data.json";
-const messages = data.messages;
-console.log(messages);
+const sender = data.senders;
 
-const MessengerComponent = () => {
+const MessengerComponent = ({ setCurrentSenderProfile }) => {
   const loaderRef = useRef(null);
   const containerRef = useRef(null);
   const [conversations, setConversations] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setConversations(messages.slice(0, 10));
+    setConversations(sender.slice(0, 10));
+    setCurrentSenderProfile(sender[0]);
   }, []);
   const getRandomColor = (name) => {
     const colors = [
@@ -55,7 +55,7 @@ const MessengerComponent = () => {
         console.log("loaded");
         setConversations((prev) => {
           setLoading(true);
-          let newChats = messages.slice(prev.length, prev.length + 10);
+          let newChats = sender.slice(prev.length, prev.length + 10);
           return [...prev, ...newChats];
         });
         setLoading(false);
@@ -81,6 +81,9 @@ const MessengerComponent = () => {
         onMouseLeave={(e) =>
           e.currentTarget.classList.remove("conversationItemHover")
         }
+        onClick={() => {
+          setCurrentSenderProfile(conversation);
+        }}
       >
         <div
           className="profileIcon"

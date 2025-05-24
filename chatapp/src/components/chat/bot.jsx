@@ -183,7 +183,6 @@ const BotChatbox = () => {
           placeholder="Ask me anything..."
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          // onKeyPress={handleKeyPress}
           rows="1"
           disabled={isTyping}
         />
