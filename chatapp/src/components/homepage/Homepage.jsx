@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../../styles/homepage.css";
 import ChatRoom from "../chat/ChatContainer";
+import { BookText } from "lucide-react";
 
 const Homepage = () => {
   const [isChatVisible, setChatVisible] = useState(false);
+  const [headerOption, setHeaderOption] = useState("aibot");
   return (
     <div className="homepageContainer">
       <main className={`homepageMain ${isChatVisible ? "chatVisible" : ""}`}>
@@ -28,7 +30,37 @@ const Homepage = () => {
           }`}
         >
           {!isChatVisible ? (
-            <div className="animationContainer"></div>
+            <div className="animationContainer">
+              <div className="animationHeader">
+                <span
+                  className={`optionsInAnimationHeader ${
+                    headerOption === "aibot" ? "selected" : ""
+                  }`}
+                  onClick={() => {
+                    setHeaderOption("aibot");
+                  }}
+                >
+                  AI Copilot
+                </span>
+                <span
+                  onClick={() => {
+                    setHeaderOption("details");
+                  }}
+                  className={`optionsInAnimationHeader ${
+                    headerOption === "details" ? "selected" : ""
+                  }`}
+                >
+                  Details
+                </span>
+              </div>
+              <div className="botNameAndIntro">
+                <div>
+                  <BookText style={{ width: "1rem", height: "1rem" }} />
+                </div>
+                <div style={{ fontWeight: "700" }}>Hi, I'm Fin AI Copilot</div>
+                <div>Ask me anything about this conversation</div>
+              </div>
+            </div>
           ) : (
             <ChatRoom isChatVisible={isChatVisible} />
           )}
