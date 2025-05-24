@@ -87,7 +87,13 @@ const Conversation = ({ currentSenderProfile }) => {
           messages.map((message) => (
             <div key={message.id} className={`message2 ${message.type}`}>
               <div className="messageBubble">
-                <CustomProfile name={"Me"} />
+                <CustomProfile
+                  name={`${
+                    message.type === "sender"
+                      ? currentSenderProfile.name
+                      : "you"
+                  }`}
+                />
                 <span className="txtBox">{message.text}</span>
                 <span className="mssgTime">{message.timestamp}</span>
               </div>

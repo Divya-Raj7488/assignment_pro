@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../../styles/bot.css";
+import CustomProfile from "./CutomProfile";
 
 const BotChatbox = () => {
   const [selectedTab, setSelectedTab] = useState("aibot");
@@ -149,10 +150,13 @@ const BotChatbox = () => {
         </div>
       </div>
 
-      <div className="messagesContainer">
+      <div className="messagesContainer2">
         {messages.map((message) => (
-          <div key={message.id} className={`message ${message.type}`}>
+          <div key={message.id} className={`messageDiv ${message.type}`}>
             <div className="messageBubble">
+              <CustomProfile
+                name={`${message.type === "bot" ? "bot" : "user"}`}
+              />
               <div
                 className={
                   message.isTyping ? "typingText writing" : "typingText"
@@ -169,7 +173,6 @@ const BotChatbox = () => {
                     <div className="typingDot"></div>
                   </div>
                 )}
-              <div className="messageTime">{message.timestamp}</div>
             </div>
           </div>
         ))}
