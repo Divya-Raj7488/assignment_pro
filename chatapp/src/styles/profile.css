@@ -92,6 +92,13 @@
   margin-right: 0.75rem;
   flex-shrink: 0;
 }
+.selected {
+  height: 1rem;
+  border: 1px solid white;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid gray;
+  color: blue;
+}
 
 .conversationDetails {
   flex: 1;

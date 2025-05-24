@@ -4000,5 +4000,49 @@
       "time": "1:47 PM",
       "unread": 2
     }
+  ],
+  "conversations": [
+    {
+      "id": 1,
+      "text": "Hey! How are you doing today?",
+      "type": "sender",
+      "timestamp": "10:30"
+    },
+    {
+      "id": 2,
+      "text": "Hi! I'm doing great, thanks for asking. Just working on some projects. How about you?",
+      "type": "receiver",
+      "timestamp": "10:32"
+    },
+    {
+      "id": 3,
+      "text": "That's awesome! I'm having a productive day too. What kind of projects are you working on?",
+      "type": "sender",
+      "timestamp": "10:33"
+    },
+    {
+      "id": 4,
+      "text": "I'm building a new chat application with React. It's been really fun to work on!",
+      "type": "receiver",
+      "timestamp": "10:35"
+    },
+    {
+      "id": 5,
+      "text": "That sounds really cool! I love React development. Are you using any specific libraries for the chat functionality?",
+      "type": "sender",
+      "timestamp": "10:37"
+    },
+    {
+      "id": 6,
+      "text": "Just vanilla React for now, keeping it simple. But I might add Socket.io later for real-time messaging.",
+      "type": "receiver",
+      "timestamp": "10:38"
+    },
+    {
+      "id": 7,
+      "text": "Smart approach! Starting simple and then adding complexity is always the way to go.",
+      "type": "sender",
+      "timestamp": "10:40"
+    }
   ]
 }
