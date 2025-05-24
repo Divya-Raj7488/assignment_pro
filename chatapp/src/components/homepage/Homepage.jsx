@@ -8,17 +8,19 @@ const Homepage = () => {
     <div className="homepageContainer">
       <main className={`homepageMain ${isChatVisible ? "chatVisible" : ""}`}>
         <div className={`leftSidebar ${isChatVisible ? "collapsed" : ""}`}>
-          <div className="forCopilotSign">
-            <span className="dot"></span>
-            <span className="forCopilotText">For Copilot</span>
+          <div className="contentContainer">
+            <div className="forCopilotSign">
+              <span className="dot"></span>
+              <span className="forCopilotText">For Copilot</span>
+            </div>
+            <h1 className="leftSidebarTitle">Hello there</h1>
+            <button
+              className="startChatButton"
+              onClick={() => setChatVisible(true)}
+            >
+              Start Chat
+            </button>
           </div>
-          <h1 className="leftSidebarTitle">Hello there</h1>
-          <button
-            className="startChatButton"
-            onClick={() => setChatVisible(true)}
-          >
-            Start Chat
-          </button>
         </div>
         <div
           className={`chatAnimationContainer ${

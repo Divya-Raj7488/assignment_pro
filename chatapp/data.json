@@ -1,0 +1,4004 @@
+{
+  "messages": [
+    {
+      "id": "a0716979-0bf1-48be-bec2-000",
+      "name": "Brenda Henry",
+      "company": "Google",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "3:36 AM",
+      "unread": 1
+    },
+    {
+      "id": "54b17df5-6f28-4228-a1fb-001",
+      "name": "Tasha Meyers MD",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "11:59 AM",
+      "unread": 1
+    },
+    {
+      "id": "0fbbfec7-7333-4021-88a8-002",
+      "name": "Veronica Pineda",
+      "company": "Tesla",
+      "message": "Let\u2019s catch up later this week",
+      "time": "8:38 AM",
+      "unread": 2
+    },
+    {
+      "id": "0bbe7207-2840-4471-ad30-003",
+      "name": "Christopher Morrow",
+      "company": "Meta",
+      "message": "Thanks for sharing the project files",
+      "time": "11:10 AM",
+      "unread": 5
+    },
+    {
+      "id": "78c0babc-428b-4cee-8296-004",
+      "name": "Michael Mclaughlin",
+      "company": "Netflix",
+      "message": "Do you have updates on the report?",
+      "time": "3:11 AM",
+      "unread": 4
+    },
+    {
+      "id": "afd0d2ac-2e92-4321-81b5-005",
+      "name": "Christopher Miller",
+      "company": "Tesla",
+      "message": "Thanks for sharing the project files",
+      "time": "3:09 PM",
+      "unread": 3
+    },
+    {
+      "id": "116070af-ab52-4331-ab53-006",
+      "name": "Jennifer Evans",
+      "company": "Microsoft",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "12:55 AM",
+      "unread": 3
+    },
+    {
+      "id": "9b5d9af8-388c-4987-b154-007",
+      "name": "Richard Williams",
+      "company": "Github",
+      "message": "Thanks for sharing the project files",
+      "time": "4:28 PM",
+      "unread": 3
+    },
+    {
+      "id": "170d16cd-4715-4dc5-b1f6-008",
+      "name": "Matthew Bailey",
+      "company": "Google",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "7:13 PM",
+      "unread": 3
+    },
+    {
+      "id": "cec9c91a-7a6a-4077-be55-009",
+      "name": "Roy Yoder",
+      "company": "Meta",
+      "message": "Looking forward to our discussion",
+      "time": "4:39 PM",
+      "unread": 5
+    },
+    {
+      "id": "18ccf334-b41b-43ec-99d1-010",
+      "name": "James Jackson",
+      "company": "Amazon",
+      "message": "Thanks for sharing the project files",
+      "time": "3:24 AM",
+      "unread": 2
+    },
+    {
+      "id": "88e91c21-0acb-4df0-a516-011",
+      "name": "Eric Montgomery",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "12:42 AM",
+      "unread": 3
+    },
+    {
+      "id": "e793d0c3-d3ef-4813-b90a-012",
+      "name": "Vincent Martin",
+      "company": "Apple",
+      "message": "Let\u2019s catch up later this week",
+      "time": "4:46 PM",
+      "unread": 5
+    },
+    {
+      "id": "f50e3682-ee2f-4758-ad65-013",
+      "name": "Dr. Mark Glass",
+      "company": "Amazon",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "12:56 AM",
+      "unread": 2
+    },
+    {
+      "id": "d392c54a-38a0-4415-8e20-014",
+      "name": "Fernando Peterson",
+      "company": "Tesla",
+      "message": "When is the deadline for this task?",
+      "time": "7:54 AM",
+      "unread": 5
+    },
+    {
+      "id": "cbbb77b0-f84b-45fe-88af-015",
+      "name": "Priscilla Harrison",
+      "company": "Microsoft",
+      "message": "Please review the attached document",
+      "time": "1:26 PM",
+      "unread": 5
+    },
+    {
+      "id": "f2fe7d20-7b2f-4901-855e-016",
+      "name": "Michael Obrien",
+      "company": "Github",
+      "message": "Please review the attached document",
+      "time": "3:24 PM",
+      "unread": 5
+    },
+    {
+      "id": "511167b9-77df-4dc2-adb5-017",
+      "name": "Russell Gallagher",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "6:42 AM",
+      "unread": 2
+    },
+    {
+      "id": "e564b88f-2e67-4828-8760-018",
+      "name": "Dr. Karen Decker",
+      "company": "Tesla",
+      "message": "Thanks for sharing the project files",
+      "time": "2:34 PM",
+      "unread": 1
+    },
+    {
+      "id": "108d3db4-a6b7-4010-ae1b-019",
+      "name": "Elijah Hopkins",
+      "company": "Github",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "10:21 AM",
+      "unread": 5
+    },
+    {
+      "id": "243fff81-2e63-4f92-8b1b-020",
+      "name": "Nichole Ray",
+      "company": "IBM",
+      "message": "When is the deadline for this task?",
+      "time": "12:29 AM",
+      "unread": 3
+    },
+    {
+      "id": "3af0114e-55a6-4c0c-90fd-021",
+      "name": "William Bailey",
+      "company": "Github",
+      "message": "Please review the attached document",
+      "time": "3:36 PM",
+      "unread": 5
+    },
+    {
+      "id": "5ac8978a-b8ca-40ca-a8cb-022",
+      "name": "Edward Pierce",
+      "company": "Apple",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "2:00 PM",
+      "unread": 1
+    },
+    {
+      "id": "8a422df8-4192-49d6-a58e-023",
+      "name": "Rodney Alvarado",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "11:08 PM",
+      "unread": 3
+    },
+    {
+      "id": "3aa94ea3-4c45-49a9-a917-024",
+      "name": "Derek Ramos",
+      "company": "Intel",
+      "message": "Thanks for sharing the project files",
+      "time": "3:25 PM",
+      "unread": 0
+    },
+    {
+      "id": "c90959bf-32c8-4ee8-8540-025",
+      "name": "Sarah Brown MD",
+      "company": "Github",
+      "message": "I've made the changes you suggested",
+      "time": "7:44 PM",
+      "unread": 0
+    },
+    {
+      "id": "f914f72b-df21-42e5-9c28-026",
+      "name": "Jason Moore",
+      "company": "Apple",
+      "message": "Please review the attached document",
+      "time": "3:02 PM",
+      "unread": 4
+    },
+    {
+      "id": "39c37cb7-70ca-4321-8566-027",
+      "name": "Jeffrey Sullivan",
+      "company": "Amazon",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "3:58 AM",
+      "unread": 1
+    },
+    {
+      "id": "d125b304-68d3-430f-b419-028",
+      "name": "Troy Hicks",
+      "company": "Github",
+      "message": "Thanks for sharing the project files",
+      "time": "10:11 PM",
+      "unread": 5
+    },
+    {
+      "id": "d7ca8369-71b9-4abf-b492-029",
+      "name": "Thomas Roberts",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "6:41 AM",
+      "unread": 0
+    },
+    {
+      "id": "3aaf5a77-8cf4-420a-9b07-030",
+      "name": "Dr. Adrian Kelley MD",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "9:27 PM",
+      "unread": 0
+    },
+    {
+      "id": "041f6218-9217-4784-9e03-031",
+      "name": "Mary Rose",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "6:24 PM",
+      "unread": 5
+    },
+    {
+      "id": "6bf22745-a8af-4f97-971e-032",
+      "name": "Melissa Cortez",
+      "company": "Meta",
+      "message": "Let\u2019s catch up later this week",
+      "time": "6:05 PM",
+      "unread": 5
+    },
+    {
+      "id": "303e7bcc-43e8-4121-9a34-033",
+      "name": "Sharon Padilla",
+      "company": "IBM",
+      "message": "Looking forward to our discussion",
+      "time": "8:40 AM",
+      "unread": 4
+    },
+    {
+      "id": "6bca5945-2415-4ebe-8734-034",
+      "name": "James Alvarez",
+      "company": "IBM",
+      "message": "Do you have updates on the report?",
+      "time": "1:45 AM",
+      "unread": 5
+    },
+    {
+      "id": "712f515a-488f-48f3-85c6-035",
+      "name": "Sheila Evans",
+      "company": "Apple",
+      "message": "Please review the attached document",
+      "time": "6:45 PM",
+      "unread": 1
+    },
+    {
+      "id": "e7b81a30-e24c-4b9a-990e-036",
+      "name": "Peter Bass",
+      "company": "Apple",
+      "message": "Do you have updates on the report?",
+      "time": "1:52 PM",
+      "unread": 4
+    },
+    {
+      "id": "cf56a749-15c1-4dfe-8df6-037",
+      "name": "Jennifer Baker",
+      "company": "Microsoft",
+      "message": "I've made the changes you suggested",
+      "time": "9:05 PM",
+      "unread": 3
+    },
+    {
+      "id": "d458c587-2ade-4bf4-b005-038",
+      "name": "Tracy Young",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "12:40 AM",
+      "unread": 0
+    },
+    {
+      "id": "09f5bd99-d449-4394-8e71-039",
+      "name": "Michael Perry",
+      "company": "Meta",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "9:29 PM",
+      "unread": 3
+    },
+    {
+      "id": "64c25129-5853-4201-bf39-040",
+      "name": "Matthew Hoffman",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "12:13 PM",
+      "unread": 1
+    },
+    {
+      "id": "f915f31d-4ae5-465a-b4a4-041",
+      "name": "Patricia Turner MD",
+      "company": "Intel",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "4:18 AM",
+      "unread": 2
+    },
+    {
+      "id": "5ea81c93-ef4a-4365-ac79-042",
+      "name": "John Burke",
+      "company": "Google",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "5:28 PM",
+      "unread": 0
+    },
+    {
+      "id": "8134b641-7cba-4567-8681-043",
+      "name": "Andrew Chandler",
+      "company": "Github",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "9:21 PM",
+      "unread": 4
+    },
+    {
+      "id": "3c181bfd-bad3-433a-a1a5-044",
+      "name": "Jacob Moran",
+      "company": "Tesla",
+      "message": "Do you have updates on the report?",
+      "time": "9:54 PM",
+      "unread": 4
+    },
+    {
+      "id": "e0fd007b-3a12-42f9-80aa-045",
+      "name": "Zachary Bartlett",
+      "company": "Google",
+      "message": "Do you have updates on the report?",
+      "time": "2:37 AM",
+      "unread": 5
+    },
+    {
+      "id": "31aa9289-f007-48b0-b597-046",
+      "name": "Michael Murphy",
+      "company": "Apple",
+      "message": "Looking forward to our discussion",
+      "time": "11:13 PM",
+      "unread": 4
+    },
+    {
+      "id": "8fa2b2cc-c804-4a23-b273-047",
+      "name": "Kathryn Smith",
+      "company": "Intel",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "5:43 AM",
+      "unread": 0
+    },
+    {
+      "id": "f3a09e0e-155b-4a79-bee6-048",
+      "name": "Seth King",
+      "company": "Github",
+      "message": "Thanks for sharing the project files",
+      "time": "3:55 PM",
+      "unread": 4
+    },
+    {
+      "id": "f5dabe02-5477-482d-820a-049",
+      "name": "Derek Carpenter",
+      "company": "Meta",
+      "message": "Do you have updates on the report?",
+      "time": "12:55 AM",
+      "unread": 3
+    },
+    {
+      "id": "84500ef9-90aa-4ccd-97e5-050",
+      "name": "Aaron Martin",
+      "company": "Amazon",
+      "message": "I've made the changes you suggested",
+      "time": "6:03 AM",
+      "unread": 1
+    },
+    {
+      "id": "37969474-f79b-4426-8559-051",
+      "name": "Rebecca Banks",
+      "company": "IBM",
+      "message": "Let\u2019s catch up later this week",
+      "time": "8:03 AM",
+      "unread": 5
+    },
+    {
+      "id": "7ebd635c-f766-44d3-8257-052",
+      "name": "Carlos Bryan",
+      "company": "Google",
+      "message": "I've made the changes you suggested",
+      "time": "4:45 PM",
+      "unread": 2
+    },
+    {
+      "id": "1a619a3a-4184-4489-90cc-053",
+      "name": "Mark Frye",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "8:42 AM",
+      "unread": 2
+    },
+    {
+      "id": "6e6dda5a-65de-43b1-9248-054",
+      "name": "Allen Jones",
+      "company": "Intel",
+      "message": "I've made the changes you suggested",
+      "time": "1:51 PM",
+      "unread": 3
+    },
+    {
+      "id": "8502ed53-d15b-42b7-9ddf-055",
+      "name": "Kurt Bryant",
+      "company": "Meta",
+      "message": "Let\u2019s catch up later this week",
+      "time": "4:11 AM",
+      "unread": 5
+    },
+    {
+      "id": "ce9b0365-c058-4e7a-8c31-056",
+      "name": "Carol Hogan",
+      "company": "Meta",
+      "message": "Thanks for sharing the project files",
+      "time": "5:43 AM",
+      "unread": 0
+    },
+    {
+      "id": "b1180655-a3ce-4cb0-bea5-057",
+      "name": "Daniel Boyer",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "8:07 PM",
+      "unread": 0
+    },
+    {
+      "id": "52c481d2-2e50-4da1-8bed-058",
+      "name": "Robert Hall",
+      "company": "Meta",
+      "message": "Let\u2019s catch up later this week",
+      "time": "11:48 AM",
+      "unread": 0
+    },
+    {
+      "id": "1c66b6ab-f2b7-4f00-a940-059",
+      "name": "Maria Gonzalez",
+      "company": "Apple",
+      "message": "Do you have updates on the report?",
+      "time": "8:52 PM",
+      "unread": 3
+    },
+    {
+      "id": "3a4c7dc1-43de-47d5-9825-060",
+      "name": "Amanda Griffin",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "12:48 PM",
+      "unread": 3
+    },
+    {
+      "id": "bd390cb4-142b-4ce0-9378-061",
+      "name": "Charlene Evans",
+      "company": "Amazon",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "1:55 AM",
+      "unread": 3
+    },
+    {
+      "id": "f139787f-7ba4-4652-9d2e-062",
+      "name": "Carlos Singleton",
+      "company": "Netflix",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "11:39 PM",
+      "unread": 1
+    },
+    {
+      "id": "8a4b10a9-3a5d-4c61-8410-063",
+      "name": "Emma Ruiz",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "7:46 AM",
+      "unread": 2
+    },
+    {
+      "id": "679d2867-8752-47ad-8288-064",
+      "name": "Jennifer Yates",
+      "company": "Google",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "9:49 PM",
+      "unread": 1
+    },
+    {
+      "id": "49c2554b-3dd8-4f82-9c59-065",
+      "name": "Carrie Juarez",
+      "company": "Microsoft",
+      "message": "I've made the changes you suggested",
+      "time": "5:35 AM",
+      "unread": 4
+    },
+    {
+      "id": "c9ca6896-8d90-4674-aae3-066",
+      "name": "Tracey Robinson",
+      "company": "Google",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "9:36 PM",
+      "unread": 2
+    },
+    {
+      "id": "7a74933d-c3c4-4cba-a622-067",
+      "name": "Jamie Williams",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "12:09 PM",
+      "unread": 0
+    },
+    {
+      "id": "f1b61fea-c63c-4c40-83e7-068",
+      "name": "Stacy Blair",
+      "company": "Apple",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "10:43 AM",
+      "unread": 2
+    },
+    {
+      "id": "5179350e-6a45-401a-8b20-069",
+      "name": "Elizabeth Brooks",
+      "company": "Netflix",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "3:49 PM",
+      "unread": 5
+    },
+    {
+      "id": "29cadb00-5073-47ac-995b-070",
+      "name": "Christopher Olsen",
+      "company": "Meta",
+      "message": "I've made the changes you suggested",
+      "time": "4:09 PM",
+      "unread": 2
+    },
+    {
+      "id": "662a8a38-0d16-4510-ad7c-071",
+      "name": "Jennifer Bryan",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "12:15 PM",
+      "unread": 0
+    },
+    {
+      "id": "67b8a128-821e-43ff-a94f-072",
+      "name": "Victoria Davenport",
+      "company": "Microsoft",
+      "message": "Looking forward to our discussion",
+      "time": "2:05 PM",
+      "unread": 5
+    },
+    {
+      "id": "29e00adb-cd99-41a8-9e8b-073",
+      "name": "Jaclyn Bryant",
+      "company": "IBM",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "1:00 AM",
+      "unread": 0
+    },
+    {
+      "id": "6210b5bc-330f-4696-a182-074",
+      "name": "Gwendolyn Ramirez",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "5:28 PM",
+      "unread": 2
+    },
+    {
+      "id": "5fa6bdc4-4d25-49f5-94f3-075",
+      "name": "Dan Brown",
+      "company": "Tesla",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "11:44 PM",
+      "unread": 4
+    },
+    {
+      "id": "54e273de-9bbf-4e13-977a-076",
+      "name": "Joseph Morrison",
+      "company": "Tesla",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "8:03 PM",
+      "unread": 1
+    },
+    {
+      "id": "4e55f9c0-f528-4150-8db3-077",
+      "name": "Jordan Herrera",
+      "company": "Github",
+      "message": "Please review the attached document",
+      "time": "9:50 AM",
+      "unread": 4
+    },
+    {
+      "id": "6c1b5c25-d86a-41ce-a76b-078",
+      "name": "Sandra Hernandez",
+      "company": "Meta",
+      "message": "When is the deadline for this task?",
+      "time": "8:37 PM",
+      "unread": 2
+    },
+    {
+      "id": "62b7f7d4-1474-465e-8e58-079",
+      "name": "Daisy Moore DVM",
+      "company": "Github",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "10:04 PM",
+      "unread": 3
+    },
+    {
+      "id": "9b935de7-63c0-4bfd-9496-080",
+      "name": "Robert Morris",
+      "company": "IBM",
+      "message": "Thanks for sharing the project files",
+      "time": "5:59 PM",
+      "unread": 0
+    },
+    {
+      "id": "11f91fbc-b15f-49bf-9139-081",
+      "name": "Gloria Tyler",
+      "company": "Tesla",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "1:09 AM",
+      "unread": 1
+    },
+    {
+      "id": "cd5fa76e-14ea-4a85-a286-082",
+      "name": "Tammy Robinson",
+      "company": "Amazon",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "6:54 PM",
+      "unread": 0
+    },
+    {
+      "id": "00d3c14d-7032-47e3-8c60-083",
+      "name": "Alexander Bennett",
+      "company": "IBM",
+      "message": "When is the deadline for this task?",
+      "time": "11:55 AM",
+      "unread": 4
+    },
+    {
+      "id": "37f80ca1-886b-4ec0-896c-084",
+      "name": "Nicole White",
+      "company": "Meta",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "12:16 PM",
+      "unread": 5
+    },
+    {
+      "id": "f84eb868-a616-464c-ab2a-085",
+      "name": "Scott Vazquez",
+      "company": "Meta",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "4:31 AM",
+      "unread": 5
+    },
+    {
+      "id": "da376b66-d666-4602-8045-086",
+      "name": "Alex Nguyen",
+      "company": "Intel",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "3:36 PM",
+      "unread": 4
+    },
+    {
+      "id": "4c0ffef4-5bbb-4a44-8159-087",
+      "name": "Regina Gray",
+      "company": "Amazon",
+      "message": "I've made the changes you suggested",
+      "time": "6:51 PM",
+      "unread": 0
+    },
+    {
+      "id": "610bcbe8-701b-40f7-a9cb-088",
+      "name": "Kyle Peters",
+      "company": "Netflix",
+      "message": "Please review the attached document",
+      "time": "9:46 AM",
+      "unread": 3
+    },
+    {
+      "id": "cb5533f9-0375-432d-912e-089",
+      "name": "Kari Wilkinson",
+      "company": "Amazon",
+      "message": "When is the deadline for this task?",
+      "time": "10:48 PM",
+      "unread": 1
+    },
+    {
+      "id": "71dd65a5-7799-4b70-ba75-090",
+      "name": "Shelley Combs",
+      "company": "Github",
+      "message": "Let\u2019s catch up later this week",
+      "time": "7:01 PM",
+      "unread": 0
+    },
+    {
+      "id": "882fccb3-c03c-4b20-9050-091",
+      "name": "Theodore Rose",
+      "company": "Github",
+      "message": "Do you have updates on the report?",
+      "time": "4:31 AM",
+      "unread": 0
+    },
+    {
+      "id": "3fcd3349-eaa1-42d9-a78d-092",
+      "name": "Jeanne Mason",
+      "company": "Intel",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "1:15 AM",
+      "unread": 0
+    },
+    {
+      "id": "b1d3a60e-29bb-4c0f-89fc-093",
+      "name": "Kathryn Garcia",
+      "company": "Google",
+      "message": "Please review the attached document",
+      "time": "1:31 AM",
+      "unread": 2
+    },
+    {
+      "id": "d7f5a145-ae00-43ae-b092-094",
+      "name": "Michelle Blackwell",
+      "company": "Github",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "11:24 AM",
+      "unread": 2
+    },
+    {
+      "id": "0922ac6d-6eef-4330-b5f5-095",
+      "name": "Heidi Gonzalez",
+      "company": "Github",
+      "message": "Do you have updates on the report?",
+      "time": "12:50 PM",
+      "unread": 4
+    },
+    {
+      "id": "2ac87656-8c44-45fc-a402-096",
+      "name": "Julie Joseph",
+      "company": "Microsoft",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "12:36 PM",
+      "unread": 3
+    },
+    {
+      "id": "78111626-43da-4fe4-b3a0-097",
+      "name": "David Wise",
+      "company": "Google",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "7:06 AM",
+      "unread": 1
+    },
+    {
+      "id": "f547a718-d6b4-45f0-86f9-098",
+      "name": "William Ochoa",
+      "company": "Microsoft",
+      "message": "Thanks for sharing the project files",
+      "time": "2:56 PM",
+      "unread": 1
+    },
+    {
+      "id": "6872e736-8a3f-4d53-9dad-099",
+      "name": "Jeffrey Peters",
+      "company": "Netflix",
+      "message": "Please review the attached document",
+      "time": "3:38 PM",
+      "unread": 1
+    },
+    {
+      "id": "60d719ba-d10e-4a89-8819-100",
+      "name": "Mathew Bentley",
+      "company": "Github",
+      "message": "Do you have updates on the report?",
+      "time": "12:17 AM",
+      "unread": 0
+    },
+    {
+      "id": "f4f7a645-a59d-44fe-852e-101",
+      "name": "Alejandro Boone",
+      "company": "Apple",
+      "message": "Please review the attached document",
+      "time": "9:56 AM",
+      "unread": 4
+    },
+    {
+      "id": "cdd310fc-a785-4f33-9519-102",
+      "name": "Jennifer Fowler",
+      "company": "Intel",
+      "message": "Looking forward to our discussion",
+      "time": "3:59 PM",
+      "unread": 5
+    },
+    {
+      "id": "c80d993e-1cec-442e-9f5f-103",
+      "name": "Timothy Moon",
+      "company": "Google",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "2:37 AM",
+      "unread": 0
+    },
+    {
+      "id": "2c8793ea-3280-42d2-a81e-104",
+      "name": "Juan Wilson",
+      "company": "Microsoft",
+      "message": "When is the deadline for this task?",
+      "time": "10:15 PM",
+      "unread": 4
+    },
+    {
+      "id": "5be2c5f7-c307-4cd9-86fd-105",
+      "name": "Kathleen Chambers",
+      "company": "Microsoft",
+      "message": "Looking forward to our discussion",
+      "time": "10:49 PM",
+      "unread": 4
+    },
+    {
+      "id": "4c21d35a-c0e7-4fc9-b946-106",
+      "name": "Scott Wright",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "1:54 AM",
+      "unread": 2
+    },
+    {
+      "id": "f8a187fd-42b0-40f6-bd71-107",
+      "name": "Kellie Wilson",
+      "company": "Apple",
+      "message": "Do you have updates on the report?",
+      "time": "1:39 PM",
+      "unread": 5
+    },
+    {
+      "id": "170f6401-ff24-41cd-a51f-108",
+      "name": "Pamela Thompson",
+      "company": "Meta",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "12:05 AM",
+      "unread": 5
+    },
+    {
+      "id": "bd38e857-6001-45e0-a798-109",
+      "name": "Bridget Edwards",
+      "company": "Github",
+      "message": "Let\u2019s catch up later this week",
+      "time": "3:23 PM",
+      "unread": 2
+    },
+    {
+      "id": "59e7353a-55cf-40ef-a849-110",
+      "name": "Heather Smith",
+      "company": "IBM",
+      "message": "Looking forward to our discussion",
+      "time": "6:16 AM",
+      "unread": 1
+    },
+    {
+      "id": "f375b0f2-87bc-40ae-aab1-111",
+      "name": "Matthew Love",
+      "company": "Meta",
+      "message": "Thanks for sharing the project files",
+      "time": "3:50 AM",
+      "unread": 4
+    },
+    {
+      "id": "92ed63d6-4a3e-4c0c-8c8d-112",
+      "name": "Brooke Carter",
+      "company": "Netflix",
+      "message": "When is the deadline for this task?",
+      "time": "12:09 AM",
+      "unread": 5
+    },
+    {
+      "id": "9827dc15-6016-4b4e-ba0c-113",
+      "name": "Christopher Mooney",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "9:33 PM",
+      "unread": 3
+    },
+    {
+      "id": "34bd8e68-9165-4050-bc3c-114",
+      "name": "Clayton Baker",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "11:24 AM",
+      "unread": 3
+    },
+    {
+      "id": "d955d813-36bc-418d-8a39-115",
+      "name": "Tiffany Jones",
+      "company": "Intel",
+      "message": "Thanks for sharing the project files",
+      "time": "4:27 AM",
+      "unread": 1
+    },
+    {
+      "id": "50b21135-a41e-428c-b3a4-116",
+      "name": "Emily Rodriguez",
+      "company": "Apple",
+      "message": "Thanks for sharing the project files",
+      "time": "9:44 AM",
+      "unread": 3
+    },
+    {
+      "id": "8853c5c6-b0c6-4db7-88c6-117",
+      "name": "Paul Wong",
+      "company": "Github",
+      "message": "When is the deadline for this task?",
+      "time": "10:47 AM",
+      "unread": 3
+    },
+    {
+      "id": "a8ee127b-a47f-4108-aea7-118",
+      "name": "Bridget Short",
+      "company": "Netflix",
+      "message": "Thanks for sharing the project files",
+      "time": "3:41 AM",
+      "unread": 3
+    },
+    {
+      "id": "b2e0e46a-4299-423b-b6bb-119",
+      "name": "James Lester",
+      "company": "IBM",
+      "message": "When is the deadline for this task?",
+      "time": "9:05 AM",
+      "unread": 0
+    },
+    {
+      "id": "8a861bec-029d-4f96-924b-120",
+      "name": "Brittany Holt",
+      "company": "Tesla",
+      "message": "Looking forward to our discussion",
+      "time": "8:14 PM",
+      "unread": 1
+    },
+    {
+      "id": "d2f2604f-a9bc-4ed9-acb4-121",
+      "name": "Shawn Parker",
+      "company": "Intel",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "11:22 AM",
+      "unread": 0
+    },
+    {
+      "id": "cc486835-753b-4da1-8ca9-122",
+      "name": "Paula Jones",
+      "company": "Google",
+      "message": "Let\u2019s catch up later this week",
+      "time": "4:01 PM",
+      "unread": 5
+    },
+    {
+      "id": "510b8e19-9237-414e-ac7f-123",
+      "name": "Anthony Lee",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "9:08 AM",
+      "unread": 1
+    },
+    {
+      "id": "bc9b2472-6df0-4149-b2f0-124",
+      "name": "Mary Jackson",
+      "company": "Intel",
+      "message": "Looking forward to our discussion",
+      "time": "6:33 PM",
+      "unread": 4
+    },
+    {
+      "id": "d6d5cd3b-910f-4e1a-b44b-125",
+      "name": "Richard Jacobson",
+      "company": "IBM",
+      "message": "I've made the changes you suggested",
+      "time": "5:49 PM",
+      "unread": 5
+    },
+    {
+      "id": "e55e69b3-f172-4e2f-a4aa-126",
+      "name": "Amy Herrera",
+      "company": "Meta",
+      "message": "Do you have updates on the report?",
+      "time": "6:37 PM",
+      "unread": 0
+    },
+    {
+      "id": "58602d39-ff83-4f4d-90c3-127",
+      "name": "Connie Robinson",
+      "company": "Apple",
+      "message": "Let\u2019s catch up later this week",
+      "time": "2:57 PM",
+      "unread": 3
+    },
+    {
+      "id": "e45f620b-213d-49a1-94bb-128",
+      "name": "Jasmine Thompson",
+      "company": "Tesla",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "3:25 PM",
+      "unread": 1
+    },
+    {
+      "id": "ce10d9c4-22d6-46ca-8fdb-129",
+      "name": "John Joyce",
+      "company": "Microsoft",
+      "message": "Thanks for sharing the project files",
+      "time": "2:21 AM",
+      "unread": 2
+    },
+    {
+      "id": "02718db1-8fce-4d16-b87d-130",
+      "name": "William Clark",
+      "company": "Tesla",
+      "message": "When is the deadline for this task?",
+      "time": "2:45 AM",
+      "unread": 5
+    },
+    {
+      "id": "7dd4ca03-f633-4bec-8e63-131",
+      "name": "Maria Jones",
+      "company": "Netflix",
+      "message": "Thanks for sharing the project files",
+      "time": "8:52 AM",
+      "unread": 4
+    },
+    {
+      "id": "2a519815-1511-43d8-a4be-132",
+      "name": "Gabriel Miller",
+      "company": "IBM",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "1:09 AM",
+      "unread": 4
+    },
+    {
+      "id": "6a1464c9-da2c-4744-8654-133",
+      "name": "Sherry Henderson",
+      "company": "Microsoft",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "9:19 PM",
+      "unread": 3
+    },
+    {
+      "id": "6668a023-ee94-488a-aa14-134",
+      "name": "Nicole Elliott",
+      "company": "Intel",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "8:59 PM",
+      "unread": 0
+    },
+    {
+      "id": "aa04970d-eb8c-46c4-922e-135",
+      "name": "Melissa Hill",
+      "company": "IBM",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "9:36 AM",
+      "unread": 3
+    },
+    {
+      "id": "157b8d32-fdbf-4b6f-908e-136",
+      "name": "Scott Walsh",
+      "company": "Meta",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "12:18 PM",
+      "unread": 3
+    },
+    {
+      "id": "7b338da5-74f4-4677-9513-137",
+      "name": "Dr. Shawn Mcmillan",
+      "company": "Amazon",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "2:00 PM",
+      "unread": 0
+    },
+    {
+      "id": "7d272205-09f9-43ff-9cf4-138",
+      "name": "Eric Norman",
+      "company": "Microsoft",
+      "message": "Please review the attached document",
+      "time": "9:22 AM",
+      "unread": 1
+    },
+    {
+      "id": "03a09ede-4ea6-4c48-99be-139",
+      "name": "Emily Evans",
+      "company": "Amazon",
+      "message": "Looking forward to our discussion",
+      "time": "5:33 PM",
+      "unread": 5
+    },
+    {
+      "id": "f52b52d0-5e28-4ae0-b1dd-140",
+      "name": "Manuel Garner",
+      "company": "Meta",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "11:46 AM",
+      "unread": 1
+    },
+    {
+      "id": "ed4e440d-3e4b-44b4-99c2-141",
+      "name": "Casey Smith",
+      "company": "Meta",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "1:12 PM",
+      "unread": 2
+    },
+    {
+      "id": "ef32dfa1-3dd2-4e4b-a699-142",
+      "name": "Erin Hernandez",
+      "company": "Github",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "9:44 AM",
+      "unread": 4
+    },
+    {
+      "id": "e5a83928-d6e4-4cea-b2c4-143",
+      "name": "Laura Ferrell",
+      "company": "Microsoft",
+      "message": "Do you have updates on the report?",
+      "time": "2:44 AM",
+      "unread": 4
+    },
+    {
+      "id": "64713af3-5120-4984-8a40-144",
+      "name": "Jennifer Brown",
+      "company": "Intel",
+      "message": "Let\u2019s catch up later this week",
+      "time": "4:03 AM",
+      "unread": 4
+    },
+    {
+      "id": "dc0e5a66-4c7b-4a67-b30e-145",
+      "name": "Gregory Jackson",
+      "company": "Microsoft",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "8:05 AM",
+      "unread": 1
+    },
+    {
+      "id": "c6bd69b9-4c4c-4a94-84cf-146",
+      "name": "Aaron Lawson",
+      "company": "Tesla",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "4:17 PM",
+      "unread": 2
+    },
+    {
+      "id": "d7f4a020-b325-4acd-b553-147",
+      "name": "Rebecca Hernandez",
+      "company": "Amazon",
+      "message": "Thanks for sharing the project files",
+      "time": "2:19 AM",
+      "unread": 2
+    },
+    {
+      "id": "20ccfe4f-e127-46cb-975f-148",
+      "name": "Ian Underwood",
+      "company": "IBM",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "5:39 AM",
+      "unread": 2
+    },
+    {
+      "id": "4e8b03a8-2261-4b8a-a055-149",
+      "name": "Benjamin Walker DVM",
+      "company": "Netflix",
+      "message": "Thanks for sharing the project files",
+      "time": "10:07 AM",
+      "unread": 0
+    },
+    {
+      "id": "14457621-3c28-466d-afd4-150",
+      "name": "Kevin Walker",
+      "company": "IBM",
+      "message": "I've made the changes you suggested",
+      "time": "8:45 AM",
+      "unread": 4
+    },
+    {
+      "id": "6f0ac018-c1d4-44d4-b41f-151",
+      "name": "Taylor Ruiz II",
+      "company": "Microsoft",
+      "message": "Thanks for sharing the project files",
+      "time": "4:52 PM",
+      "unread": 2
+    },
+    {
+      "id": "d05bd38a-22e8-4c72-912f-152",
+      "name": "Lisa Lin",
+      "company": "Apple",
+      "message": "I've made the changes you suggested",
+      "time": "10:32 PM",
+      "unread": 5
+    },
+    {
+      "id": "300e2567-ce25-4332-b83d-153",
+      "name": "David Lara",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "3:08 PM",
+      "unread": 0
+    },
+    {
+      "id": "5c272cb3-4183-4e5c-bcac-154",
+      "name": "Teresa Roth MD",
+      "company": "Apple",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "2:32 AM",
+      "unread": 1
+    },
+    {
+      "id": "22d92d79-0cf5-49de-986a-155",
+      "name": "Donald Meyers",
+      "company": "Google",
+      "message": "I've made the changes you suggested",
+      "time": "4:06 AM",
+      "unread": 0
+    },
+    {
+      "id": "fc2dddda-1ee0-4596-b48c-156",
+      "name": "Michelle Haynes",
+      "company": "Google",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "3:14 AM",
+      "unread": 3
+    },
+    {
+      "id": "2ac1a460-79ca-4409-af23-157",
+      "name": "Nicole Mendez",
+      "company": "Google",
+      "message": "I've made the changes you suggested",
+      "time": "2:06 PM",
+      "unread": 3
+    },
+    {
+      "id": "dfd107a2-8204-4db0-9958-158",
+      "name": "Ricky Fox",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "10:38 AM",
+      "unread": 0
+    },
+    {
+      "id": "7d75fb14-0e68-462c-8c17-159",
+      "name": "Virginia Maldonado",
+      "company": "Amazon",
+      "message": "Looking forward to our discussion",
+      "time": "9:27 PM",
+      "unread": 4
+    },
+    {
+      "id": "571cb621-8408-4b46-9d1b-160",
+      "name": "Bruce Martin",
+      "company": "Netflix",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "5:01 AM",
+      "unread": 0
+    },
+    {
+      "id": "5c41a371-2b67-433f-b080-161",
+      "name": "Brianna Peterson",
+      "company": "Github",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "12:35 PM",
+      "unread": 3
+    },
+    {
+      "id": "a99678fa-96d0-497c-96a1-162",
+      "name": "Samantha Mcclain",
+      "company": "Amazon",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "4:52 PM",
+      "unread": 4
+    },
+    {
+      "id": "498ed6db-49b4-4d93-b72e-163",
+      "name": "Brandon Patterson",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "8:39 AM",
+      "unread": 1
+    },
+    {
+      "id": "4e17096f-90c2-4610-ae4d-164",
+      "name": "Elizabeth Jimenez",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "10:16 PM",
+      "unread": 1
+    },
+    {
+      "id": "9715a253-0c14-4ab6-82cb-165",
+      "name": "Juan Schmidt",
+      "company": "Meta",
+      "message": "I've made the changes you suggested",
+      "time": "6:48 PM",
+      "unread": 1
+    },
+    {
+      "id": "acab0799-65e2-4b03-bb55-166",
+      "name": "Paige Martin",
+      "company": "Microsoft",
+      "message": "Thanks for sharing the project files",
+      "time": "3:51 PM",
+      "unread": 4
+    },
+    {
+      "id": "853b9e94-76ac-4637-a5b8-167",
+      "name": "Carol Wright",
+      "company": "Intel",
+      "message": "Looking forward to our discussion",
+      "time": "7:12 PM",
+      "unread": 5
+    },
+    {
+      "id": "9c74e665-8668-40ee-867a-168",
+      "name": "Jeremy Tran",
+      "company": "Meta",
+      "message": "I've made the changes you suggested",
+      "time": "7:46 PM",
+      "unread": 1
+    },
+    {
+      "id": "ab9844d5-2612-4328-82ad-169",
+      "name": "Timothy Oliver",
+      "company": "Netflix",
+      "message": "Do you have updates on the report?",
+      "time": "5:02 AM",
+      "unread": 3
+    },
+    {
+      "id": "0fe979c7-13f4-4580-b0a1-170",
+      "name": "Oscar Martinez",
+      "company": "Apple",
+      "message": "Let\u2019s catch up later this week",
+      "time": "3:44 AM",
+      "unread": 4
+    },
+    {
+      "id": "9799e4ef-9b64-461d-8d9e-171",
+      "name": "Chelsea Hoffman",
+      "company": "Apple",
+      "message": "Thanks for sharing the project files",
+      "time": "4:22 PM",
+      "unread": 5
+    },
+    {
+      "id": "2a233fc1-3422-4e36-8de9-172",
+      "name": "Nichole Gordon",
+      "company": "Meta",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "8:31 AM",
+      "unread": 0
+    },
+    {
+      "id": "1fa45de5-35ad-441b-acd0-173",
+      "name": "Erin Miller",
+      "company": "Tesla",
+      "message": "Let\u2019s catch up later this week",
+      "time": "7:07 AM",
+      "unread": 5
+    },
+    {
+      "id": "4658f58d-2376-493d-92b5-174",
+      "name": "Ronald Garcia",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "9:21 AM",
+      "unread": 4
+    },
+    {
+      "id": "18c12fb5-2af8-492e-bea0-175",
+      "name": "Laura Chen",
+      "company": "Meta",
+      "message": "Looking forward to our discussion",
+      "time": "1:26 AM",
+      "unread": 5
+    },
+    {
+      "id": "c4e1a48a-0212-47e0-bd2f-176",
+      "name": "Marcus Singleton",
+      "company": "Netflix",
+      "message": "I've made the changes you suggested",
+      "time": "12:18 AM",
+      "unread": 0
+    },
+    {
+      "id": "350bca9f-ddd6-40ff-a81a-177",
+      "name": "David Pugh",
+      "company": "Google",
+      "message": "I've made the changes you suggested",
+      "time": "2:23 AM",
+      "unread": 5
+    },
+    {
+      "id": "4cc37ee9-b815-4f80-9ee7-178",
+      "name": "Sarah Gonzalez",
+      "company": "Intel",
+      "message": "Do you have updates on the report?",
+      "time": "2:31 AM",
+      "unread": 2
+    },
+    {
+      "id": "523c4854-7f0f-4012-9861-179",
+      "name": "Sean Guzman",
+      "company": "Tesla",
+      "message": "Please review the attached document",
+      "time": "4:04 PM",
+      "unread": 3
+    },
+    {
+      "id": "f9737ce8-73f2-4fa7-bc6c-180",
+      "name": "Michelle Melendez",
+      "company": "Github",
+      "message": "I've made the changes you suggested",
+      "time": "5:13 PM",
+      "unread": 1
+    },
+    {
+      "id": "b7f873bc-1f2b-4f69-a69d-181",
+      "name": "Bryan Lynn",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "1:11 AM",
+      "unread": 0
+    },
+    {
+      "id": "85813206-4835-442c-9782-182",
+      "name": "Leslie Smith",
+      "company": "Apple",
+      "message": "Looking forward to our discussion",
+      "time": "9:59 PM",
+      "unread": 2
+    },
+    {
+      "id": "7d5386d9-0365-4650-ac81-183",
+      "name": "John Hernandez",
+      "company": "Tesla",
+      "message": "Thanks for sharing the project files",
+      "time": "9:44 AM",
+      "unread": 2
+    },
+    {
+      "id": "85cb2bc0-8924-4ba9-b902-184",
+      "name": "Dakota Sutton",
+      "company": "Amazon",
+      "message": "Thanks for sharing the project files",
+      "time": "2:52 PM",
+      "unread": 0
+    },
+    {
+      "id": "41002dd6-ebed-4f86-a8e4-185",
+      "name": "Christopher Martinez",
+      "company": "Tesla",
+      "message": "Thanks for sharing the project files",
+      "time": "5:03 PM",
+      "unread": 5
+    },
+    {
+      "id": "45045fed-9caf-48cb-aabd-186",
+      "name": "David Baker",
+      "company": "Netflix",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "4:28 AM",
+      "unread": 2
+    },
+    {
+      "id": "9687baf6-acbc-4feb-be7c-187",
+      "name": "Sean Silva",
+      "company": "Meta",
+      "message": "I've made the changes you suggested",
+      "time": "12:14 AM",
+      "unread": 3
+    },
+    {
+      "id": "bf0df4fd-e5b7-4ea7-9af1-188",
+      "name": "Richard Parker",
+      "company": "Github",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "5:52 AM",
+      "unread": 4
+    },
+    {
+      "id": "8eefd7c4-ae78-4526-973f-189",
+      "name": "Ashlee Small",
+      "company": "Apple",
+      "message": "Do you have updates on the report?",
+      "time": "10:08 PM",
+      "unread": 4
+    },
+    {
+      "id": "67a7ecee-3107-49cf-ac5e-190",
+      "name": "Raymond Holmes",
+      "company": "Meta",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "9:43 PM",
+      "unread": 0
+    },
+    {
+      "id": "753de505-42e4-4531-af83-191",
+      "name": "Zachary Prince",
+      "company": "Meta",
+      "message": "Please review the attached document",
+      "time": "12:35 PM",
+      "unread": 2
+    },
+    {
+      "id": "8f69e378-ca84-47a9-b410-192",
+      "name": "Brandon Sosa",
+      "company": "Tesla",
+      "message": "Let\u2019s catch up later this week",
+      "time": "9:57 AM",
+      "unread": 1
+    },
+    {
+      "id": "4506ee3f-b40b-4f37-bba6-193",
+      "name": "Erica Rogers",
+      "company": "Github",
+      "message": "Please review the attached document",
+      "time": "7:04 AM",
+      "unread": 2
+    },
+    {
+      "id": "b3cab2ea-30c3-49bf-8f3e-194",
+      "name": "Krystal Love",
+      "company": "Amazon",
+      "message": "Please review the attached document",
+      "time": "8:01 PM",
+      "unread": 5
+    },
+    {
+      "id": "3729da59-ba1a-49b1-acd4-195",
+      "name": "Cindy Conner DDS",
+      "company": "Tesla",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "5:23 AM",
+      "unread": 1
+    },
+    {
+      "id": "d933c95a-2d46-4f33-aba3-196",
+      "name": "Walter Estrada",
+      "company": "Intel",
+      "message": "Do you have updates on the report?",
+      "time": "12:06 AM",
+      "unread": 4
+    },
+    {
+      "id": "6e6db901-16d1-41d4-b27c-197",
+      "name": "Kimberly Fernandez",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "5:28 AM",
+      "unread": 0
+    },
+    {
+      "id": "9f8ec989-9f07-4c9e-ab1a-198",
+      "name": "Diane Jordan",
+      "company": "Github",
+      "message": "Do you have updates on the report?",
+      "time": "9:48 PM",
+      "unread": 3
+    },
+    {
+      "id": "6ad4470a-abda-4d49-ba4b-199",
+      "name": "Roberto Zimmerman",
+      "company": "Tesla",
+      "message": "Please review the attached document",
+      "time": "9:47 AM",
+      "unread": 3
+    },
+    {
+      "id": "938a776a-96af-40da-abdb-200",
+      "name": "Ann Carter",
+      "company": "Tesla",
+      "message": "Thanks for sharing the project files",
+      "time": "11:47 AM",
+      "unread": 4
+    },
+    {
+      "id": "190fcf3c-4837-4620-9226-201",
+      "name": "Robert Knight",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "11:25 PM",
+      "unread": 0
+    },
+    {
+      "id": "e2d82581-e332-463c-ac13-202",
+      "name": "Terrance Wilson",
+      "company": "IBM",
+      "message": "Please review the attached document",
+      "time": "5:52 PM",
+      "unread": 3
+    },
+    {
+      "id": "f8d5d241-01ef-489b-a291-203",
+      "name": "Linda Brown",
+      "company": "Amazon",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "7:55 PM",
+      "unread": 2
+    },
+    {
+      "id": "fb6cf761-7c6e-48d2-b51d-204",
+      "name": "Kristen Wilson",
+      "company": "Github",
+      "message": "Looking forward to our discussion",
+      "time": "7:06 PM",
+      "unread": 5
+    },
+    {
+      "id": "a3ffd6b2-f6d5-455f-923a-205",
+      "name": "Henry Brewer",
+      "company": "IBM",
+      "message": "I've made the changes you suggested",
+      "time": "6:06 PM",
+      "unread": 3
+    },
+    {
+      "id": "b3c42483-dc93-4cdc-a272-206",
+      "name": "Scott Cantrell",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "1:12 PM",
+      "unread": 1
+    },
+    {
+      "id": "22827bef-d098-40f5-8bf0-207",
+      "name": "Jennifer Stevens",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "3:44 PM",
+      "unread": 2
+    },
+    {
+      "id": "48196167-9913-4308-8029-208",
+      "name": "Kenneth Rogers",
+      "company": "Microsoft",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "10:57 AM",
+      "unread": 1
+    },
+    {
+      "id": "7ca87206-58b1-46fc-9b53-209",
+      "name": "Patrick Lee",
+      "company": "Meta",
+      "message": "Thanks for sharing the project files",
+      "time": "1:30 PM",
+      "unread": 4
+    },
+    {
+      "id": "93e1f72e-3747-4414-9304-210",
+      "name": "Janice Jones",
+      "company": "Github",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "4:01 PM",
+      "unread": 4
+    },
+    {
+      "id": "cbcf2700-b5dc-4777-9016-211",
+      "name": "Courtney Gray",
+      "company": "Intel",
+      "message": "Thanks for sharing the project files",
+      "time": "7:26 AM",
+      "unread": 3
+    },
+    {
+      "id": "e49af6ab-a3a2-4728-bdba-212",
+      "name": "William Smith",
+      "company": "Amazon",
+      "message": "Do you have updates on the report?",
+      "time": "5:43 AM",
+      "unread": 0
+    },
+    {
+      "id": "f446050e-3c35-4b32-9666-213",
+      "name": "Jennifer James",
+      "company": "Amazon",
+      "message": "Do you have updates on the report?",
+      "time": "11:37 AM",
+      "unread": 2
+    },
+    {
+      "id": "7c007766-f2c8-4cec-b643-214",
+      "name": "Robert Mccormick",
+      "company": "Apple",
+      "message": "Let\u2019s catch up later this week",
+      "time": "2:22 PM",
+      "unread": 3
+    },
+    {
+      "id": "96431d2e-0f2f-45f9-9be1-215",
+      "name": "Travis Jones",
+      "company": "Amazon",
+      "message": "I've made the changes you suggested",
+      "time": "10:46 PM",
+      "unread": 5
+    },
+    {
+      "id": "ade82f11-22ba-4524-9dce-216",
+      "name": "Shannon Jackson",
+      "company": "Tesla",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "5:43 PM",
+      "unread": 0
+    },
+    {
+      "id": "afcedbcf-3b8d-4ddb-8421-217",
+      "name": "Sherri Torres",
+      "company": "Amazon",
+      "message": "When is the deadline for this task?",
+      "time": "12:03 AM",
+      "unread": 4
+    },
+    {
+      "id": "85fa5ed6-124a-4676-aa75-218",
+      "name": "Brian Reeves",
+      "company": "Github",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "6:33 AM",
+      "unread": 3
+    },
+    {
+      "id": "1ad96c4d-ec06-42ca-9130-219",
+      "name": "Stefanie Hull",
+      "company": "Intel",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "12:02 PM",
+      "unread": 0
+    },
+    {
+      "id": "f34cc6d2-f1f0-4c8e-8173-220",
+      "name": "Claudia Smith",
+      "company": "Tesla",
+      "message": "When is the deadline for this task?",
+      "time": "7:02 AM",
+      "unread": 2
+    },
+    {
+      "id": "d5232eeb-9fe6-4686-9131-221",
+      "name": "Kelsey Robinson",
+      "company": "Google",
+      "message": "I've made the changes you suggested",
+      "time": "2:46 PM",
+      "unread": 4
+    },
+    {
+      "id": "02a597a3-335f-412c-b089-222",
+      "name": "Lisa Brewer",
+      "company": "Tesla",
+      "message": "Let\u2019s catch up later this week",
+      "time": "8:47 PM",
+      "unread": 1
+    },
+    {
+      "id": "a6c79430-f80a-4ec6-b3e2-223",
+      "name": "Scott Gonzalez",
+      "company": "Github",
+      "message": "When is the deadline for this task?",
+      "time": "5:58 AM",
+      "unread": 0
+    },
+    {
+      "id": "d40ec4b6-f6bc-4c36-a530-224",
+      "name": "Dorothy Preston",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "1:05 AM",
+      "unread": 3
+    },
+    {
+      "id": "c7e80236-314f-4b91-ba75-225",
+      "name": "Deborah Lowe",
+      "company": "Amazon",
+      "message": "I've made the changes you suggested",
+      "time": "12:20 AM",
+      "unread": 1
+    },
+    {
+      "id": "62eb753b-d7c4-48d7-a440-226",
+      "name": "Shirley Robinson",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "11:03 PM",
+      "unread": 4
+    },
+    {
+      "id": "0cd0044a-3b8a-4ad4-84de-227",
+      "name": "Michelle Walker",
+      "company": "IBM",
+      "message": "Thanks for sharing the project files",
+      "time": "9:59 PM",
+      "unread": 4
+    },
+    {
+      "id": "062a0847-3c57-4858-8175-228",
+      "name": "Megan Harrison",
+      "company": "Amazon",
+      "message": "Do you have updates on the report?",
+      "time": "10:34 AM",
+      "unread": 3
+    },
+    {
+      "id": "0fcfaea3-e7ea-49ae-a487-229",
+      "name": "Edward Murphy",
+      "company": "IBM",
+      "message": "Please review the attached document",
+      "time": "9:35 PM",
+      "unread": 0
+    },
+    {
+      "id": "2a0a568b-c866-4a1d-8e01-230",
+      "name": "Christina Humphrey",
+      "company": "Amazon",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "12:31 AM",
+      "unread": 1
+    },
+    {
+      "id": "6c3e4208-d7ff-454e-be93-231",
+      "name": "Jake Williams",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "10:03 PM",
+      "unread": 3
+    },
+    {
+      "id": "03b71cc6-224a-4732-9d54-232",
+      "name": "Melissa Nelson",
+      "company": "Apple",
+      "message": "When is the deadline for this task?",
+      "time": "12:30 AM",
+      "unread": 4
+    },
+    {
+      "id": "9103c6ed-a16b-401e-9d85-233",
+      "name": "Stephanie Hubbard",
+      "company": "Tesla",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "7:36 AM",
+      "unread": 5
+    },
+    {
+      "id": "382718ee-c01c-4863-9d36-234",
+      "name": "Rebecca Roberts",
+      "company": "IBM",
+      "message": "I've made the changes you suggested",
+      "time": "2:40 PM",
+      "unread": 5
+    },
+    {
+      "id": "23a04b74-32c4-4c17-b95d-235",
+      "name": "Jennifer Avery",
+      "company": "Github",
+      "message": "When is the deadline for this task?",
+      "time": "7:55 PM",
+      "unread": 3
+    },
+    {
+      "id": "603baabe-a31b-4674-b353-236",
+      "name": "Robert Trevino",
+      "company": "Tesla",
+      "message": "Do you have updates on the report?",
+      "time": "8:45 AM",
+      "unread": 0
+    },
+    {
+      "id": "b18d445f-a454-4867-b961-237",
+      "name": "John Hill",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "9:30 AM",
+      "unread": 0
+    },
+    {
+      "id": "581dbe29-5bc2-49ab-bc09-238",
+      "name": "Christopher Burton",
+      "company": "Google",
+      "message": "Do you have updates on the report?",
+      "time": "8:21 PM",
+      "unread": 2
+    },
+    {
+      "id": "23f034f9-4a48-4583-a717-239",
+      "name": "Monique White",
+      "company": "Netflix",
+      "message": "Do you have updates on the report?",
+      "time": "4:15 PM",
+      "unread": 2
+    },
+    {
+      "id": "8e749e82-d498-427a-b154-240",
+      "name": "Stephanie May",
+      "company": "Meta",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "2:38 AM",
+      "unread": 5
+    },
+    {
+      "id": "3fd98ccc-1e3a-471d-aff9-241",
+      "name": "Ryan Murphy",
+      "company": "Tesla",
+      "message": "Thanks for sharing the project files",
+      "time": "8:23 PM",
+      "unread": 3
+    },
+    {
+      "id": "67fb4737-6770-4eed-911f-242",
+      "name": "Taylor Adams",
+      "company": "Amazon",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "3:05 PM",
+      "unread": 0
+    },
+    {
+      "id": "6cf32f61-c11b-466e-8d82-243",
+      "name": "Ralph King",
+      "company": "Github",
+      "message": "When is the deadline for this task?",
+      "time": "12:49 AM",
+      "unread": 4
+    },
+    {
+      "id": "61c9477b-b495-4d22-90b4-244",
+      "name": "Marcus Bryant",
+      "company": "Google",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "10:38 AM",
+      "unread": 5
+    },
+    {
+      "id": "9202aabb-c927-4ee8-83d6-245",
+      "name": "John Velez",
+      "company": "Microsoft",
+      "message": "Please review the attached document",
+      "time": "2:44 PM",
+      "unread": 4
+    },
+    {
+      "id": "5bef73fd-a976-4984-861d-246",
+      "name": "Kimberly Wilcox",
+      "company": "Apple",
+      "message": "Thanks for sharing the project files",
+      "time": "11:21 AM",
+      "unread": 2
+    },
+    {
+      "id": "9c7e0960-0664-4c03-8743-247",
+      "name": "Jason Cole",
+      "company": "Apple",
+      "message": "Please review the attached document",
+      "time": "4:10 AM",
+      "unread": 2
+    },
+    {
+      "id": "fdedbbc7-413e-4cfb-99e6-248",
+      "name": "Mr. Harry Jenkins",
+      "company": "IBM",
+      "message": "Thanks for sharing the project files",
+      "time": "2:06 PM",
+      "unread": 3
+    },
+    {
+      "id": "ae2679fc-4f32-48f3-a737-249",
+      "name": "Stephanie Riley",
+      "company": "Intel",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "11:25 AM",
+      "unread": 2
+    },
+    {
+      "id": "7c4c9615-4985-44b1-b8ab-250",
+      "name": "Carla Peterson",
+      "company": "Amazon",
+      "message": "Looking forward to our discussion",
+      "time": "5:38 PM",
+      "unread": 0
+    },
+    {
+      "id": "dcc2e22c-98d9-4166-90e1-251",
+      "name": "Tina Mcdaniel",
+      "company": "Amazon",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "5:06 AM",
+      "unread": 0
+    },
+    {
+      "id": "9e7de389-492a-4d3d-b0df-252",
+      "name": "Danielle Thomas",
+      "company": "Google",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "9:53 AM",
+      "unread": 3
+    },
+    {
+      "id": "7e006dac-56a7-4b48-9ad8-253",
+      "name": "Kevin Allen",
+      "company": "Microsoft",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "12:08 AM",
+      "unread": 1
+    },
+    {
+      "id": "64cc1e25-88e2-4ec2-98a9-254",
+      "name": "Michael Turner",
+      "company": "Tesla",
+      "message": "Looking forward to our discussion",
+      "time": "3:47 AM",
+      "unread": 0
+    },
+    {
+      "id": "225edfa5-d53d-4328-8686-255",
+      "name": "Meagan Gallagher",
+      "company": "Meta",
+      "message": "I've made the changes you suggested",
+      "time": "11:33 AM",
+      "unread": 5
+    },
+    {
+      "id": "4b3eb413-8a80-447c-973f-256",
+      "name": "Steven White",
+      "company": "Microsoft",
+      "message": "I've made the changes you suggested",
+      "time": "8:53 AM",
+      "unread": 1
+    },
+    {
+      "id": "a4ee5227-9bb3-4323-ba6b-257",
+      "name": "Aimee Davis",
+      "company": "IBM",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "9:45 PM",
+      "unread": 0
+    },
+    {
+      "id": "a39b1253-c363-4d41-8480-258",
+      "name": "Jessica Townsend",
+      "company": "Amazon",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "8:43 AM",
+      "unread": 3
+    },
+    {
+      "id": "7b6ff257-a79d-4943-ae0d-259",
+      "name": "Jeremy Cook",
+      "company": "IBM",
+      "message": "When is the deadline for this task?",
+      "time": "1:48 PM",
+      "unread": 2
+    },
+    {
+      "id": "181b9b2e-4c9c-4d4a-9e9e-260",
+      "name": "Eric Edwards",
+      "company": "Intel",
+      "message": "Let\u2019s catch up later this week",
+      "time": "9:32 PM",
+      "unread": 4
+    },
+    {
+      "id": "476f2dfc-0745-4edf-81c9-261",
+      "name": "Denise Simpson",
+      "company": "IBM",
+      "message": "When is the deadline for this task?",
+      "time": "12:55 PM",
+      "unread": 4
+    },
+    {
+      "id": "1839099f-2a66-46c3-b71a-262",
+      "name": "Robert Riley",
+      "company": "Apple",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "10:14 AM",
+      "unread": 0
+    },
+    {
+      "id": "fd65c727-3fcc-4bb4-a7e6-263",
+      "name": "Donald Jones",
+      "company": "Apple",
+      "message": "Let\u2019s catch up later this week",
+      "time": "12:13 AM",
+      "unread": 0
+    },
+    {
+      "id": "4663a692-5428-4185-9ee5-264",
+      "name": "Lori Evans DDS",
+      "company": "Google",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "9:19 PM",
+      "unread": 5
+    },
+    {
+      "id": "f685786b-0796-46fe-babe-265",
+      "name": "Theresa Schneider",
+      "company": "Tesla",
+      "message": "I've made the changes you suggested",
+      "time": "6:33 AM",
+      "unread": 4
+    },
+    {
+      "id": "8d0bbb5b-953e-4306-b7b2-266",
+      "name": "Meghan Wallace",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "7:01 PM",
+      "unread": 3
+    },
+    {
+      "id": "43e94335-0c61-4035-a161-267",
+      "name": "Hayley Jackson",
+      "company": "Meta",
+      "message": "Let\u2019s catch up later this week",
+      "time": "4:19 PM",
+      "unread": 4
+    },
+    {
+      "id": "8fbee875-1d31-4c50-9299-268",
+      "name": "Juan Young",
+      "company": "Amazon",
+      "message": "I've made the changes you suggested",
+      "time": "3:40 AM",
+      "unread": 4
+    },
+    {
+      "id": "85cce925-e623-4538-a492-269",
+      "name": "Angela Carey",
+      "company": "IBM",
+      "message": "When is the deadline for this task?",
+      "time": "4:43 AM",
+      "unread": 2
+    },
+    {
+      "id": "1dbaa7f8-3c37-4520-95b0-270",
+      "name": "Jonathan Munoz",
+      "company": "Apple",
+      "message": "Looking forward to our discussion",
+      "time": "1:08 PM",
+      "unread": 0
+    },
+    {
+      "id": "e62149c8-c9d9-44d7-941e-271",
+      "name": "Savannah Johnson",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "2:07 PM",
+      "unread": 1
+    },
+    {
+      "id": "abaed7bf-24b4-4c5d-b022-272",
+      "name": "Michael Pittman",
+      "company": "Intel",
+      "message": "Looking forward to our discussion",
+      "time": "8:33 PM",
+      "unread": 1
+    },
+    {
+      "id": "7367dcd7-dfa1-4b4f-9c80-273",
+      "name": "Joel Torres",
+      "company": "IBM",
+      "message": "Looking forward to our discussion",
+      "time": "7:08 PM",
+      "unread": 4
+    },
+    {
+      "id": "7be32cba-cdfd-405c-828c-274",
+      "name": "Lawrence Marshall",
+      "company": "Intel",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "8:25 AM",
+      "unread": 5
+    },
+    {
+      "id": "bee0db4a-d819-4b79-987c-275",
+      "name": "Lori Freeman",
+      "company": "Tesla",
+      "message": "I've made the changes you suggested",
+      "time": "5:14 AM",
+      "unread": 4
+    },
+    {
+      "id": "094ca1bc-6e85-43d8-9a0e-276",
+      "name": "Hannah Carr",
+      "company": "Github",
+      "message": "I've made the changes you suggested",
+      "time": "2:34 PM",
+      "unread": 0
+    },
+    {
+      "id": "47aa20d6-4a1d-452d-b605-277",
+      "name": "Mrs. Kelli Bender MD",
+      "company": "Netflix",
+      "message": "Please review the attached document",
+      "time": "10:25 PM",
+      "unread": 3
+    },
+    {
+      "id": "39c2df4f-5b83-4669-b663-278",
+      "name": "Meagan Mejia",
+      "company": "Github",
+      "message": "Let\u2019s catch up later this week",
+      "time": "2:48 AM",
+      "unread": 3
+    },
+    {
+      "id": "f441e91e-70f5-4cf9-9da1-279",
+      "name": "Jessica Smith",
+      "company": "Netflix",
+      "message": "Do you have updates on the report?",
+      "time": "5:32 PM",
+      "unread": 2
+    },
+    {
+      "id": "74cbae2b-3d8b-406e-94f6-280",
+      "name": "Emma Barnett",
+      "company": "Meta",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "3:41 PM",
+      "unread": 2
+    },
+    {
+      "id": "58f3a289-be34-4d85-83ad-281",
+      "name": "Nathan Thornton",
+      "company": "Microsoft",
+      "message": "Looking forward to our discussion",
+      "time": "1:48 AM",
+      "unread": 3
+    },
+    {
+      "id": "d63d83e7-4fa9-4829-8733-282",
+      "name": "Teresa Landry",
+      "company": "Github",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "5:00 PM",
+      "unread": 2
+    },
+    {
+      "id": "e71b164f-bded-4cbe-927f-283",
+      "name": "Karen Wood",
+      "company": "Google",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "4:57 AM",
+      "unread": 5
+    },
+    {
+      "id": "225ea2db-eca9-4a27-9d9e-284",
+      "name": "Stacey Walton",
+      "company": "Apple",
+      "message": "I've made the changes you suggested",
+      "time": "4:43 AM",
+      "unread": 1
+    },
+    {
+      "id": "1d447e5b-7bd6-49c7-a4e4-285",
+      "name": "Dennis Johns",
+      "company": "Microsoft",
+      "message": "Let\u2019s catch up later this week",
+      "time": "9:33 AM",
+      "unread": 0
+    },
+    {
+      "id": "3145c8db-0795-4c25-8b5c-286",
+      "name": "Adam Wright",
+      "company": "Microsoft",
+      "message": "Looking forward to our discussion",
+      "time": "4:42 PM",
+      "unread": 2
+    },
+    {
+      "id": "9e1db9d0-d3ea-4256-877f-287",
+      "name": "Anthony Whitney",
+      "company": "Apple",
+      "message": "Thanks for sharing the project files",
+      "time": "6:29 PM",
+      "unread": 3
+    },
+    {
+      "id": "06165f3a-d4fe-405f-b232-288",
+      "name": "Thomas Lloyd",
+      "company": "Github",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "8:42 PM",
+      "unread": 1
+    },
+    {
+      "id": "ece72aa9-2e7d-473a-bf27-289",
+      "name": "Carrie Brown",
+      "company": "Tesla",
+      "message": "Do you have updates on the report?",
+      "time": "9:36 AM",
+      "unread": 3
+    },
+    {
+      "id": "630fc2af-e737-4717-8c7b-290",
+      "name": "Gina Duncan",
+      "company": "Github",
+      "message": "Let\u2019s catch up later this week",
+      "time": "2:31 PM",
+      "unread": 4
+    },
+    {
+      "id": "8b4b9183-501d-471e-82d3-291",
+      "name": "Deborah Clements",
+      "company": "Apple",
+      "message": "Let\u2019s catch up later this week",
+      "time": "12:55 PM",
+      "unread": 5
+    },
+    {
+      "id": "825369fa-a166-4bf4-b9f9-292",
+      "name": "Lisa Harrison",
+      "company": "Meta",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "10:35 AM",
+      "unread": 0
+    },
+    {
+      "id": "20af75cb-19c7-402d-a68c-293",
+      "name": "Angelica Sanchez",
+      "company": "Apple",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "6:44 PM",
+      "unread": 2
+    },
+    {
+      "id": "0c22b17d-a079-45fa-9fbb-294",
+      "name": "Julie Allen",
+      "company": "Github",
+      "message": "I've made the changes you suggested",
+      "time": "1:47 PM",
+      "unread": 5
+    },
+    {
+      "id": "2d7f14f9-fee7-49e0-8ff2-295",
+      "name": "Jodi Jones",
+      "company": "IBM",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "4:21 AM",
+      "unread": 2
+    },
+    {
+      "id": "baccc347-641e-4ed6-aeed-296",
+      "name": "Justin Morgan",
+      "company": "Google",
+      "message": "Thanks for sharing the project files",
+      "time": "5:37 AM",
+      "unread": 1
+    },
+    {
+      "id": "39f82f2c-1886-44d5-a435-297",
+      "name": "Crystal Cox",
+      "company": "Github",
+      "message": "Looking forward to our discussion",
+      "time": "8:56 PM",
+      "unread": 0
+    },
+    {
+      "id": "58f62785-1751-4a3c-b4f8-298",
+      "name": "Matthew Giles",
+      "company": "Amazon",
+      "message": "Do you have updates on the report?",
+      "time": "9:25 AM",
+      "unread": 0
+    },
+    {
+      "id": "78aa75b5-4970-4797-b304-299",
+      "name": "Colin Hampton",
+      "company": "Netflix",
+      "message": "Please review the attached document",
+      "time": "1:22 AM",
+      "unread": 5
+    },
+    {
+      "id": "ddfdc1bb-6bfd-4b85-a3db-300",
+      "name": "Arthur Davis",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "10:30 AM",
+      "unread": 5
+    },
+    {
+      "id": "4c87c787-34a9-4f4e-a1ab-301",
+      "name": "Sandra Coleman",
+      "company": "Intel",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "12:27 AM",
+      "unread": 3
+    },
+    {
+      "id": "34c5a8c1-1ebd-4945-9f89-302",
+      "name": "Marcus Zhang",
+      "company": "Amazon",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "3:50 PM",
+      "unread": 3
+    },
+    {
+      "id": "9b6aeb08-450e-49fb-a7bc-303",
+      "name": "Stephen Burton",
+      "company": "Meta",
+      "message": "Please review the attached document",
+      "time": "11:38 AM",
+      "unread": 2
+    },
+    {
+      "id": "a0c34b6e-b2eb-4d54-b50d-304",
+      "name": "Patricia Thompson",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "3:48 PM",
+      "unread": 4
+    },
+    {
+      "id": "3801f5f4-4f66-41a5-b6bc-305",
+      "name": "Daniel Padilla",
+      "company": "Github",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "10:03 PM",
+      "unread": 0
+    },
+    {
+      "id": "fab1cad1-a303-48cd-bea9-306",
+      "name": "Andrew Fowler",
+      "company": "Microsoft",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "10:08 AM",
+      "unread": 1
+    },
+    {
+      "id": "369ee800-4afc-49d2-b143-307",
+      "name": "Jacqueline Cruz",
+      "company": "Amazon",
+      "message": "Let\u2019s catch up later this week",
+      "time": "3:16 AM",
+      "unread": 1
+    },
+    {
+      "id": "dda99445-790b-4d99-abd8-308",
+      "name": "Ashley Gutierrez",
+      "company": "Netflix",
+      "message": "Please review the attached document",
+      "time": "4:45 PM",
+      "unread": 0
+    },
+    {
+      "id": "2ab7c74a-6f7f-4a60-958e-309",
+      "name": "Edward Moore",
+      "company": "Tesla",
+      "message": "Thanks for sharing the project files",
+      "time": "10:55 PM",
+      "unread": 3
+    },
+    {
+      "id": "26a94785-5399-42c3-935c-310",
+      "name": "Alex Ruiz",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "7:35 AM",
+      "unread": 2
+    },
+    {
+      "id": "d74c3319-2746-45c3-a28a-311",
+      "name": "Mark Juarez",
+      "company": "Intel",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "6:45 PM",
+      "unread": 4
+    },
+    {
+      "id": "63a2daa9-caba-4130-9540-312",
+      "name": "Lisa Foster DVM",
+      "company": "Github",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "6:57 PM",
+      "unread": 2
+    },
+    {
+      "id": "a5764f02-ecdb-4d8a-bc7f-313",
+      "name": "Michael Armstrong",
+      "company": "Meta",
+      "message": "When is the deadline for this task?",
+      "time": "2:04 AM",
+      "unread": 1
+    },
+    {
+      "id": "da040f5d-6e33-40ae-81d3-314",
+      "name": "Janet Smith",
+      "company": "Apple",
+      "message": "Looking forward to our discussion",
+      "time": "9:29 PM",
+      "unread": 5
+    },
+    {
+      "id": "3732044c-3f4f-4c61-bd6c-315",
+      "name": "Tanya Nelson",
+      "company": "IBM",
+      "message": "Do you have updates on the report?",
+      "time": "9:12 PM",
+      "unread": 1
+    },
+    {
+      "id": "95c24bf9-3d2c-4a3a-984e-316",
+      "name": "Daniel Lee",
+      "company": "Netflix",
+      "message": "Let\u2019s catch up later this week",
+      "time": "2:47 PM",
+      "unread": 1
+    },
+    {
+      "id": "9039b192-ca95-4ee1-b48b-317",
+      "name": "Mark Flores",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "1:04 AM",
+      "unread": 2
+    },
+    {
+      "id": "ccbc90e2-9e7e-47c8-947d-318",
+      "name": "Tasha Davis",
+      "company": "Google",
+      "message": "Please review the attached document",
+      "time": "3:14 AM",
+      "unread": 5
+    },
+    {
+      "id": "8add2db7-e2d9-4256-8d9c-319",
+      "name": "Anne Green",
+      "company": "Intel",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "8:26 AM",
+      "unread": 2
+    },
+    {
+      "id": "ce0be9cc-5928-46bb-8773-320",
+      "name": "Patrick Murillo",
+      "company": "Microsoft",
+      "message": "I've made the changes you suggested",
+      "time": "4:07 AM",
+      "unread": 1
+    },
+    {
+      "id": "056070f1-24fb-448a-81ea-321",
+      "name": "Lisa Smith",
+      "company": "Netflix",
+      "message": "Let\u2019s catch up later this week",
+      "time": "6:11 AM",
+      "unread": 1
+    },
+    {
+      "id": "d9fef825-53a2-4396-9ebb-322",
+      "name": "Pamela Schmidt",
+      "company": "Amazon",
+      "message": "Looking forward to our discussion",
+      "time": "10:24 AM",
+      "unread": 5
+    },
+    {
+      "id": "dfe418cd-ff5c-42a4-912b-323",
+      "name": "Charles Duncan",
+      "company": "Microsoft",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "11:26 PM",
+      "unread": 3
+    },
+    {
+      "id": "f2c26400-3e16-4e2a-8cb0-324",
+      "name": "Ronald Lam",
+      "company": "Meta",
+      "message": "When is the deadline for this task?",
+      "time": "9:36 PM",
+      "unread": 0
+    },
+    {
+      "id": "175c88e0-8ed2-4f41-b435-325",
+      "name": "Nathan Johnson",
+      "company": "Microsoft",
+      "message": "Let\u2019s catch up later this week",
+      "time": "3:33 PM",
+      "unread": 3
+    },
+    {
+      "id": "2bd5700e-ab6c-40ea-98c7-326",
+      "name": "Paul Weaver",
+      "company": "Tesla",
+      "message": "When is the deadline for this task?",
+      "time": "4:26 PM",
+      "unread": 0
+    },
+    {
+      "id": "b36d35a3-9037-4896-93fa-327",
+      "name": "Mark Wright",
+      "company": "Tesla",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "9:13 PM",
+      "unread": 4
+    },
+    {
+      "id": "9c31ef72-c60c-4c28-af11-328",
+      "name": "Trevor Middleton",
+      "company": "Google",
+      "message": "Looking forward to our discussion",
+      "time": "3:42 AM",
+      "unread": 5
+    },
+    {
+      "id": "f05d84b8-d699-4e9e-a213-329",
+      "name": "Debra Henderson",
+      "company": "IBM",
+      "message": "Please review the attached document",
+      "time": "10:28 AM",
+      "unread": 4
+    },
+    {
+      "id": "3146d174-e63a-4932-bce7-330",
+      "name": "Tina Gibson",
+      "company": "Amazon",
+      "message": "When is the deadline for this task?",
+      "time": "9:02 PM",
+      "unread": 0
+    },
+    {
+      "id": "3fc0bbf3-7e0a-40f0-b229-331",
+      "name": "Anthony Kane",
+      "company": "Google",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "6:22 PM",
+      "unread": 4
+    },
+    {
+      "id": "1e117942-1aa4-4aab-86e5-332",
+      "name": "Wendy Middleton",
+      "company": "Apple",
+      "message": "Do you have updates on the report?",
+      "time": "1:57 PM",
+      "unread": 0
+    },
+    {
+      "id": "56a02fa2-b79a-44d7-aa27-333",
+      "name": "Christina White",
+      "company": "Google",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "9:07 AM",
+      "unread": 5
+    },
+    {
+      "id": "9f37cc13-f5f5-4ef5-b9d5-334",
+      "name": "Mitchell Lopez",
+      "company": "Netflix",
+      "message": "Please review the attached document",
+      "time": "3:26 AM",
+      "unread": 5
+    },
+    {
+      "id": "c43661ea-c5e4-4c88-abd7-335",
+      "name": "Gloria Juarez",
+      "company": "IBM",
+      "message": "Thanks for sharing the project files",
+      "time": "6:02 PM",
+      "unread": 1
+    },
+    {
+      "id": "64e8ed46-6b77-4e40-bb97-336",
+      "name": "Alyssa Morrison",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "3:31 AM",
+      "unread": 2
+    },
+    {
+      "id": "a6ed99eb-f3e2-4d09-b95e-337",
+      "name": "Daniel Burke",
+      "company": "Github",
+      "message": "When is the deadline for this task?",
+      "time": "6:08 PM",
+      "unread": 4
+    },
+    {
+      "id": "5a26410d-1a28-4a2c-a6b2-338",
+      "name": "Jennifer Shaw",
+      "company": "Amazon",
+      "message": "I've made the changes you suggested",
+      "time": "1:47 PM",
+      "unread": 3
+    },
+    {
+      "id": "d016add3-69cf-49dd-b93c-339",
+      "name": "Jennifer Yates",
+      "company": "IBM",
+      "message": "I've made the changes you suggested",
+      "time": "12:38 AM",
+      "unread": 1
+    },
+    {
+      "id": "484b19c3-af7d-41d2-9869-340",
+      "name": "Chad Ali",
+      "company": "Google",
+      "message": "Looking forward to our discussion",
+      "time": "4:28 PM",
+      "unread": 4
+    },
+    {
+      "id": "981e2c29-0f48-4e55-b087-341",
+      "name": "Nicole Stephenson",
+      "company": "IBM",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "10:23 AM",
+      "unread": 4
+    },
+    {
+      "id": "5db5d6a9-be83-4a99-b3fb-342",
+      "name": "Christopher Taylor",
+      "company": "Meta",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "6:48 AM",
+      "unread": 0
+    },
+    {
+      "id": "c8bd0413-cede-4cb4-90af-343",
+      "name": "Chad King",
+      "company": "Amazon",
+      "message": "I've made the changes you suggested",
+      "time": "2:56 AM",
+      "unread": 3
+    },
+    {
+      "id": "92678ef4-763b-4385-90e6-344",
+      "name": "Scott Simon",
+      "company": "Microsoft",
+      "message": "I've made the changes you suggested",
+      "time": "11:26 AM",
+      "unread": 3
+    },
+    {
+      "id": "da398d9d-e3ed-4899-8acb-345",
+      "name": "Jessica Moore",
+      "company": "Netflix",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "11:18 PM",
+      "unread": 3
+    },
+    {
+      "id": "43bc33f3-30c7-4dc5-adda-346",
+      "name": "Terri Lee",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "6:51 AM",
+      "unread": 0
+    },
+    {
+      "id": "27211b28-206f-4c53-a9f3-347",
+      "name": "James Austin",
+      "company": "Netflix",
+      "message": "Please review the attached document",
+      "time": "7:50 AM",
+      "unread": 2
+    },
+    {
+      "id": "f6691243-77ae-498b-b01c-348",
+      "name": "Dale Shaw",
+      "company": "Microsoft",
+      "message": "I've made the changes you suggested",
+      "time": "12:30 PM",
+      "unread": 0
+    },
+    {
+      "id": "09ce1084-bf70-4480-96c8-349",
+      "name": "Sophia Reid",
+      "company": "Intel",
+      "message": "I've made the changes you suggested",
+      "time": "12:23 AM",
+      "unread": 3
+    },
+    {
+      "id": "43833eea-908f-47b5-b182-350",
+      "name": "Kara Barker",
+      "company": "Intel",
+      "message": "Let\u2019s catch up later this week",
+      "time": "6:39 PM",
+      "unread": 1
+    },
+    {
+      "id": "1328f03b-351c-499a-a5c2-351",
+      "name": "Maria Smith",
+      "company": "Github",
+      "message": "I've made the changes you suggested",
+      "time": "2:24 AM",
+      "unread": 4
+    },
+    {
+      "id": "b968ad59-f677-487c-90a0-352",
+      "name": "Julia Jordan",
+      "company": "IBM",
+      "message": "Do you have updates on the report?",
+      "time": "9:01 PM",
+      "unread": 2
+    },
+    {
+      "id": "3aa45d14-3223-406c-9864-353",
+      "name": "Christopher Moss",
+      "company": "Google",
+      "message": "Please review the attached document",
+      "time": "4:35 PM",
+      "unread": 2
+    },
+    {
+      "id": "5c9f0728-b3aa-462d-96bc-354",
+      "name": "Yvette Woods",
+      "company": "Github",
+      "message": "Do you have updates on the report?",
+      "time": "3:50 PM",
+      "unread": 4
+    },
+    {
+      "id": "19af87a1-b04d-459d-936a-355",
+      "name": "George Smith",
+      "company": "Meta",
+      "message": "Let\u2019s catch up later this week",
+      "time": "6:20 PM",
+      "unread": 0
+    },
+    {
+      "id": "807abcfd-9553-4037-ac60-356",
+      "name": "Alicia Burch",
+      "company": "Google",
+      "message": "Looking forward to our discussion",
+      "time": "3:15 AM",
+      "unread": 3
+    },
+    {
+      "id": "ef826569-873f-4b31-8384-357",
+      "name": "Kimberly Greer",
+      "company": "Tesla",
+      "message": "Do you have updates on the report?",
+      "time": "3:23 PM",
+      "unread": 0
+    },
+    {
+      "id": "337f1362-7926-40db-9453-358",
+      "name": "Danny Rice",
+      "company": "Meta",
+      "message": "I've made the changes you suggested",
+      "time": "3:17 PM",
+      "unread": 5
+    },
+    {
+      "id": "d77bedeb-9fa3-47f9-8d43-359",
+      "name": "Andrea Hill",
+      "company": "Meta",
+      "message": "I've made the changes you suggested",
+      "time": "7:39 PM",
+      "unread": 1
+    },
+    {
+      "id": "92333f51-e509-4eaa-a938-360",
+      "name": "Thomas Miller",
+      "company": "Apple",
+      "message": "I've made the changes you suggested",
+      "time": "3:26 PM",
+      "unread": 3
+    },
+    {
+      "id": "57565d67-981a-49cb-aedd-361",
+      "name": "Mr. Christopher Scott MD",
+      "company": "Tesla",
+      "message": "Let\u2019s catch up later this week",
+      "time": "12:03 PM",
+      "unread": 2
+    },
+    {
+      "id": "f5d5d126-2b9b-4338-b1f8-362",
+      "name": "Tracey Miller",
+      "company": "Google",
+      "message": "I've made the changes you suggested",
+      "time": "9:07 PM",
+      "unread": 3
+    },
+    {
+      "id": "de1ef07c-b790-46ba-aa80-363",
+      "name": "Phyllis Moore",
+      "company": "Tesla",
+      "message": "Thanks for sharing the project files",
+      "time": "2:16 PM",
+      "unread": 5
+    },
+    {
+      "id": "997c793d-0bd5-44dc-92a6-364",
+      "name": "Kenneth Farley",
+      "company": "Microsoft",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "3:17 PM",
+      "unread": 4
+    },
+    {
+      "id": "12c9ede4-0b15-41fa-be5a-365",
+      "name": "Jason Cervantes",
+      "company": "Google",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "8:54 AM",
+      "unread": 3
+    },
+    {
+      "id": "1e3ebe9e-d452-414d-b5c7-366",
+      "name": "James Carter",
+      "company": "Amazon",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "10:43 AM",
+      "unread": 4
+    },
+    {
+      "id": "73894c5b-b248-43e0-af2b-367",
+      "name": "Joseph Gardner",
+      "company": "Meta",
+      "message": "Please review the attached document",
+      "time": "12:23 PM",
+      "unread": 2
+    },
+    {
+      "id": "8f3597f2-6b8c-490c-aec3-368",
+      "name": "Sean Knight",
+      "company": "Google",
+      "message": "Do you have updates on the report?",
+      "time": "1:14 PM",
+      "unread": 0
+    },
+    {
+      "id": "128b1f86-b5cf-4c24-8cc1-369",
+      "name": "James Arellano",
+      "company": "IBM",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "2:41 AM",
+      "unread": 5
+    },
+    {
+      "id": "e3aff63b-a970-4ef7-981e-370",
+      "name": "Clayton Davis",
+      "company": "Microsoft",
+      "message": "Let\u2019s catch up later this week",
+      "time": "2:05 AM",
+      "unread": 0
+    },
+    {
+      "id": "3357708e-e65d-4810-8655-371",
+      "name": "Taylor Contreras",
+      "company": "IBM",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "6:51 AM",
+      "unread": 1
+    },
+    {
+      "id": "1639d8e2-5dfd-439e-a672-372",
+      "name": "Julian Bradley",
+      "company": "Github",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "7:08 PM",
+      "unread": 2
+    },
+    {
+      "id": "d73c9c21-dbbc-4aa6-815f-373",
+      "name": "George Richardson",
+      "company": "Apple",
+      "message": "Looking forward to our discussion",
+      "time": "12:23 PM",
+      "unread": 3
+    },
+    {
+      "id": "1ef740b2-990f-4a82-8252-374",
+      "name": "Jodi Hill",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "1:48 PM",
+      "unread": 2
+    },
+    {
+      "id": "4b51e198-fa79-4b56-9b72-375",
+      "name": "Natalie Jones",
+      "company": "Tesla",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "6:38 AM",
+      "unread": 5
+    },
+    {
+      "id": "0341b0e2-1413-4b38-a24b-376",
+      "name": "James Miller",
+      "company": "IBM",
+      "message": "Do you have updates on the report?",
+      "time": "12:01 PM",
+      "unread": 4
+    },
+    {
+      "id": "55d43fac-3c31-47aa-888d-377",
+      "name": "Jose Lane",
+      "company": "Intel",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "9:29 PM",
+      "unread": 4
+    },
+    {
+      "id": "e645f37a-9fd6-42d4-9142-378",
+      "name": "David Andrews",
+      "company": "Apple",
+      "message": "I've made the changes you suggested",
+      "time": "8:21 PM",
+      "unread": 4
+    },
+    {
+      "id": "db1b14f3-e094-43cf-a02a-379",
+      "name": "Hunter Young",
+      "company": "Microsoft",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "3:59 AM",
+      "unread": 1
+    },
+    {
+      "id": "7a745b0f-b5e3-4373-8ac8-380",
+      "name": "Jasmine Flores",
+      "company": "Intel",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "11:39 PM",
+      "unread": 2
+    },
+    {
+      "id": "3659c917-de32-4868-8c9f-381",
+      "name": "Richard Young",
+      "company": "IBM",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "11:27 AM",
+      "unread": 2
+    },
+    {
+      "id": "85e17ac2-31f4-41b0-9e8d-382",
+      "name": "Robert Olsen",
+      "company": "Netflix",
+      "message": "Do you have updates on the report?",
+      "time": "6:25 AM",
+      "unread": 2
+    },
+    {
+      "id": "bff85e58-a5f3-4650-8d54-383",
+      "name": "Kimberly Paul",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "4:14 PM",
+      "unread": 3
+    },
+    {
+      "id": "d04d73f2-a0bd-4e77-afce-384",
+      "name": "Laurie Rush DDS",
+      "company": "Github",
+      "message": "I've made the changes you suggested",
+      "time": "5:03 PM",
+      "unread": 0
+    },
+    {
+      "id": "5c52d569-0685-433b-9196-385",
+      "name": "Joseph Garza",
+      "company": "Microsoft",
+      "message": "When is the deadline for this task?",
+      "time": "6:32 AM",
+      "unread": 0
+    },
+    {
+      "id": "f9aad34d-8af6-4d50-b693-386",
+      "name": "Krystal Blanchard",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "8:04 AM",
+      "unread": 4
+    },
+    {
+      "id": "80d48632-e59d-4fd4-a912-387",
+      "name": "Allison Parker",
+      "company": "Intel",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "2:13 PM",
+      "unread": 1
+    },
+    {
+      "id": "2c15ddab-2f7a-4992-9078-388",
+      "name": "Stacy Vaughn",
+      "company": "Intel",
+      "message": "Do you have updates on the report?",
+      "time": "2:50 AM",
+      "unread": 1
+    },
+    {
+      "id": "a851b8cc-8406-4d73-8325-389",
+      "name": "Joel Levy",
+      "company": "Apple",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "7:48 AM",
+      "unread": 3
+    },
+    {
+      "id": "0127a796-4d3a-44ac-9514-390",
+      "name": "Robert Anderson",
+      "company": "Apple",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "1:49 AM",
+      "unread": 1
+    },
+    {
+      "id": "67c4a994-2470-4dc6-991b-391",
+      "name": "Derek Reilly",
+      "company": "IBM",
+      "message": "When is the deadline for this task?",
+      "time": "7:23 AM",
+      "unread": 0
+    },
+    {
+      "id": "f22434bf-3a7b-4b65-8c51-392",
+      "name": "Kristy Herrera",
+      "company": "Github",
+      "message": "I've made the changes you suggested",
+      "time": "3:37 AM",
+      "unread": 2
+    },
+    {
+      "id": "8343c91e-96ed-41a0-a558-393",
+      "name": "Tiffany Bishop",
+      "company": "Github",
+      "message": "Please review the attached document",
+      "time": "6:31 AM",
+      "unread": 4
+    },
+    {
+      "id": "e6e25b02-1b49-42ec-85c6-394",
+      "name": "Morgan Banks",
+      "company": "Amazon",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "6:53 PM",
+      "unread": 1
+    },
+    {
+      "id": "8d5a7948-4d50-46be-a25c-395",
+      "name": "Jamie Harris",
+      "company": "Apple",
+      "message": "Let\u2019s catch up later this week",
+      "time": "7:34 PM",
+      "unread": 2
+    },
+    {
+      "id": "8f52b58e-caaf-44a5-870e-396",
+      "name": "Ashley Rodriguez",
+      "company": "Tesla",
+      "message": "Let\u2019s catch up later this week",
+      "time": "10:05 AM",
+      "unread": 1
+    },
+    {
+      "id": "7c422d28-262a-4436-88da-397",
+      "name": "Karen Spence",
+      "company": "Google",
+      "message": "Thanks for sharing the project files",
+      "time": "6:07 AM",
+      "unread": 1
+    },
+    {
+      "id": "e36eba23-f987-44d0-af73-398",
+      "name": "Robert Carter",
+      "company": "Meta",
+      "message": "When is the deadline for this task?",
+      "time": "9:30 PM",
+      "unread": 2
+    },
+    {
+      "id": "1acef27e-3d2a-47df-ba8d-399",
+      "name": "Brenda Salinas",
+      "company": "Netflix",
+      "message": "Let\u2019s catch up later this week",
+      "time": "5:56 PM",
+      "unread": 5
+    },
+    {
+      "id": "38d8014f-827c-4eaf-b7f2-400",
+      "name": "Steven Bautista",
+      "company": "Netflix",
+      "message": "Please review the attached document",
+      "time": "3:00 AM",
+      "unread": 1
+    },
+    {
+      "id": "479cad71-dd4a-44b3-8aee-401",
+      "name": "Dr. Gina Greer MD",
+      "company": "Microsoft",
+      "message": "Looking forward to our discussion",
+      "time": "2:05 PM",
+      "unread": 5
+    },
+    {
+      "id": "33a583b7-412c-4f92-87ca-402",
+      "name": "James Hernandez",
+      "company": "Google",
+      "message": "Thanks for sharing the project files",
+      "time": "10:15 PM",
+      "unread": 2
+    },
+    {
+      "id": "2e680446-f7bf-4ae7-adff-403",
+      "name": "Michelle Ellis",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "8:44 PM",
+      "unread": 3
+    },
+    {
+      "id": "6f52bb30-78e2-4abc-9a9f-404",
+      "name": "Hannah Harris",
+      "company": "Apple",
+      "message": "Looking forward to our discussion",
+      "time": "3:54 AM",
+      "unread": 4
+    },
+    {
+      "id": "bf5d8f14-06f6-4f81-ac6d-405",
+      "name": "Teresa Williams",
+      "company": "Tesla",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "2:52 PM",
+      "unread": 0
+    },
+    {
+      "id": "0dd2b102-1621-4807-a77b-406",
+      "name": "Anthony Lynch",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "2:58 AM",
+      "unread": 4
+    },
+    {
+      "id": "4f1c67d3-a957-451a-a5fe-407",
+      "name": "Kristi Ryan PhD",
+      "company": "Microsoft",
+      "message": "Let\u2019s catch up later this week",
+      "time": "2:08 PM",
+      "unread": 2
+    },
+    {
+      "id": "4706ab4a-933b-4571-8b1a-408",
+      "name": "Michaela Mcneil",
+      "company": "Intel",
+      "message": "Do you have updates on the report?",
+      "time": "7:33 PM",
+      "unread": 4
+    },
+    {
+      "id": "a6835676-1d08-4218-b275-409",
+      "name": "Kathryn Martinez",
+      "company": "Microsoft",
+      "message": "Let\u2019s catch up later this week",
+      "time": "8:00 AM",
+      "unread": 3
+    },
+    {
+      "id": "2df8dae2-67c0-4742-b774-410",
+      "name": "John Thomas",
+      "company": "Github",
+      "message": "When is the deadline for this task?",
+      "time": "6:32 AM",
+      "unread": 1
+    },
+    {
+      "id": "c249d794-10e7-4fd7-8875-411",
+      "name": "Jonathan Vance",
+      "company": "Github",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "6:33 AM",
+      "unread": 0
+    },
+    {
+      "id": "f50bf124-6118-4311-b194-412",
+      "name": "Nicholas Parsons",
+      "company": "Intel",
+      "message": "Looking forward to our discussion",
+      "time": "5:41 PM",
+      "unread": 5
+    },
+    {
+      "id": "b3343721-c985-4c3c-b00a-413",
+      "name": "Brandon White",
+      "company": "Meta",
+      "message": "I've made the changes you suggested",
+      "time": "6:39 AM",
+      "unread": 0
+    },
+    {
+      "id": "871b50eb-22a8-41e9-b441-414",
+      "name": "Jonathan Baker",
+      "company": "Tesla",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "7:28 AM",
+      "unread": 4
+    },
+    {
+      "id": "210b4b57-4cb9-4703-a117-415",
+      "name": "Spencer Anthony",
+      "company": "Microsoft",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "4:26 AM",
+      "unread": 2
+    },
+    {
+      "id": "33296af3-5c3c-431b-a51f-416",
+      "name": "Devon Randall",
+      "company": "Meta",
+      "message": "Do you have updates on the report?",
+      "time": "6:39 AM",
+      "unread": 4
+    },
+    {
+      "id": "341b9ce4-8239-478e-9f55-417",
+      "name": "Cassandra Nguyen",
+      "company": "Meta",
+      "message": "Please review the attached document",
+      "time": "10:20 AM",
+      "unread": 5
+    },
+    {
+      "id": "2d627e19-5d5a-46da-afa9-418",
+      "name": "Teresa Tanner",
+      "company": "Github",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "10:04 AM",
+      "unread": 5
+    },
+    {
+      "id": "969f693e-ca75-4d26-923f-419",
+      "name": "James Wolfe",
+      "company": "Netflix",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "8:46 PM",
+      "unread": 1
+    },
+    {
+      "id": "b6c7c508-b9f9-4960-9df1-420",
+      "name": "Michele Hunter",
+      "company": "Intel",
+      "message": "Thanks for sharing the project files",
+      "time": "9:59 AM",
+      "unread": 0
+    },
+    {
+      "id": "c170ce99-3eb5-4dc0-9ae5-421",
+      "name": "Melissa Williams",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "4:30 PM",
+      "unread": 4
+    },
+    {
+      "id": "27723c8c-c865-4a43-b741-422",
+      "name": "Jean Lin",
+      "company": "Meta",
+      "message": "Do you have updates on the report?",
+      "time": "7:33 PM",
+      "unread": 4
+    },
+    {
+      "id": "55dceffa-2fdc-4232-95d5-423",
+      "name": "Randy Mcclure",
+      "company": "Google",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "1:01 AM",
+      "unread": 1
+    },
+    {
+      "id": "971ed3c5-2167-4dc8-a37b-424",
+      "name": "Matthew Kaufman",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "7:07 PM",
+      "unread": 1
+    },
+    {
+      "id": "b4fdf731-1d6d-4ffe-996c-425",
+      "name": "Samantha Myers",
+      "company": "Netflix",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "5:46 PM",
+      "unread": 5
+    },
+    {
+      "id": "9a0be3d6-b6b7-4e94-88bd-426",
+      "name": "Susan Jacobs",
+      "company": "Apple",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "3:27 AM",
+      "unread": 0
+    },
+    {
+      "id": "3a99aac4-f445-4b65-a033-427",
+      "name": "Leah Taylor",
+      "company": "IBM",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "9:26 PM",
+      "unread": 0
+    },
+    {
+      "id": "5943ca4c-cc98-4faa-b449-428",
+      "name": "Michael Salinas",
+      "company": "Meta",
+      "message": "Please review the attached document",
+      "time": "12:11 PM",
+      "unread": 1
+    },
+    {
+      "id": "48f319d4-db85-4456-8010-429",
+      "name": "Jack Barrett",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "1:39 PM",
+      "unread": 0
+    },
+    {
+      "id": "fdbbe143-97e8-413e-84a0-430",
+      "name": "Janet Shields",
+      "company": "IBM",
+      "message": "Thanks for sharing the project files",
+      "time": "11:41 AM",
+      "unread": 0
+    },
+    {
+      "id": "fb7f6224-10f7-45ea-8a2a-431",
+      "name": "Diana Madden",
+      "company": "Tesla",
+      "message": "Looking forward to our discussion",
+      "time": "10:46 AM",
+      "unread": 1
+    },
+    {
+      "id": "4381ca92-b24b-4fbc-ba3b-432",
+      "name": "Wendy Bailey",
+      "company": "Tesla",
+      "message": "I've made the changes you suggested",
+      "time": "5:22 AM",
+      "unread": 0
+    },
+    {
+      "id": "f0b04b79-0da2-4aba-ba53-433",
+      "name": "Steven Munoz",
+      "company": "Github",
+      "message": "Please review the attached document",
+      "time": "11:04 AM",
+      "unread": 2
+    },
+    {
+      "id": "52e81b24-1fac-4911-83d3-434",
+      "name": "Joann Hall",
+      "company": "Apple",
+      "message": "Thanks for sharing the project files",
+      "time": "4:43 PM",
+      "unread": 2
+    },
+    {
+      "id": "cceae502-c240-4e52-8292-435",
+      "name": "Mr. Troy Taylor",
+      "company": "Google",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "4:26 PM",
+      "unread": 4
+    },
+    {
+      "id": "f68c6190-4595-4b5b-83bf-436",
+      "name": "Andre Buchanan",
+      "company": "Tesla",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "9:35 AM",
+      "unread": 5
+    },
+    {
+      "id": "85c24d80-00b8-4427-b351-437",
+      "name": "Dawn Campbell MD",
+      "company": "Google",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "5:45 PM",
+      "unread": 2
+    },
+    {
+      "id": "97682eb2-adec-4526-ac50-438",
+      "name": "Monica Tanner",
+      "company": "Netflix",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "9:58 AM",
+      "unread": 0
+    },
+    {
+      "id": "b93b0e2f-b3b4-45e3-85c1-439",
+      "name": "Jocelyn Cruz",
+      "company": "IBM",
+      "message": "I've made the changes you suggested",
+      "time": "3:54 PM",
+      "unread": 2
+    },
+    {
+      "id": "e3d3771e-dd5d-47f0-8bd4-440",
+      "name": "Leslie Singh",
+      "company": "IBM",
+      "message": "When is the deadline for this task?",
+      "time": "2:39 PM",
+      "unread": 5
+    },
+    {
+      "id": "a7c6b9f0-f5fa-411b-964c-441",
+      "name": "Justin Griffith",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "2:32 PM",
+      "unread": 1
+    },
+    {
+      "id": "be21fa52-7b5a-4dab-b68e-442",
+      "name": "Julie Price",
+      "company": "Google",
+      "message": "Looking forward to our discussion",
+      "time": "6:19 PM",
+      "unread": 2
+    },
+    {
+      "id": "a8e3abe0-f8b9-44c0-8b6d-443",
+      "name": "James Johnson",
+      "company": "Meta",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "5:49 AM",
+      "unread": 1
+    },
+    {
+      "id": "d9d9ea9b-6ade-44dc-b492-444",
+      "name": "Debra Velasquez",
+      "company": "Netflix",
+      "message": "Thanks for sharing the project files",
+      "time": "4:57 AM",
+      "unread": 2
+    },
+    {
+      "id": "0b5f0702-86fd-48cf-a29b-445",
+      "name": "Tonya Stuart",
+      "company": "Google",
+      "message": "Do you have updates on the report?",
+      "time": "9:30 PM",
+      "unread": 0
+    },
+    {
+      "id": "5ce6fab0-4144-41bf-92a6-446",
+      "name": "Michael Watkins",
+      "company": "IBM",
+      "message": "Thanks for sharing the project files",
+      "time": "12:39 AM",
+      "unread": 2
+    },
+    {
+      "id": "697bc014-6e51-4f73-a4af-447",
+      "name": "Wayne Cochran",
+      "company": "Microsoft",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "5:07 AM",
+      "unread": 3
+    },
+    {
+      "id": "577f382c-6783-4958-b67d-448",
+      "name": "Billy Garcia",
+      "company": "Meta",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "2:05 PM",
+      "unread": 4
+    },
+    {
+      "id": "dfc7d988-617f-422d-a652-449",
+      "name": "Mrs. Molly Hale",
+      "company": "Amazon",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "2:37 PM",
+      "unread": 4
+    },
+    {
+      "id": "7f081598-92c9-4c55-bf37-450",
+      "name": "Jennifer Perry",
+      "company": "Microsoft",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "2:45 PM",
+      "unread": 5
+    },
+    {
+      "id": "e51e7175-d407-49f3-8588-451",
+      "name": "Edward Fernandez",
+      "company": "Github",
+      "message": "Thanks for sharing the project files",
+      "time": "6:15 PM",
+      "unread": 4
+    },
+    {
+      "id": "536c2cfc-ec85-4b67-9c65-452",
+      "name": "Andrew Pineda",
+      "company": "Intel",
+      "message": "Do you have updates on the report?",
+      "time": "4:58 AM",
+      "unread": 1
+    },
+    {
+      "id": "fe5b2827-ea40-4848-843f-453",
+      "name": "Casey Hensley",
+      "company": "Microsoft",
+      "message": "Do you have updates on the report?",
+      "time": "2:46 PM",
+      "unread": 4
+    },
+    {
+      "id": "b0709bff-c654-41c3-92d4-454",
+      "name": "Randy Evans",
+      "company": "Intel",
+      "message": "When is the deadline for this task?",
+      "time": "2:52 AM",
+      "unread": 1
+    },
+    {
+      "id": "8691fedd-fdcb-4c61-8a4c-455",
+      "name": "Jacqueline Ho",
+      "company": "Amazon",
+      "message": "Please review the attached document",
+      "time": "12:16 AM",
+      "unread": 2
+    },
+    {
+      "id": "cfc23e53-967e-43ab-84a0-456",
+      "name": "Vanessa Jordan",
+      "company": "Intel",
+      "message": "Thanks for sharing the project files",
+      "time": "7:03 PM",
+      "unread": 2
+    },
+    {
+      "id": "2276be63-b68e-47e4-8646-457",
+      "name": "Marcus May",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "5:45 PM",
+      "unread": 0
+    },
+    {
+      "id": "771b3378-c1e7-476b-b256-458",
+      "name": "Dawn Young",
+      "company": "Tesla",
+      "message": "Looking forward to our discussion",
+      "time": "5:20 AM",
+      "unread": 5
+    },
+    {
+      "id": "8dee4ba6-b18e-4c29-bb18-459",
+      "name": "Kaitlin Higgins",
+      "company": "Google",
+      "message": "Thanks for sharing the project files",
+      "time": "11:10 AM",
+      "unread": 2
+    },
+    {
+      "id": "a67aafaa-d7a3-4f20-b19c-460",
+      "name": "Mr. Jacob Wolfe",
+      "company": "Amazon",
+      "message": "Please review the attached document",
+      "time": "2:23 PM",
+      "unread": 0
+    },
+    {
+      "id": "d62e2715-6590-4849-8eb5-461",
+      "name": "Natasha Duran",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "11:46 AM",
+      "unread": 0
+    },
+    {
+      "id": "c19524f5-05ac-4e6f-8a68-462",
+      "name": "Jennifer Atkinson",
+      "company": "IBM",
+      "message": "Looking forward to our discussion",
+      "time": "7:08 AM",
+      "unread": 4
+    },
+    {
+      "id": "31428090-06b7-4ad5-adea-463",
+      "name": "Steven Farmer",
+      "company": "Apple",
+      "message": "Please review the attached document",
+      "time": "12:10 PM",
+      "unread": 4
+    },
+    {
+      "id": "c3971029-8b98-4178-a94f-464",
+      "name": "Joseph Morris",
+      "company": "Github",
+      "message": "Thanks for sharing the project files",
+      "time": "8:48 AM",
+      "unread": 3
+    },
+    {
+      "id": "66af3109-e133-40e5-8c41-465",
+      "name": "Donna Larson",
+      "company": "Google",
+      "message": "I've made the changes you suggested",
+      "time": "1:43 PM",
+      "unread": 4
+    },
+    {
+      "id": "b2764f1b-328f-491a-ad14-466",
+      "name": "Anna Burch",
+      "company": "Meta",
+      "message": "Thanks for sharing the project files",
+      "time": "5:12 AM",
+      "unread": 5
+    },
+    {
+      "id": "50c407c8-b2ba-4f05-9cc0-467",
+      "name": "Casey Hood",
+      "company": "Tesla",
+      "message": "Let\u2019s catch up later this week",
+      "time": "12:00 AM",
+      "unread": 1
+    },
+    {
+      "id": "b5ba33f4-4de1-4ab7-9b24-468",
+      "name": "Shelly Cook",
+      "company": "Microsoft",
+      "message": "When is the deadline for this task?",
+      "time": "9:33 PM",
+      "unread": 1
+    },
+    {
+      "id": "29994a82-97e8-479d-b63f-469",
+      "name": "Courtney Savage",
+      "company": "Github",
+      "message": "Let me know your thoughts on the proposal",
+      "time": "9:00 AM",
+      "unread": 0
+    },
+    {
+      "id": "a2c57c8c-c69c-4e0d-957f-470",
+      "name": "Christina Parks",
+      "company": "Meta",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "5:31 PM",
+      "unread": 0
+    },
+    {
+      "id": "0b90e123-c1cd-4650-a6e7-471",
+      "name": "Cassandra Guerrero",
+      "company": "Tesla",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "11:54 PM",
+      "unread": 3
+    },
+    {
+      "id": "8daf5e98-0180-4e8f-b404-472",
+      "name": "Amy Davis",
+      "company": "Meta",
+      "message": "When is the deadline for this task?",
+      "time": "1:29 PM",
+      "unread": 1
+    },
+    {
+      "id": "884d199a-9f56-4b4e-b5ea-473",
+      "name": "Matthew Lambert",
+      "company": "Google",
+      "message": "Do you have updates on the report?",
+      "time": "5:48 PM",
+      "unread": 3
+    },
+    {
+      "id": "bf400a74-310b-4f74-ad41-474",
+      "name": "Alec Hall",
+      "company": "IBM",
+      "message": "I've made the changes you suggested",
+      "time": "4:22 PM",
+      "unread": 2
+    },
+    {
+      "id": "a635090b-8ddc-4ead-bc3d-475",
+      "name": "Megan Mccarty",
+      "company": "Netflix",
+      "message": "I've made the changes you suggested",
+      "time": "8:50 PM",
+      "unread": 2
+    },
+    {
+      "id": "1c7b223e-6300-44e7-a1c8-476",
+      "name": "Kathleen White",
+      "company": "Intel",
+      "message": "Do you have updates on the report?",
+      "time": "6:52 AM",
+      "unread": 2
+    },
+    {
+      "id": "40601313-22d9-47c6-92b6-477",
+      "name": "Susan Brooks",
+      "company": "Netflix",
+      "message": "Looking forward to our discussion",
+      "time": "1:33 AM",
+      "unread": 2
+    },
+    {
+      "id": "f8e91c54-8354-4497-abb7-478",
+      "name": "Scott Wiggins",
+      "company": "Microsoft",
+      "message": "Do you have updates on the report?",
+      "time": "8:49 PM",
+      "unread": 5
+    },
+    {
+      "id": "19d321e4-1416-4fa2-8a5c-479",
+      "name": "Tami Hall",
+      "company": "Google",
+      "message": "When is the deadline for this task?",
+      "time": "1:45 AM",
+      "unread": 4
+    },
+    {
+      "id": "442c1b5b-0d15-4040-a0a8-480",
+      "name": "John Gill",
+      "company": "Netflix",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "10:10 PM",
+      "unread": 3
+    },
+    {
+      "id": "0eb1a4bd-e631-4b3d-a3e7-481",
+      "name": "James Myers",
+      "company": "Meta",
+      "message": "Do you have updates on the report?",
+      "time": "8:01 PM",
+      "unread": 0
+    },
+    {
+      "id": "7055d28b-fb0d-412a-863e-482",
+      "name": "James Webb",
+      "company": "Netflix",
+      "message": "When is the deadline for this task?",
+      "time": "5:23 AM",
+      "unread": 1
+    },
+    {
+      "id": "e895e810-8ad9-48cb-81af-483",
+      "name": "Julie Adams",
+      "company": "Microsoft",
+      "message": "When is the deadline for this task?",
+      "time": "6:09 PM",
+      "unread": 2
+    },
+    {
+      "id": "82af0e38-751d-4db8-917a-484",
+      "name": "Frank Hall",
+      "company": "IBM",
+      "message": "Looking forward to our discussion",
+      "time": "5:36 AM",
+      "unread": 1
+    },
+    {
+      "id": "7d0593aa-d367-48f9-8d26-485",
+      "name": "Michele Rangel",
+      "company": "Netflix",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "7:49 PM",
+      "unread": 2
+    },
+    {
+      "id": "59dce611-c859-4a2f-8133-486",
+      "name": "Susan Park",
+      "company": "Intel",
+      "message": "Do you have updates on the report?",
+      "time": "4:06 AM",
+      "unread": 5
+    },
+    {
+      "id": "d5a27271-bb46-4cf1-81eb-487",
+      "name": "Lisa Arias",
+      "company": "Amazon",
+      "message": "I've made the changes you suggested",
+      "time": "9:43 PM",
+      "unread": 4
+    },
+    {
+      "id": "6e2bad92-ce8e-410f-b3c1-488",
+      "name": "Kimberly Frey",
+      "company": "Intel",
+      "message": "Please review the attached document",
+      "time": "2:11 AM",
+      "unread": 2
+    },
+    {
+      "id": "3847f9b8-8080-4ceb-beea-489",
+      "name": "Jon Dominguez",
+      "company": "IBM",
+      "message": "I've made the changes you suggested",
+      "time": "3:24 PM",
+      "unread": 3
+    },
+    {
+      "id": "250cb692-bac0-4405-be7e-490",
+      "name": "Misty Buckley",
+      "company": "Intel",
+      "message": "The new feature looks amazing! \ud83d\ude80",
+      "time": "3:38 PM",
+      "unread": 2
+    },
+    {
+      "id": "72690e83-2343-4b01-bf41-491",
+      "name": "Jessica Gutierrez MD",
+      "company": "Amazon",
+      "message": "Hey! Are we still on for the meeting tomorrow?",
+      "time": "10:27 PM",
+      "unread": 3
+    },
+    {
+      "id": "139a7a0d-7f9a-4311-9bbd-492",
+      "name": "Harry Hayes",
+      "company": "Tesla",
+      "message": "When is the deadline for this task?",
+      "time": "4:34 PM",
+      "unread": 3
+    },
+    {
+      "id": "5e0086b2-c341-4fe9-9d72-493",
+      "name": "Mr. Mark Guerrero PhD",
+      "company": "Google",
+      "message": "Looking forward to our discussion",
+      "time": "11:18 AM",
+      "unread": 1
+    },
+    {
+      "id": "463a4a98-52c3-4150-8467-494",
+      "name": "Bethany Hill",
+      "company": "Google",
+      "message": "Please review the attached document",
+      "time": "4:26 AM",
+      "unread": 3
+    },
+    {
+      "id": "8c0d566a-f694-41d1-a0c6-495",
+      "name": "Jennifer Davis",
+      "company": "Microsoft",
+      "message": "When is the deadline for this task?",
+      "time": "8:56 AM",
+      "unread": 3
+    },
+    {
+      "id": "562789ff-8858-41fd-aa7d-496",
+      "name": "Shannon Howard",
+      "company": "Tesla",
+      "message": "Looking forward to our discussion",
+      "time": "3:58 PM",
+      "unread": 1
+    },
+    {
+      "id": "598433d6-9747-49a0-8ea0-497",
+      "name": "Molly Griffin",
+      "company": "Tesla",
+      "message": "Let\u2019s catch up later this week",
+      "time": "7:21 PM",
+      "unread": 2
+    },
+    {
+      "id": "80161a07-a12a-437a-beed-498",
+      "name": "Kathleen Martin",
+      "company": "Microsoft",
+      "message": "Please review the attached document",
+      "time": "12:18 AM",
+      "unread": 4
+    },
+    {
+      "id": "a479a473-2dd3-4d16-a46e-499",
+      "name": "Michael Soto",
+      "company": "Netflix",
+      "message": "Let\u2019s catch up later this week",
+      "time": "1:47 PM",
+      "unread": 2
+    }
+  ]
+}
