@@ -73,14 +73,6 @@
   border-bottom-left-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* .messageTime {
-  font-size: 0.75rem;
-  color: #718096;
-  margin-top: 0.5rem;
-  text-align: center;
-} */
-
 .typingIndicator {
   display: flex;
   gap: 4px;
@@ -256,4 +248,22 @@
 
 .chatSection::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
+}
+.collapseBot {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.collapseBot {
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 900px) {
+  .botChatboxContainer {
+    width: 80vw;
+    height: 70vh;
+    position: absolute;
+    top: 2rem;
+    right: -2rem;
+  }
 }

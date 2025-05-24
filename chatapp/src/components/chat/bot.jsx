@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../../styles/bot.css";
 import CustomProfile from "./CutomProfile";
+import { ChevronLeft } from "lucide-react";
 
-const BotChatbox = () => {
+const BotChatbox = ({ isMobile, setToggleBot, toggleBot }) => {
   const [selectedTab, setSelectedTab] = useState("aibot");
   const [messages, setMessages] = useState([
     {
@@ -148,6 +149,21 @@ const BotChatbox = () => {
         >
           Details
         </div>
+        {isMobile && (
+          <div
+            className="collapseBot"
+            onClick={() => {
+              if (isMobile) {
+                setToggleBot(!toggleBot);
+              }
+            }}
+          >
+            <span>
+              <ChevronLeft style={{ width: "2rem", height: "2rem" }} />
+            </span>
+            <span className="collapseBot">Collapse bot</span>
+          </div>
+        )}
       </div>
 
       <div className="messagesContainer2">

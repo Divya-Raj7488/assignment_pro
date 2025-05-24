@@ -2,8 +2,13 @@ import React, { useState, useRef, useEffect } from "react";
 import "../../styles/conversation.css";
 import data from "../../../data.json";
 import CustomProfile from "./CutomProfile";
+import { ArrowLeft } from "lucide-react";
 const conversations = data.conversations;
-const Conversation = ({ currentSenderProfile }) => {
+const Conversation = ({
+  currentSenderProfile,
+  isMobile,
+  setRenderId = { setRenderId },
+}) => {
   const [messages, setMessages] = useState(conversations);
 
   const [inputValue, setInputValue] = useState("");
@@ -75,7 +80,19 @@ const Conversation = ({ currentSenderProfile }) => {
 
   return (
     <div className="chatboxContainer">
-      <div className="conversationHeader2">{currentSenderProfile.name}</div>
+      <div className="conversationHeader2">
+        {isMobile && (
+          <span
+            className="backBtn"
+            onClick={() => {
+              if (isMobile) setRenderId(1);
+            }}
+          >
+            <ArrowLeft className="backIcon" />
+          </span>
+        )}
+        <span>{currentSenderProfile.name}</span>
+      </div>
       <div className="messagesContainer">
         {messages.length === 0 ? (
           <div className="emptyState">

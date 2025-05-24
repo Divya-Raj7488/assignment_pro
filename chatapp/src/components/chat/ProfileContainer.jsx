@@ -3,7 +3,11 @@ import "../../styles/Profile.css";
 import data from "../../../data.json";
 const sender = data.senders;
 
-const MessengerComponent = ({ setCurrentSenderProfile }) => {
+const MessengerComponent = ({
+  setCurrentSenderProfile,
+  isMobile,
+  setRenderId,
+}) => {
   const loaderRef = useRef(null);
   const containerRef = useRef(null);
   const [conversations, setConversations] = useState([]);
@@ -83,6 +87,7 @@ const MessengerComponent = ({ setCurrentSenderProfile }) => {
         }
         onClick={() => {
           setCurrentSenderProfile(conversation);
+          if (isMobile) setRenderId(2);
         }}
       >
         <div
