@@ -9,7 +9,7 @@ const ChatRoom = () => {
   const [currentSenderProfile, setCurrentSenderProfile] = useState({});
   const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
   const [renderId, setRenderId] = useState(1);
-  const [toggleBot, setToggleBot] = useState(false);
+  const [toggleBot, setToggleBot] = useState(true);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 900);
