@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../../styles/Profile.css";
+import "../../styles/profile.css";
 import data from "../../../data.json";
 const sender = data.senders;
 
