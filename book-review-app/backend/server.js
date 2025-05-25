@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const corsOptions = require("./config/cors");
 const dbConfig = require("./config/dbConfig");
@@ -12,5 +13,4 @@ app.use("/review", require("./routes/review"));
 
 app.listen(3000, (req, res) => {
   console.log("listening on port 3000");
-  return res.send("Hello");
 });

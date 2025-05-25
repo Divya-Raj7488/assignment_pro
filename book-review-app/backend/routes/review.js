@@ -6,8 +6,8 @@ const {
   updateReviewById,
 } = require("../controller/review");
 
-router.route("/").get(retrieveReviewForBook);
-router.route("/").post(updateReviewById);
-router.put("/:id").put(addReviewForBook);
+router.get("/", retrieveReviewForBook);
+router.post("/:bookId", addReviewForBook);
+router.put("/:id", updateReviewById);
 
 module.exports = router;

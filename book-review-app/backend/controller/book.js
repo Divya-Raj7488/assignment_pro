@@ -1,8 +1,8 @@
 // get all book, get specific book, add new book,
-const Book = require("../models/books");
+const Book = require("../models/book");
 const getAllBooks = async (req, res) => {
   try {
-    const books = await Book.find().populate("reviews"); // Optional: .populate('reviews')
+    const books = await Book.find().populate("reviews");
     res.status(200).json(books);
   } catch (error) {
     res
@@ -30,7 +30,7 @@ const getBookById = async (req, res) => {
 };
 
 const addNewBook = async (req, res) => {
-  const { name, id, author, publishDate } = req.body;
+  const { name, id, author, publishDate, rating, genre } = req.body;
 
   try {
     const newBook = new Book({
@@ -38,6 +38,8 @@ const addNewBook = async (req, res) => {
       id,
       author,
       publishDate,
+      rating,
+      genre,
     });
 
     const savedBook = await newBook.save();

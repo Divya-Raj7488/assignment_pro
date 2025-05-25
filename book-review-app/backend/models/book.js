@@ -7,6 +7,12 @@ const bookSchema = new mongoose.Schema(
     id: { type: String, required: true, unique: true },
     author: { type: String, required: true },
     publishDate: { type: Date, required: true },
+    genre: {
+      type: String,
+      enum: ["Fiction", "Romance", "Comedy", "Tragedy", "Drama", "Horror"],
+      required: true,
+    },
+    rating: { type: Number, required: true },
   },
   { timestamps: true }
 );
