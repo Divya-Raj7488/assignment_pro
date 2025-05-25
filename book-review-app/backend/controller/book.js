@@ -30,7 +30,7 @@ const getBookById = async (req, res) => {
 };
 
 const addNewBook = async (req, res) => {
-  const { name, id, author, publishDate, rating, genre } = req.body;
+  const { name, id, author, publishDate, rating, genre, coverImg } = req.body;
 
   try {
     const newBook = new Book({
@@ -40,6 +40,7 @@ const addNewBook = async (req, res) => {
       publishDate,
       rating,
       genre,
+      v,
     });
 
     const savedBook = await newBook.save();
