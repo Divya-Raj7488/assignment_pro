@@ -11,6 +11,10 @@ app.use("/books/", require("./routes/books"));
 app.use("/user", require("./routes/user"));
 app.use("/review", require("./routes/review"));
 
+app.get("/", (req, res) => {
+  return res.send("hello");
+});
+
 app.listen(3000, (req, res) => {
   console.log("listening on port 3000");
 });
