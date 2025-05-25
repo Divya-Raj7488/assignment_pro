@@ -40,7 +40,7 @@ const addNewBook = async (req, res) => {
       publishDate,
       rating,
       genre,
-      v,
+      coverUrl,
     });
 
     const savedBook = await newBook.save();
