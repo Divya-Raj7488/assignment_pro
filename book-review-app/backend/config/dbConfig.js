@@ -10,4 +10,4 @@ const dbConfig = async () => {
     console.log(err);
   }
 };
-export default dbConfig;
+module.exports = dbConfig;
