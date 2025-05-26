@@ -7,7 +7,8 @@ const dbConfig = require("./config/dbConfig");
 
 app.use(cors(corsOptions));
 dbConfig();
-app.use("/books/", require("./routes/books"));
+app.use(express.json());
+app.use("/books", require("./routes/books"));
 app.use("/user", require("./routes/user"));
 app.use("/review", require("./routes/review"));
 
