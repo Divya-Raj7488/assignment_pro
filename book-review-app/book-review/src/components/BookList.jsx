@@ -1,10 +1,11 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useContext } from "react";
 import { Search } from "lucide-react";
 import Sidebar from "./subcomponents/Sidebar";
 import BookCard from "./subcomponents/BookCard";
 import Navbar from "./subcomponents/Navbar";
 import Pagination from "./subcomponents/Pagination";
 import axios from "axios";
+import UserContentext from "../context/UserContext";
 
 const BookList = () => {
   const [books, setBooks] = useState([]);
@@ -14,6 +15,8 @@ const BookList = () => {
   const [selectedGenres, setSelectedGenres] = useState([]);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+  const { user, setUser } = useContext(UserContentext);
+  const userId = "68339c04970c91e370348ee5";
 
   const booksPerPage = 25;
   const filteredBooks = useMemo(() => {
@@ -42,13 +45,27 @@ const BookList = () => {
   const getBookData = async () => {
     try {
       const response = await axios.get("http://localhost:3000/books");
-      console.log(response.data);
       setBooks(response.data);
       setLoading(false);
     } catch (err) {
       console.log(err);
     }
   };
+  const fetchUserData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:3000/user/${userId}`, {
+        params: { _id: userId },
+      });
+      console.log("User data fetched:", response.data);
+      setUser(response.data);
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchUserData();
+  }, []);
 
   useEffect(() => {
     getBookData();
