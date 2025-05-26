@@ -1,7 +1,17 @@
 import { Calendar, Star, UserCheck } from "lucide-react";
 
 const BookCard = ({ book }) => {
-  const formatDate = (date) => {
+  const {
+    _id: id,
+    title,
+    author,
+    cover_url: cover,
+    rating,
+    publication_date: publishDate,
+    genre,
+  } = book;
+  const formatDate = (dateStr) => {
+    const date = new Date(dateStr);
     return date.toLocaleDateString("en-US", {
       year: "numeric",
       month: "short",
@@ -21,35 +31,31 @@ const BookCard = ({ book }) => {
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
       <div className="aspect-w-3 aspect-h-4 bg-gray-200">
-        <img
-          src={book.cover}
-          alt={book.title}
-          className="w-full h-48 object-cover"
-        />
+        <img src={cover} alt={title} className="w-full h-48 object-cover" />
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-          {book.title}
+          {title}
         </h3>
 
         <div className="flex items-center text-sm text-gray-600 mb-2">
           <UserCheck className="w-4 h-4 mr-1" />
-          <span>{book.author}</span>
+          <span>{author}</span>
         </div>
 
         <div className="flex items-center mb-2">
-          {renderStars(book.rating)}
-          <span className="ml-1 text-sm text-gray-600">({book.rating})</span>
+          {renderStars(rating)}
+          <span className="ml-1 text-sm text-gray-600">({rating})</span>
         </div>
 
         <div className="flex items-center text-sm text-gray-600 mb-2">
           <Calendar className="w-4 h-4 mr-1" />
-          <span>{formatDate(book.publishDate)}</span>
+          <span>{formatDate(publishDate)}</span>
         </div>
 
         <div className="mb-4">
           <span className="inline-block px-2 py-1 text-xs font-medium text-indigo-600 bg-indigo-100 rounded-full">
-            {book.genre}
+            {genre}
           </span>
         </div>
 
