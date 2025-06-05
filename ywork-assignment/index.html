@@ -1,0 +1,90 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Chat App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">ChatApp</div>
+      <div class="profile">CL</div>
+    </header>
+
+    <div class="main-container">
+      <aside class="sender-list">
+        <div class="sender" onclick="openChat('Alice')">
+          <div class="sender-icon">A</div>
+          <div class="sender-name">Alice</div>
+        </div>
+        <div class="sender" onclick="openChat('Bob')">
+          <div class="sender-icon">B</div>
+          <div class="sender-name">Bob</div>
+        </div>
+        <div class="sender" onclick="openChat('Ram')">
+          <div class="sender-icon">R</div>
+          <div class="sender-name">Ram</div>
+        </div>
+        <div class="sender" onclick="openChat('George')">
+          <div class="sender-icon">G</div>
+          <div class="sender-name">George</div>
+        </div>
+        <div class="sender" onclick="openChat('Molly')">
+          <div class="sender-icon">M</div>
+          <div class="sender-name">Molly</div>
+        </div>
+        <div class="sender" onclick="openChat('Jenny')">
+          <div class="sender-icon">J</div>
+          <div class="sender-name">Jenny</div>
+        </div>
+      </aside>
+
+      <!-- Chat Area -->
+      <main class="chat-area">
+        <div class="chat-header">
+          <button class="back-btn" onclick="closeChat()">←</button>
+          <h2 class="chat-title">Chat with <span id="chatWith">Alice</span></h2>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="bot-message">Hello! How can I assist you?</div>
+        </div>
+        <div class="chat-input">
+          <textarea
+            id="chatInput"
+            rows="1"
+            placeholder="Type a message..."
+          ></textarea>
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </main>
+
+      <!-- Chatbot Icon -->
+      <div class="chatbot-icon" onclick="openBotModal()">🤖</div>
+
+      <!-- Chatbot Modal -->
+      <div class="bot-modal" id="botModal">
+        <div class="bot-header">
+          <span>Chatbot</span>
+          <button onclick="closeBotModal()">✕</button>
+        </div>
+        <div class="bot-messages" id="botMessages"></div>
+        <div class="bot-input">
+          <textarea
+            id="botInput"
+            rows="1"
+            placeholder="Ask something..."
+          ></textarea>
+          <button onclick="sendBotMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">&copy; 2025 ChatApp</footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
